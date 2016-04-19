@@ -1,0 +1,160 @@
+<div data-role="page" id="base" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="1">
+                <label for="date"><strong>Date of Birth (mm/dd/yyyy):</strong></label>
+                <input name="date1" id="date" tabindex="1" type="text">
+                <a href="#" id="q1Btn" onClick="q1()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err1st" class="errmsg"><b>Please enter a valid date.</b></p>
+            </div>
+            <div id="2">
+                <label for="age"><strong>How old are you?</strong></label>
+                <input name="age1" id="age" pattern="[0-9]*" type="number">
+                <a href="#" id="q2Btn" onClick="q2()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err2" class="errmsg"><b>Please enter a valid age.</b></p>
+            </div>
+            <div id="3">
+                <p>What is your gender?</p>
+                <fieldset id="q3fd" data-role="controlgroup">
+                    <input name="q3Op1" id="q3Op1" value="0" type="radio">
+                    <label id="q3lb1" for="q3Op1" class="chkbox">Male</label>
+                    <input name="q3Op1" id="q3Op2" value="1" type="radio">
+                    <label id="q3lb2" for="q3Op2" class="chkbox">Female</label>
+                    <input name="q3Op1" id="q3Op3" value="2" type="radio">
+                    <label id="q3lb3" for="q3Op3" class="chkbox">Other</label>
+                    <input name="q3Op1" id="q3Op4" value="3" type="radio">
+                    <label id="q3lb4" for="q3Op4" class="chkbox">Prefer not to say</label>
+                </fieldset>
+                <a href="#" id="q3Btn" onClick="q3()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err3" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="4">
+                <p>What is your primary language (i.e., the one you speak most of the time)?</p>
+                <fieldset id="q4fd" data-role="controlgroup">
+                    <input name="q4Op1" id="q4Op1" value="0" type="radio">
+                    <label id="q4lb1" for="q4Op1" class="chkbox">English</label>
+                    <input name="q4Op1" id="q4Op2" value="1" type="radio">
+                    <label id="q4lb2" for="q4Op2" class="chkbox">Spanish</label>
+                    <input name="q4Op1" id="q4Op3" value="2" type="radio">
+                    <label id="q4lb3" for="q4Op3" class="chkbox">Chinese</label>
+                    <input name="q4Op1" id="q4Op4" value="3" type="radio">
+                    <label id="q4lb4" for="q4Op4" class="chkbox">French</label>
+                    <input name="q4Op1" id="q4Op5" value="4" type="radio">
+                    <label id="q4lb5" for="q4Op5" class="chkbox">German</label>
+                    <input name="q4Op1" id="q4Op6" value="5" type="radio">
+                    <label id="q4lb6" for="q4Op6" class="chkbox">Dutch</label>
+                    <input name="q4Op1" id="q4Op7" value="6" type="radio">
+                    <label id="q4lb7" for="q4Op7" class="chkbox">Portuguese</label>
+                    <input name="q4Op1" id="q4Op8" value="7" type="radio">
+                    <label id="q4lb8" for="q4Op8" class="chkbox">Japanese</label>
+                    <input name="q4Op1" id="q4Op9" value="8" type="radio">
+                    <label id="q4lb9" for="q4Op9" class="chkbox">Hebrew</label>
+                    <input name="q4Op1" id="q4Op10" value="9" type="radio">
+                    <label id="q4lb10" for="q4Op10" class="chkbox">Swedish</label>
+                    <input name="q4Op1" id="q4Op11" value="10" type="radio">
+                    <label id="q4lb11" for="q4Op11" class="chkbox">Other</label>
+                </fieldset>
+                <a href="#" id="q4Btn" onClick="q4()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err4" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="5">
+                <p>What is your race/ethnicity?</p>
+                <fieldset id="q5fd" data-role="controlgroup">
+                    <input name="q5Op1" id="q5Op1" value="0" type="radio">
+                    <label id="q5lb1" for="q5Op1" class="chkbox">White</label>
+                    <input name="q5Op1" id="q5Op2" value="1" type="radio">
+                    <label id="q5lb2" for="q5Op2" class="chkbox">Black or African-American</label>
+                    <input name="q5Op1" id="q5Op3" value="2" type="radio">
+                    <label id="q5lb3" for="q5Op3" class="chkbox">Asian</label>
+                    <input name="q5Op1" id="q5Op4" value="3" type="radio">
+                    <label id="q5lb4" for="q5Op4" class="chkbox">Native Hawaiian or other Pacific Islander</label>
+                    <input name="q5Op1" id="q5Op5" value="4" type="radio">
+                    <label id="q5lb5" for="q5Op5" class="chkbox">Native American or Alaska Native</label>
+                    <input name="q5Op1" id="q5Op6" value="5" type="radio">
+                    <label id="q5lb6" for="q5Op6" class="chkbox">Hispanic or Latino</label>
+                    <input name="q5Op1" id="q5Op7" value="6" type="radio">
+                    <label id="q5lb7" for="q5Op7" class="chkbox">Other</label>
+                </fieldset>
+                <a href="#" id="q5Btn" onClick="q5()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err5" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="6">
+                <p>What is the highest level of education you have completed?</p>
+                <fieldset id="q6fd" data-role="controlgroup">
+                    <input name="q6Op1" id="q6Op1" value="0" type="radio">
+                    <label id="q6lb1" for="q6Op1" class="chkbox">Less than high school</label>
+                    <input name="q6Op1" id="q6Op2" value="1" type="radio">
+                    <label id="q6lb2" for="q6Op2" class="chkbox">High school/GED</label>
+                    <input name="q6Op1" id="q6Op3" value="2" type="radio">
+                    <label id="q6lb3" for="q6Op3" class="chkbox">Some college</label>
+                    <input name="q6Op1" id="q6Op4" value="3" type="radio">
+                    <label id="q6lb4" for="q6Op4" class="chkbox">2-year college degree</label>
+                    <input name="q6Op1" id="q6Op5" value="4" type="radio">
+                    <label id="q6lb5" for="q6Op5" class="chkbox">4-year college degree</label>
+                    <input name="q6Op1" id="q6Op6" value="5" type="radio">
+                    <label id="q6lb6" for="q6Op6" class="chkbox">Masters degree</label>
+                    <input name="q6Op1" id="q6Op7" value="6" type="radio">
+                    <label id="q6lb7" for="q6Op7" class="chkbox">Doctoral degree</label>
+                    <input name="q6Op1" id="q6Op8" value="7" type="radio">
+                    <label id="q6lb8" for="q6Op8" class="chkbox">Professional degree (JD, MD)</label>
+                </fieldset>
+                <a href="#" id="q6Btn" onClick="q6()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err6" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="7">
+                <p>Are you currently employed?</p>
+                <fieldset id="q7fd" data-role="controlgroup">
+                    <input name="q7Op1" id="q7Op1" value="0" type="radio">
+                    <label id="q7lb1" for="q7Op1" class="chkbox">No</label>
+                    <input name="q7Op1" id="q7Op2" value="1" type="radio">
+                    <label id="q7lb2" for="q7Op2" class="chkbox">Yes, full-time</label>
+                    <input name="q7Op1" id="q7Op3" value="2" type="radio">
+                    <label id="q7lb3" for="q7Op3" class="chkbox">Yes, part-time</label>
+                </fieldset>
+                <a href="#" id="q7Btn" onClick="q7()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err7" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="8">
+                <p>Are you currently in school?</p>
+                <fieldset id="q8fd" data-role="controlgroup">
+                    <input name="q8Op1" id="q8Op1" value="0" type="radio">
+                    <label id="q8lb1" for="q8Op1" class="chkbox">No</label>
+                    <input name="q8Op1" id="q8Op2" value="1" type="radio">
+                    <label id="q8lb2" for="q8Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q8Btn" onClick="q8()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err8" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="9">
+                <p>What is your sexual orientation?</p>
+                <fieldset id="q9fd" data-role="controlgroup">
+                    <input name="q9Op1" id="q9Op1" value="0" type="radio">
+                    <label id="q9lb1" for="q9Op1" class="chkbox">Heterosexual</label>
+                    <input name="q9Op1" id="q9Op2" value="1" type="radio">
+                    <label id="q9lb2" for="q9Op2" class="chkbox">Homosexual</label>
+                    <input name="q9Op1" id="q9Op3" value="2" type="radio">
+                    <label id="q9lb3" for="q9Op3" class="chkbox">Bisexual</label>
+                    <input name="q9Op1" id="q9Op4" value="3" type="radio">
+                    <label id="q9lb4" for="q9Op4" class="chkbox">Prefer not to say</label>
+                </fieldset>
+                <a href="#" id="q9Btn" onClick="q9()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err9" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="10">
+                <label for="twitter"><strong>What is your twitter handle?  If you do not have, please write "none".</strong></label>
+                <input name="twitter1" id="twitter" type="text">
+                <a href="#" id="q10Btn" onClick="q10()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err10" class="errmsg"><b>Please enter an answer.</b></p>
+            </div>
+            <div id="s1Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s1FinBtn" onClick="s1Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

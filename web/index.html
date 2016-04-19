@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="icon" sizes="114x114" href="resources/images/tecicon.png"/>
+    <link rel="icon" sizes="60x60" href="resources/images/tecicon-small.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/images/tecicon.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/images/tecicon-small.png"/>
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="resources/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+    <script type="text/javascript" src="resources/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="resources/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="resources/jquery.maskedinput.js"></script>
+    <title>AMP Survey</title>
+</head>
+<body>
+<div data-role="page" id="idHome" data-theme="a">
+    <div data-role="content">
+        <div id="idBlk" class="sur3">
+            <input type="text" id="idtxt" value="" placeholder="Enter ID" />
+            <a id="stBtn" onclick="idSt()" class="ui-btn ui-corner-all">Start</a>
+            <p id="err0" class="errmsg"><b>Invalid ID</b></p>
+            <p id="err1" class="errmsg"><b>Can't connect to server.</b></p>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="home" data-theme="b">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1 class="ui-title"><span data-translate="Tec-Tec">AMP</span></h1>
+    </div>
+    <div data-role="content">
+        <a href="#inst" data-transition="slide" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-right btnSize"><span data-translate="How to Play">Sorting Task</span></a>
+    </div>
+</div>
+<div data-role="page" id="inst" data-theme="b">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1><span data-translate="inst">Instructions</span></h1>
+    </div>
+    <div data-role="content">
+        <ul>
+            <li>This task examines how people make quick judgments.</li>
+            <li>You will see pairs of pictures flashed one after the other.  The <ins>first</ins> is a real life word or image.  The <ins>second</ins> is a Chinese character.</li>
+            <li>The real-life word or image simply serves as a warning that the Chinese character is about to appear.  <ins>Ignore</ins> the real-life word or image.</li>
+            <li>Your task is to use your GUT FEELING to <ins>judge</ins> whether the Chinese character was more pleasant or more unpleasant.</li>
+        </ul>
+        <a href="#base" id="instBtn2" data-transition="slide" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-right btnSize"><span data-translate="How to Play">Start Task</span></a>
+    </div>
+</div>
+<div data-role="page" id="amp" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#home" onclick="resetGame()" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1><span data-translate="inst">Sorting Task</span></h1>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <img id="amp1" />
+            <img id="amp2" src="resources/images/black.jpg" />
+            <img id="amp3" />
+            <img id="amp4" src="resources/images/gray.jpg" />
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#" onClick="unBtn()" class="ui-btn ui-corner-all ui-btn-b btnAmp">Unpleasant</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" onClick="plBtn()" class="ui-btn ui-corner-all ui-btn-b btnAmp">Pleasant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="resources/game.js"></script>
+</body>
+</html>
