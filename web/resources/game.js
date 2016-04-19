@@ -1,3 +1,6 @@
+$(function() {
+    FastClick.attach(document.body);
+});
 var rootURL = "http://amptest.elasticbeanstalk.com/rest/tec";
 var hasTouch = ('ontouchstart' in window);
 var TOUCH_START = hasTouch ? "touchstart" : "mousedown";
@@ -136,6 +139,7 @@ $(document).on('pagebeforeshow', '#home', function() {
 $(document).on('pagebeforeshow', '#base', function() {
     navArry = [];
     $("#2, #3, #4, #5, #6, #7, #8, #9, #10, #s1Fin, #err1st, #back").hide();
+    FastClick.attach(document.body);
     $(function(){
         $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
     });
