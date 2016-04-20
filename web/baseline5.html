@@ -1,0 +1,68 @@
+<div data-role="page" id="base5" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst5">
+                <p><b>Instructions:</b>  The following questions ask about times when you took action and tried to kill yourself (i.e., purposefully hurting yourself with some intent to die).  We realize that people talk about these behaviors in different ways, but we are including <strong><i>any</i></strong> of the following events:</p>
+                <ul>
+                    <li>Times when you started to try to kill yourself but then stopped yourself <strong><i>after you had taken some action</i></strong> (e.g., took some pills as part of an overdose but then you stopped yourself from continuing)</li>
+                    <li>Times when you started to try to kill yourself, but then someone or something interrupted you <strong><i>after you had taken some action</i></strong> (e.g., started taking some pills as part of an overdose but then someone walked in and stopped your from continuing)</li>
+                    <li>Times where you tried to kill yourself and <strong><i>after you had taken some action</i></strong> you called for help (e.g., after you took pills as part of an overdose, you called for help)</li>
+                    <li>Times where you tried to kill yourself and no one found you</li>
+                </ul>
+                <a href="#" id="bInst5Btn" onClick="bInst5()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="57">
+                <p>Have you ever tried to kill yourself?  In other words, have you ever <strong>purposefully hurt yourself <i>with some</i> intent to die</strong>?</p>
+                <fieldset id="q57fd" data-role="controlgroup">
+                    <input name="q57Op1" id="q57Op1" value="0" type="radio">
+                    <label id="q57lb1" for="q57Op1" class="chkbox">No</label>
+                    <input name="q57Op1" id="q57Op2" value="1" type="radio">
+                    <label id="q57lb2" for="q57Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q57Btn" onClick="q57()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err57" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="58">
+                <label for="times8">How many times in the <strong>past week</strong> have you <strong>purposefully hurt yourself with some intent to die</strong> (i.e., tried to kill yourself)?</label>
+                <input name="times9" id="times8" pattern="[0-9]*" type="number" placeholder="times in the past week">
+                <a href="#" id="q58Btn" onClick="q58()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err58" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="59">
+                <label for="times9">How many times in the <strong>past month</strong> have you <strong>purposefully hurt yourself with some intent to die</strong> (i.e., tried to kill yourself)?</label>
+                <input name="times10" id="times9" pattern="[0-9]*" type="number" placeholder="times in the past month">
+                <a href="#" id="q59Btn" onClick="q59()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err59" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="60">
+                <label for="times10">How many times in the <strong>past year</strong> have you <strong>purposefully hurt yourself with some intent to die</strong> (i.e., tried to kill yourself)?</label>
+                <input name="times11" id="times10" pattern="[0-9]*" type="number" placeholder="times in the past year">
+                <a href="#" id="q60Btn" onClick="q60()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err60" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="61">
+                <label for="times11">How many times in <strong>your life</strong> have you <strong>purposefully hurt yourself with some intent to die</strong> (i.e., tried to kill yourself)?</label>
+                <input name="times12" id="times11" pattern="[0-9]*" type="number" placeholder="times in my lifetime">
+                <a href="#" id="q61Btn" onClick="q61()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err61" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="62">
+                <label for="times12">How old were you the first time you tried to kill yourself (i.e., purposefully hurt yourself with some intent to die)?</label>
+                <input name="times13" id="times12" pattern="[0-9]*" type="number" placeholder="years">
+                <a href="#" id="q62Btn" onClick="q62()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err62" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="63">
+                <label for="times13">How old were you the last time you tried to kill yourself (i.e., purposefully hurt yourself with some intent to die)?</label>
+                <input name="times14" id="times13" pattern="[0-9]*" type="number" placeholder="years">
+                <a href="#" id="q63Btn" onClick="q63()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err63" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+        </div>
+    </div>
+</div>

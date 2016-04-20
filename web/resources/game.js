@@ -22,36 +22,40 @@ var dScr = 0.0;
 var eScr = 0.0;
 var fScr = 0.0;
 var ampCnt = 0;
-var totPoints = 0.0;
 var right = 0;
 var wrong = 0;
 var hide = false;
-var choice1;
-var choice2;
-var prevSel;
 var totTime = 0.0;
 var pId = "";
 var active = false;
-var stTime;
-var stopTime;
 var points = 0;
 var fnLoop = false;
-var fnLand = false;
-var inst = false;
-var inst2 = false;
-var neut = false;;
-var played;
-var reloadCnt = 3;
+var q11logic = false;
+var q14logic = false;
+var q19logic = false;
+var q24logic = false;
+var q31logic = false;
+var q45logic = false;
+var q47logic = false;
+var q52logic = false;
+var q57logic = false;
+var q68logic = false;
+var base3Loaded = false;
 var matchArry = [];
 var trialMtch = [];
 var ampArry = [];
 var ampScr = {};
 var ampSym = [];
-var fnArry = [];
 var navArry = [];
+var vis = [];
 var navPos = 0;
 var surArry = {DOB : "", Age : "", Gender : "", Language : "", Race : "", Education : "", Employment : "", School : "", Orientation : ""
-               , Twitter : ""}
+               , Twitter : "", NSSI_yn_t1 : "", NSSI_agestart_t1 : "", NSSI_agelast_t1 : "", Cut_yn_t1 : "", Cut_wk_t1 : "", Cut_mth_t1 : "",
+               Cut_yr_t1 : "", Cut_life_t1 : "", Burn_yn_t1 : "", Burn_wk_t1 : "", Burn_mth_t1 : "", Burn_yr_t1 : "", Burn_life_t1 : "",
+               AltNSSI_yn_t1 : "", AltNSSI_wk_t1 : "", AltNSSI_mth_t1 : "", AltNSSI_yr_t1 : "", AltNSSI_life_t1 : "", NSSI_desirestop_t1 : "",
+               NSSI_likelihood_t1 : "", Plan_yn_t1 : "", Plan_lethal_t1 : "", Plan_place_t1 : "", Plan_time_t1 : "", Plan_placetime_t1 : "",
+               Plan_freq_t1 : "", Plan_wk_t1 : "", Plan_mth_t1 : "", Plan_yr_t1 : "", Plan_life_t1 : "", Plan_intent_t1 : "", wPlan_freq_t1 : "",
+               wPlan_intent_t1 : "", Plan_likelihood_t1 : "", Prep_yn_t1 : "", Prep_conf_t1 : ""}
 
 $(window).on('popstate', function(e) {
     e.preventDefault();
@@ -139,11 +143,31 @@ $(document).on('pagebeforeshow', '#home', function() {
 $(document).on('pagebeforeshow', '#base', function() {
     navArry = [];
     $("#2, #3, #4, #5, #6, #7, #8, #9, #10, #s1Fin, #err1st, #back").hide();
+    vis = ["#q1Btn", "#q2Btn", "#q3Btn", "#q4Btn", "#q5Btn", "#q6Btn", "#q7Btn", "#q8Btn", "#q9Btn", "#q10Btn"];
     FastClick.attach(document.body);
     $(function(){
         $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
     });
     bindBase();
+});
+
+$(document).on('pagebeforeshow', '#base2', function() {
+    navArry = [];
+    $("#11, #12, #13, #14, #15, #16, #17, #18, #19, #s2Fin, #baseInst2, #back, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30").hide();
+    vis = ["#q11Btn", "#q12Btn", "#q13Btn", "#q14Btn", "#q15Btn", "#q16Btn", "#q17Btn", "#q18Btn", "#q19Btn", "#q20Btn",
+            "#q21Btn", "#q22Btn", "#q23Btn", "#q24Btn", "#q25Btn", "#q26Btn", "#q27Btn", "#q28Btn", "#q29Btn", "#q30Btn",
+            "#bInst2Btn", "#bInst1Btn"];
+    FastClick.attach(document.body);
+    bindBase2();
+});
+
+$(document).on('pagebeforeshow', '#base3', function() {
+    navArry = [];
+    $("#31, #32, #33, #34, #35, #36, #37, #38, #39, #s3Fin, #back, #40, #41, #42, #43, #44, #45, #46").hide();
+    vis = ["#q31Btn", "#q32Btn", "#q33Btn", "#q34Btn", "#q35Btn", "#q36Btn", "#q37Btn", "#q38Btn", "#q39Btn", "#q40Btn",
+        "#q41Btn", "#q42Btn", "#q43Btn", "#q44Btn", "#q45Btn", "#q46Btn", "#bInst3Btn"];
+    FastClick.attach(document.body);
+    bindBase3();
 });
 
     $(window).on('orientationchange', function (e) {
@@ -550,37 +574,206 @@ function resetGame() {
 function bindBase() {
     $("#q3Op1, #q3Op2, #q3Op3, #q3Op4").on('change', function() {
         surArry.Gender = $(this).val();
-        q3();
+        setTimeout(function() {
+            q3();
+        }, 200);
     });
 
     $("#q4Op1, #q4Op2, #q4Op3, #q4Op4, #q4Op5, #q4Op6, #q4Op7, #q4Op8, #q4Op9, #q4Op10, #q4Op11").on('change', function() {
         surArry.Language = $(this).val();
-        q4();
+        setTimeout(function() {
+            q4();
+        }, 200);
     });
 
     $("#q5Op1, #q5Op2, #q5Op3, #q5Op4, #q5Op5, #q5Op6, #q5Op7").on('change', function() {
         surArry.Race = $(this).val();
-        q5();
+        setTimeout(function() {
+            q5();
+        }, 200);
     });
 
     $("#q6Op1, #q6Op2, #q6Op3, #q6Op4, #q6Op5, #q6Op6, #q6Op7, #q6Op8").on('change', function() {
         surArry.Education = $(this).val();
-        q6();
+        setTimeout(function() {
+            q6();
+        }, 200);
     });
 
     $("#q7Op1, #q7Op2, #q7Op3").on('change', function() {
         surArry.Employment = $(this).val();
-        q7();
+        setTimeout(function() {
+            q7();
+        }, 200);
     });
 
     $("#q8Op1, #q8Op2").on('change', function() {
         surArry.School = $(this).val();
-        q8();
+        setTimeout(function() {
+            q8();
+        }, 200);
     });
 
     $("#q9Op1, #q9Op2, #q9Op3, #q9Op4").on('change', function() {
         surArry.Orientation = $(this).val();
-        q9();
+        setTimeout(function() {
+            q9();
+        }, 200);
+    });
+}
+
+function bindBase2() {
+    $("#q11Op1, #q11Op2").on('change', function() {
+        surArry.NSSI_yn_t1 = $(this).val();
+        setTimeout(function() {
+            q11();
+        }, 200);
+    });
+
+    $("#q14Op1, #q14Op2").on('change', function() {
+        surArry.Cut_yn_t1 = $(this).val();
+        setTimeout(function() {
+            q14();
+        }, 200);
+    });
+
+    $("#q19Op1, #q19Op2").on('change', function() {
+        surArry.Burn_yn_t1 = $(this).val();
+        setTimeout(function() {
+            q19();
+        }, 200);
+    });
+
+    $("#q24Op1, #q24Op2").on('change', function() {
+        surArry.AltNSSI_yn_t1 = $(this).val();
+        setTimeout(function() {
+            q24();
+        }, 200);
+    });
+
+    $("#q29Op1, #q29Op2, #q29Op3, #q29Op4, #q29Op5, #q29Op6, #q29Op7, #q29Op8, #q29Op9, #q29Op10, #q29Op11").on('change', function() {
+        surArry.NSSI_desirestop_t1 = $(this).val();
+        setTimeout(function() {
+            q29();
+        }, 200);
+    });
+
+    $("#q30Op1, #q30Op2, #q30Op3, #q30Op4, #q30Op5, #q30Op6, #q30Op7, #q30Op8, #q30Op9, #q30Op10, #q30Op11").on('change', function() {
+        surArry.NSSI_likelihood_t1 = $(this).val();
+        if (!base3Loaded) {
+            base3Loaded = true;
+            $(":mobile-pagecontainer").pagecontainer("load", "baseline3.html", {showLoadMsg: false});
+        }
+        setTimeout(function() {
+            q30();
+        }, 200);
+    });
+}
+
+function bindBase3() {
+    $("#q31Op1, #q31Op2").on('change', function() {
+        surArry.Plan_yn_t1 = $(this).val();
+        setTimeout(function() {
+            q31();
+        }, 200);
+    });
+
+    $("#q32Op1, #q32Op2, #q32Op3, #q32Op4, #q32Op5, #q32Op6, #q32Op7, #q32Op8, #q32Op9, #q32Op10, #q32Op11").on('change', function() {
+        surArry.Plan_lethal_t1 = $(this).val();
+        setTimeout(function() {
+            q32();
+        }, 200);
+    });
+
+    $("#q33Op1, #q33Op2").on('change', function() {
+        surArry.Plan_place_t1 = $(this).val();
+        setTimeout(function() {
+            q33();
+        }, 200);
+    });
+
+    $("#q34Op1, #q34Op2").on('change', function() {
+        surArry.Plan_time_t1 = $(this).val();
+        setTimeout(function() {
+            q34();
+        }, 200);
+    });
+
+    $("#q35Op1, #q35Op2").on('change', function() {
+        surArry.Plan_placetime_t1 = $(this).val();
+        setTimeout(function() {
+            q35();
+        }, 200);
+    });
+
+    $("#q36Op1, #q36Op2, #q36Op3, #q36Op4, #q36Op5, #q36Op6, #q36Op7, #q36Op8").on('change', function() {
+        surArry.Plan_freq_t1 = $(this).val();
+        setTimeout(function() {
+            q36();
+        }, 200);
+    });
+
+    $("#q37Op1, #q37Op2, #q37Op3, #q37Op4, #q37Op5, #q37Op6, #q37Op7, #q37Op8").on('change', function() {
+        surArry.Plan_wk_t1 = $(this).val();
+        setTimeout(function() {
+            q37();
+        }, 200);
+    });
+
+    $("#q38Op1, #q38Op2, #q38Op3, #q38Op4, #q38Op5, #q38Op6, #q38Op7").on('change', function() {
+        surArry.Plan_mth_t1 = $(this).val();
+        setTimeout(function() {
+            q38();
+        }, 200);
+    });
+
+    $("#q39Op1, #q39Op2, #q39Op3, #q39Op4, #q39Op5, #q39Op6, #q39Op7").on('change', function() {
+        surArry.Plan_yr_t1 = $(this).val();
+        setTimeout(function() {
+            q39();
+        }, 200);
+    });
+
+    $("#q41Op1, #q41Op2, #q41Op3, #q41Op4, #q41Op5, #q41Op6, #q41Op7, #q41Op8, #q41Op9, #q41Op10, #q41Op11").on('change', function() {
+        surArry.Plan_intent_t1 = $(this).val();
+        setTimeout(function() {
+            q41();
+        }, 200);
+    });
+
+    $("#q42Op1, #q42Op2, #q42Op3, #q42Op4, #q42Op5, #q42Op6, #q42Op7").on('change', function() {
+        surArry.wPlan_freq_t1 = $(this).val();
+        setTimeout(function() {
+            q42();
+        }, 200);
+    });
+
+    $("#q43Op1, #q43Op2, #q43Op3, #q43Op4, #q43Op5, #q43Op6, #q43Op7, #q43Op8, #q43Op9, #q43Op10, #q43Op11").on('change', function() {
+        surArry.wPlan_intent_t1 = $(this).val();
+        setTimeout(function() {
+            q43();
+        }, 200);
+    });
+
+    $("#q44Op1, #q44Op2, #q44Op3, #q44Op4, #q44Op5, #q44Op6, #q44Op7, #q44Op8, #q44Op9, #q44Op10, #q44Op11").on('change', function() {
+        surArry.Plan_likelihood_t1 = $(this).val();
+        setTimeout(function() {
+            q44();
+        }, 200);
+    });
+
+    $("#q45Op1, #q45Op2").on('change', function () {
+        surArry.Prep_yn_t1 = $(this).val();
+        setTimeout(function () {
+            q45();
+        }, 200);
+    });
+
+    $("#q46Op1, #q46Op2, #q46Op3, #q46Op4, #q46Op5, #q46Op6, #q46Op7, #q46Op8, #q46Op9, #q46Op10, #q46Op11").on('change', function() {
+        surArry.Prep_conf_t1 = $(this).val();
+        setTimeout(function() {
+            q46();
+        }, 200);
     });
 }
 
@@ -728,10 +921,535 @@ function q10() {
         $("#s1Fin").show();
         $("#fwd").hide();
         addArry(q9);
+        $(":mobile-pagecontainer" ).pagecontainer( "load", "baseline2.html", { showLoadMsg: false } );
     }
     else {
         $("#err10").show();
     }
+}
+
+function s1Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base2");
+}
+
+function base2St() {
+    $("#11").hide();
+    $("#err11").hide();
+    $("#back").hide();
+    $("#baseInst1").show();
+}
+
+function bInst1() {
+    $("#baseInst1").hide();
+    $("#err11").hide();
+    $("#11").show();
+    $("#back").show();
+    addArry(base2St);
+}
+
+function q11() {
+    var choice = surArry.NSSI_yn_t1;
+    if (choice === "1") {
+        q11logic = false;
+        $("#err11").hide();
+        $("#err12").hide();
+        $("#11").hide();
+        $("#12").show();
+        addArry(bInst1);
+    }
+    else if (choice === "0") {
+        q11logic = true;
+        $("#err11").hide();
+        $("#err30").hide();
+        $("#11").hide();
+        surArry.NSSI_agestart_t1 = "";
+        surArry.NSSI_agelast_t1 = "";
+        surArry.Cut_yn_t1 = "";
+        surArry.Cut_wk_t1 = "";
+        surArry.Cut_mth_t1 = "";
+        surArry.Cut_yr_t1 = "";
+        surArry.Cut_life_t1 = "";
+        surArry.Burn_yn_t1 = "";
+        surArry.Burn_wk_t1 = "";
+        surArry.Burn_mth_t1 = "";
+        surArry.Burn_yr_t1 = "";
+        surArry.Burn_life_t1 = "";
+        surArry.AltNSSI_yn_t1 = "";
+        surArry.AltNSSI_wk_t1 = "";
+        surArry.AltNSSI_mth_t1 = "";
+        surArry.AltNSSI_yr_t1 = "";
+        surArry.AltNSSI_life_t1 = "";
+        surArry.NSSI_desirestop_t1 = "";
+        $("#14, #19, #24, #29").find("input").each(function() {
+            if ($(this).is(":checked")) {
+                $(this).prop("checked", false).checkboxradio("refresh");
+            }
+        });
+        $("#12, #13, #15, #16, #17, #18, #20, #21, #22, #23, #25, #26, #27, #28").find("input").each(function() {
+            $(this).val("");
+        });
+        $("#30").show();
+        $("#fwd").show();
+        addArry(bInst1);
+    }
+    else {
+        $("#err11").show();
+    }
+}
+
+function q12() {
+    var age = parseInt($("#age2").val());
+    if (age > 0 && age < 100000) {
+        surArry.NSSI_agestart_t1 = age.toString();
+        $("#err12").hide();
+        $("#err13").hide();
+        $("#12").hide();
+        $("#13").show();
+        addArry(q11);
+    }
+    else {
+        $("#err12").show();
+    }
+}
+
+function q13() {
+    var age = parseInt($("#age3").val());
+    if (age > 0 && age < 100000) {
+        surArry.NSSI_agelast_t1 = age.toString();
+        $("#err13").hide();
+        $("#err14").hide();
+        $("#13").hide();
+        $("#baseInst2").show();
+        addArry(q12);
+    }
+    else {
+        $("#err13").show();
+    }
+}
+
+function bInst2() {
+    $("#baseInst2").hide();
+    $("#err14").hide();
+    $("#14").show();
+    addArry(q13);
+}
+
+function q14() {
+    var choice = surArry.Cut_yn_t1;
+    if (choice === "1") {
+        q14logic = false;
+        $("#err14").hide();
+        $("#err15").hide();
+        $("#14").hide();
+        $("#15").show();
+        addArry(bInst2);
+    }
+    else if (choice === "0") {
+        q14logic = true;
+        $("#err14").hide();
+        $("#err19").hide();
+        $("#14").hide();
+        surArry.Cut_wk_t1 = "";
+        surArry.Cut_mth_t1 = "";
+        surArry.Cut_yr_t1 = "";
+        surArry.Cut_life_t1 = "";
+        $("#15, #16, #17, #18").find("input").each(function() {
+            $(this).val("");
+        });
+        $("#19").show();
+        addArry(bInst2);
+    }
+    else {
+        $("#err14").show();
+    }
+}
+
+function q15() {
+    var age = parseInt($("#age5").val());
+    if (age > 0 && age < 100000) {
+        surArry.Cut_wk_t1 = age.toString();
+        $("#err15").hide();
+        $("#err16").hide();
+        $("#15").hide();
+        $("#16").show();
+        addArry(q14);
+    }
+    else {
+        $("#err15").show();
+    }
+}
+
+function q16() {
+    var age = parseInt($("#age6").val());
+    if (age > 0 && age < 100000) {
+        surArry.Cut_mth_t1 = age.toString();
+        $("#err16").hide();
+        $("#err17").hide();
+        $("#16").hide();
+        $("#17").show();
+        addArry(q15);
+    }
+    else {
+        $("#err16").show();
+    }
+}
+
+function q17() {
+    var age = parseInt($("#age7").val());
+    if (age > 0 && age < 100000) {
+        surArry.Cut_yr_t1 = age.toString();
+        $("#err17").hide();
+        $("#err18").hide();
+        $("#17").hide();
+        $("#18").show();
+        addArry(q16);
+    }
+    else {
+        $("#err17").show();
+    }
+}
+
+function q18() {
+    var age = parseInt($("#age8").val());
+    if (age > 0 && age < 100000) {
+        surArry.Cut_life_t1 = age.toString();
+        $("#err18").hide();
+        $("#err19").hide();
+        $("#18").hide();
+        $("#19").show();
+        addArry(q17);
+    }
+    else {
+        $("#err18").show();
+    }
+}
+
+function q19() {
+    var choice = surArry.Burn_yn_t1;
+    if (choice === "1") {
+        q19logic = false;
+        $("#err19").hide();
+        $("#err20").hide();
+        $("#19").hide();
+        $("#20").show();
+        if (q14logic) {
+            addArry(q14);
+        }
+        else {
+            addArry(q18);
+        }
+    }
+    else if (choice === "0") {
+        q19logic = true;
+        $("#err19").hide();
+        $("#err24").hide();
+        $("#19").hide();
+        surArry.Burn_wk_t1 = "";
+        surArry.Burn_mth_t1 = "";
+        surArry.Burn_yr_t1 = "";
+        surArry.Burn_life_t1 = "";
+        $("#20, #21, #22, #23").find("input").each(function() {
+            $(this).val("");
+        });
+        $("#24").show();
+        if (q14logic) {
+            addArry(q14);
+        }
+        else {
+            addArry(q18);
+        }
+    }
+    else {
+        $("#err19").show();
+    }
+}
+
+function q20() {
+    var age = parseInt($("#age9").val());
+    if (age > 0 && age < 100000) {
+        surArry.Burn_wk_t1 = age.toString();
+        $("#err20").hide();
+        $("#err21").hide();
+        $("#20").hide();
+        $("#21").show();
+        addArry(q19);
+    }
+    else {
+        $("#err20").show();
+    }
+}
+
+function q21() {
+    var age = parseInt($("#age10").val());
+    if (age > 0 && age < 100000) {
+        surArry.Burn_mth_t1 = age.toString();
+        $("#err21").hide();
+        $("#err22").hide();
+        $("#21").hide();
+        $("#22").show();
+        addArry(q20);
+    }
+    else {
+        $("#err21").show();
+    }
+}
+
+function q22() {
+    var age = parseInt($("#age11").val());
+    if (age > 0 && age < 100000) {
+        surArry.Burn_yr_t1 = age.toString();
+        $("#err22").hide();
+        $("#err23").hide();
+        $("#22").hide();
+        $("#23").show();
+        addArry(q21);
+    }
+    else {
+        $("#err22").show();
+    }
+}
+
+function q23() {
+    var age = parseInt($("#age12").val());
+    if (age > 0 && age < 100000) {
+        surArry.Burn_life_t1 = age.toString();
+        $("#err23").hide();
+        $("#err24").hide();
+        $("#23").hide();
+        $("#24").show();
+        addArry(q22);
+    }
+    else {
+        $("#err23").show();
+    }
+}
+
+function q24() {
+    var choice = surArry.AltNSSI_yn_t1;
+    if (choice === "1") {
+        q24logic = false;
+        $("#err24").hide();
+        $("#err25").hide();
+        $("#24").hide();
+        $("#25").show();
+        if (q19logic) {
+            addArry(q19);
+        }
+        else {
+            addArry(q23);
+        }
+    }
+    else if (choice === "0") {
+        q24logic = true;
+        $("#err24").hide();
+        $("#err30").hide();
+        $("#24").hide();
+        surArry.AltNSSI_wk_t1 = "";
+        surArry.AltNSSI_mth_t1 = "";
+        surArry.AltNSSI_yr_t1 = "";
+        surArry.AltNSSI_life_t1 = "";
+        $("#25, #26, #27, #28").find("input").each(function() {
+            $(this).val("");
+        });
+        $("#29").find("input").each(function() {
+            if ($(this).is(":checked")) {
+                $(this).prop("checked", false).checkboxradio("refresh");
+            }
+        });
+        $("#30").show();
+        $("#fwd").show();
+        if (q19logic) {
+            addArry(q19);
+        }
+        else {
+            addArry(q23);
+        }
+    }
+    else {
+        $("#err24").show();
+    }
+}
+
+function q25() {
+    var age = parseInt($("#age13").val());
+    if (age > 0 && age < 100000) {
+        surArry.AltNSSI_wk_t1 = age.toString();
+        $("#err25").hide();
+        $("#err26").hide();
+        $("#25").hide();
+        $("#26").show();
+        addArry(q24);
+    }
+    else {
+        $("#err25").show();
+    }
+}
+
+function q26() {
+    var age = parseInt($("#age14").val());
+    if (age > 0 && age < 100000) {
+        surArry.AltNSSI_mth_t1 = age.toString();
+        $("#err26").hide();
+        $("#err27").hide();
+        $("#26").hide();
+        $("#27").show();
+        addArry(q25);
+    }
+    else {
+        $("#err26").show();
+    }
+}
+
+function q27() {
+    var age = parseInt($("#age15").val());
+    if (age > 0 && age < 100000) {
+        surArry.AltNSSI_yr_t1 = age.toString();
+        $("#err27").hide();
+        $("#err28").hide();
+        $("#27").hide();
+        $("#28").show();
+        addArry(q26);
+    }
+    else {
+        $("#err27").show();
+    }
+}
+
+function q28() {
+    var age = parseInt($("#age16").val());
+    if (age > 0 && age < 100000) {
+        surArry.AltNSSI_life_t1 = age.toString();
+        $("#err28").hide();
+        $("#err29").hide();
+        $("#28").hide();
+        $("#29").show();
+        addArry(q27);
+    }
+    else {
+        $("#err28").show();
+    }
+}
+
+function q29() {
+    if (surArry.NSSI_desirestop_t1 != "") {
+        $("#err29").hide();
+        $("#err30").hide();
+        $("#29").hide();
+        $("#30").show();
+        $("#fwd").show();
+        addArry(q28);
+    }
+    else {
+        $("#err29").show();
+    }
+}
+
+function q30() {
+    if (surArry.NSSI_likelihood_t1 != "") {
+        $("#err30").hide();
+        $("#30").hide();
+        $("#fwd").hide();
+        $("#s2Fin").show();
+        if (q11logic) {
+            addArry(q11);
+        }
+        else if (q24logic) {
+            addArry(q24);
+        }
+        else {
+            addArry(q29);
+        }
+    }
+    else {
+        $("#err30").show();
+    }
+}
+
+function s2Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base3");
+}
+
+function base3St() {
+    $("#31").hide();
+    $("#err31").hide();
+    $("#back").hide();
+    $("#baseInst3").show();
+}
+
+function bInst3Btn() {
+
+}
+
+function q31() {
+
+}
+
+function q32() {
+
+}
+
+function q33() {
+
+}
+
+function q34() {
+
+}
+
+function q35() {
+
+}
+
+function q36() {
+
+}
+
+function q37() {
+
+}
+
+function q38() {
+
+}
+
+function q39() {
+
+}
+
+function q40() {
+
+}
+
+function q41() {
+
+}
+
+function q42() {
+
+}
+
+function q43() {
+
+}
+
+function q44() {
+
+}
+
+function q45() {
+
+}
+
+function q46() {
+
+}
+
+function s3Fin() {
+
 }
 
 function addArry(blk) {
@@ -761,8 +1479,6 @@ function backBtn() {
 }
 
 function forwardBtn() {
-    vis = ["#q1Btn", "#q2Btn", "#q3Btn", "#q4Btn", "#q5Btn", "#q6Btn", "#q7Btn", "#q8Btn", "#q9Btn", "#q10Btn"];
-
     for (i = 0; i < vis.length; i++) {
         if ($(vis[i]).is(':visible')) {
             $(vis[i]).click();
@@ -773,5 +1489,6 @@ function forwardBtn() {
 
 function hideAll() {
     $("#1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #s1Fin").hide();
+    $("#baseInst1, #11, #12, #13, #14, #baseInst2, #15, #16, #17, #18, #19, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30, #s2Fin").hide();
     return true;
 }

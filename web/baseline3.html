@@ -1,0 +1,334 @@
+<div data-role="page" id="base3" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst3">
+                <p><b>Instructions:</b>  The next few questions ask about suicide planning.  You'll be asked about different aspects of planning, such as whether you've ever thought of how, where, or when to kill yourself.</p>
+                <a href="#" id="bInst3Btn" onClick="bInst3()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="31">
+                <p>Have you ever thought of <strong>a way or method</strong> to kill yourself (e.g., overdose, firearm, crashing a car, etc.)?</p>
+                <fieldset id="q31fd" data-role="controlgroup">
+                    <input name="q31Op1" id="q31Op1" value="0" type="radio">
+                    <label id="q31lb1" for="q31Op1" class="chkbox">No</label>
+                    <input name="q31Op1" id="q31Op2" value="1" type="radio">
+                    <label id="q31lb2" for="q31Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q31Btn" onClick="q31()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err31" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="32">
+                <p>What do you think the <strong>likelihood</strong> is that you will purposely hurt yourself without wanting to die in the future?  <i>Remember, this is how likely you think it will happen in the future, regardless of whether you want it to.</i></p>
+                <fieldset id="q32fd" data-role="controlgroup">
+                    <input name="q32Op1" id="q32Op1" value="0" type="radio">
+                    <label id="q32lb1" for="q32Op1" class="chkbox">0 Not at all Confident</label>
+                    <input name="q32Op1" id="q32Op2" value="1" type="radio">
+                    <label id="q32lb2" for="q32Op2" class="chkbox">1</label>
+                    <input name="q32Op1" id="q32Op3" value="2" type="radio">
+                    <label id="q32lb3" for="q32Op3" class="chkbox">2</label>
+                    <input name="q32Op1" id="q32Op4" value="3" type="radio">
+                    <label id="q32lb4" for="q32Op4" class="chkbox">3</label>
+                    <input name="q32Op1" id="q32Op5" value="4" type="radio">
+                    <label id="q32lb5" for="q32Op5" class="chkbox">4</label>
+                    <input name="q32Op1" id="q32Op6" value="5" type="radio">
+                    <label id="q32lb6" for="q32Op6" class="chkbox">5</label>
+                    <input name="q32Op1" id="q32Op7" value="6" type="radio">
+                    <label id="q32lb7" for="q32Op7" class="chkbox">6</label>
+                    <input name="q32Op1" id="q32Op8" value="7" type="radio">
+                    <label id="q32lb8" for="q32Op8" class="chkbox">7</label>
+                    <input name="q32Op1" id="q32Op9" value="8" type="radio">
+                    <label id="q32lb9" for="q32Op9" class="chkbox">8</label>
+                    <input name="q32Op1" id="q32Op10" value="9" type="radio">
+                    <label id="q32lb10" for="q32Op10" class="chkbox">9</label>
+                    <input name="q32Op1" id="q32Op11" value="10" type="radio">
+                    <label id="q32lb11" for="q32Op11" class="chkbox">10 Extremely Confident</label>
+                </fieldset>
+                <a href="#" id="q32Btn" onClick="q32()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err32" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="33">
+                <p>Have you ever thought of a <strong>specific place</strong> to kill yourself?</p>
+                <fieldset id="q33fd" data-role="controlgroup">
+                    <input name="q33Op1" id="q33Op1" value="0" type="radio">
+                    <label id="q33lb1" for="q33Op1" class="chkbox">No</label>
+                    <input name="q33Op1" id="q33Op2" value="1" type="radio">
+                    <label id="q33lb2" for="q33Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q33Btn" onClick="q33()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err33" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="34">
+                <p>Have you ever thought of a <strong>specific date and/or time</strong> to kill yourself?</p>
+                <fieldset id="q34fd" data-role="controlgroup">
+                    <input name="q34Op1" id="q34Op1" value="0" type="radio">
+                    <label id="q34lb1" for="q34Op1" class="chkbox">No</label>
+                    <input name="q34Op1" id="q34Op2" value="1" type="radio">
+                    <label id="q34lb2" for="q34Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q34Btn" onClick="q34()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err34" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="35">
+                <p>Have you ever thought about using a specific method to kill yourself in a specific place at a specific time?</p>
+                <fieldset id="q35fd" data-role="controlgroup">
+                    <input name="q35Op1" id="q35Op1" value="0" type="radio">
+                    <label id="q35lb1" for="q35Op1" class="chkbox">No</label>
+                    <input name="q35Op1" id="q35Op2" value="1" type="radio">
+                    <label id="q35lb2" for="q35Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q35Btn" onClick="q35()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err35" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="36">
+                <p>Since you first thought of a suicide plan (that is, a method, place, and/or time), on average, how frequently have you thought about a suicide plan(s)?</p>
+                <fieldset id="q36fd" data-role="controlgroup">
+                    <input name="q36Op1" id="q36Op1" value="0" type="radio">
+                    <label id="q36lb1" for="q36Op1" class="chkbox">Never</label>
+                    <input name="q36Op1" id="q36Op2" value="1" type="radio">
+                    <label id="q36lb2" for="q36Op2" class="chkbox">Less than once a year</label>
+                    <input name="q36Op1" id="q36Op3" value="2" type="radio">
+                    <label id="q36lb3" for="q36Op3" class="chkbox">1-2 days per year</label>
+                    <input name="q36Op1" id="q36Op4" value="3" type="radio">
+                    <label id="q36lb4" for="q36Op4" class="chkbox">Less than once a month</label>
+                    <input name="q36Op1" id="q36Op5" value="4" type="radio">
+                    <label id="q36lb5" for="q36Op5" class="chkbox">1-2 days a month</label>
+                    <input name="q36Op1" id="q36Op6" value="5" type="radio">
+                    <label id="q36lb6" for="q36Op6" class="chkbox">1-2 days a week</label>
+                    <input name="q36Op1" id="q36Op7" value="6" type="radio">
+                    <label id="q36lb7" for="q36Op7" class="chkbox">3-4 days a week</label>
+                    <input name="q36Op1" id="q36Op8" value="7" type="radio">
+                    <label id="q36lb8" for="q36Op8" class="chkbox">Every or nearly every day</label>
+                </fieldset>
+                <a href="#" id="q36Btn" onClick="q36()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err36" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="37">
+                <p>In the <strong>past week</strong>, how many days did you think about your suicide plan?</p>
+                <fieldset id="q37fd" data-role="controlgroup">
+                    <input name="q37Op1" id="q37Op1" value="0" type="radio">
+                    <label id="q37lb1" for="q37Op1" class="chkbox">0 days</label>
+                    <input name="q37Op1" id="q37Op2" value="1" type="radio">
+                    <label id="q37lb2" for="q37Op2" class="chkbox">1 day</label>
+                    <input name="q37Op1" id="q37Op3" value="2" type="radio">
+                    <label id="q37lb3" for="q37Op3" class="chkbox">2 days</label>
+                    <input name="q37Op1" id="q37Op4" value="3" type="radio">
+                    <label id="q37lb4" for="q37Op4" class="chkbox">3 days</label>
+                    <input name="q37Op1" id="q37Op5" value="4" type="radio">
+                    <label id="q37lb5" for="q37Op5" class="chkbox">4 days</label>
+                    <input name="q37Op1" id="q37Op6" value="5" type="radio">
+                    <label id="q37lb6" for="q37Op6" class="chkbox">5 days</label>
+                    <input name="q37Op1" id="q37Op7" value="6" type="radio">
+                    <label id="q37lb7" for="q37Op7" class="chkbox">6 days</label>
+                    <input name="q37Op1" id="q37Op8" value="7" type="radio">
+                    <label id="q37lb8" for="q37Op8" class="chkbox">7 days</label>
+                </fieldset>
+                <a href="#" id="q37Btn" onClick="q37()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err37" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="38">
+                <p>In the <strong>past month</strong>, on average, how often did you think about your suicide plan(s)?</p>
+                <fieldset id="q38fd" data-role="controlgroup">
+                    <input name="q38Op1" id="q38Op1" value="0" type="radio">
+                    <label id="q38lb1" for="q38Op1" class="chkbox">Never</label>
+                    <input name="q38Op1" id="q38Op2" value="1" type="radio">
+                    <label id="q38lb2" for="q38Op2" class="chkbox">Very rarely</label>
+                    <input name="q38Op1" id="q38Op3" value="2" type="radio">
+                    <label id="q38lb3" for="q38Op3" class="chkbox">Rarely</label>
+                    <input name="q38Op1" id="q38Op4" value="3" type="radio">
+                    <label id="q38lb4" for="q38Op4" class="chkbox">About half the time</label>
+                    <input name="q38Op1" id="q38Op5" value="4" type="radio">
+                    <label id="q38lb5" for="q38Op5" class="chkbox">Occasionally</label>
+                    <input name="q38Op1" id="q38Op6" value="5" type="radio">
+                    <label id="q38lb6" for="q38Op6" class="chkbox">Very frequently</label>
+                    <input name="q38Op1" id="q38Op7" value="6" type="radio">
+                    <label id="q38lb7" for="q38Op7" class="chkbox">Always</label>
+                </fieldset>
+                <a href="#" id="q38Btn" onClick="q38()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err38" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="39">
+                <p>In the <strong>past year</strong>, how often did you think about your suicide plan(s)?</p>
+                <fieldset id="q39fd" data-role="controlgroup">
+                    <input name="q39Op1" id="q39Op1" value="0" type="radio">
+                    <label id="q39lb1" for="q39Op1" class="chkbox">Never</label>
+                    <input name="q39Op1" id="q39Op2" value="1" type="radio">
+                    <label id="q39lb2" for="q39Op2" class="chkbox">Very rarely</label>
+                    <input name="q39Op1" id="q39Op3" value="2" type="radio">
+                    <label id="q39lb3" for="q39Op3" class="chkbox">Rarely</label>
+                    <input name="q39Op1" id="q39Op4" value="3" type="radio">
+                    <label id="q39lb4" for="q39Op4" class="chkbox">About half the time</label>
+                    <input name="q39Op1" id="q39Op5" value="4" type="radio">
+                    <label id="q39lb5" for="q39Op5" class="chkbox">Occasionally</label>
+                    <input name="q39Op1" id="q39Op6" value="5" type="radio">
+                    <label id="q39lb6" for="q39Op6" class="chkbox">Very frequently</label>
+                    <input name="q39Op1" id="q39Op7" value="6" type="radio">
+                    <label id="q39lb7" for="q39Op7" class="chkbox">Always</label>
+                </fieldset>
+                <a href="#" id="q39Btn" onClick="q39()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err39" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="40">
+                <label for="periods">How many <strong>separate periods</strong> in your life have you thought your suicide plans?</label>
+                <input name="periods1" id="periods" pattern="[0-9]*" type="number" placeholder="separate periods in my lifetime">
+                <a href="#" id="q40Btn" onClick="q40()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err40" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="41">
+                <p>Thinking about all the times that you thought about your suicide plan(s), on average, <strong>how seriously did you consider or intend on action on your suicide plan(s)</strong>?</p>
+                <fieldset id="q41fd" data-role="controlgroup">
+                    <input name="q41Op1" id="q41Op1" value="0" type="radio">
+                    <label id="q41lb1" for="q41Op1" class="chkbox">0 Absolutely no intent/did not seriously consider acting on my plan(s) at all</label>
+                    <input name="q41Op1" id="q41Op2" value="1" type="radio">
+                    <label id="q41lb2" for="q41Op2" class="chkbox">1</label>
+                    <input name="q41Op1" id="q41Op3" value="2" type="radio">
+                    <label id="q41lb3" for="q41Op3" class="chkbox">2</label>
+                    <input name="q41Op1" id="q41Op4" value="3" type="radio">
+                    <label id="q41lb4" for="q41Op4" class="chkbox">3</label>
+                    <input name="q41Op1" id="q41Op5" value="4" type="radio">
+                    <label id="q41lb5" for="q41Op5" class="chkbox">4</label>
+                    <input name="q41Op1" id="q41Op6" value="5" type="radio">
+                    <label id="q41lb6" for="q41Op6" class="chkbox">5</label>
+                    <input name="q41Op1" id="q41Op7" value="6" type="radio">
+                    <label id="q41lb7" for="q41Op7" class="chkbox">6</label>
+                    <input name="q41Op1" id="q41Op8" value="7" type="radio">
+                    <label id="q41lb8" for="q41Op8" class="chkbox">7</label>
+                    <input name="q41Op1" id="q41Op9" value="8" type="radio">
+                    <label id="q41lb9" for="q41Op9" class="chkbox">8</label>
+                    <input name="q41Op1" id="q41Op10" value="9" type="radio">
+                    <label id="q41lb10" for="q41Op10" class="chkbox">9</label>
+                    <input name="q41Op1" id="q41Op11" value="10" type="radio">
+                    <label id="q41lb11" for="q41Op11" class="chkbox">10 Extremely high intent/very seriously considered acting on my plan(s)</label>
+                </fieldset>
+                <a href="#" id="q41Btn" onClick="q41()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err41" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="42">
+                <p>At the <strong>worst point</strong>, how frequently did you think about your suicide plan(s)?</p>
+                <fieldset id="q42fd" data-role="controlgroup">
+                    <input name="q42Op1" id="q42Op1" value="0" type="radio">
+                    <label id="q42lb1" for="q42Op1" class="chkbox">Never</label>
+                    <input name="q42Op1" id="q42Op2" value="1" type="radio">
+                    <label id="q42lb2" for="q42Op2" class="chkbox">Very rarely</label>
+                    <input name="q42Op1" id="q42Op3" value="2" type="radio">
+                    <label id="q42lb3" for="q42Op3" class="chkbox">Rarely</label>
+                    <input name="q42Op1" id="q42Op4" value="3" type="radio">
+                    <label id="q42lb4" for="q42Op4" class="chkbox">About half the time</label>
+                    <input name="q42Op1" id="q42Op5" value="4" type="radio">
+                    <label id="q42lb5" for="q42Op5" class="chkbox">Occasionally</label>
+                    <input name="q42Op1" id="q42Op6" value="5" type="radio">
+                    <label id="q42lb6" for="q42Op6" class="chkbox">Very frequently</label>
+                    <input name="q42Op1" id="q42Op7" value="6" type="radio">
+                    <label id="q42lb7" for="q42Op7" class="chkbox">Always</label>
+                </fieldset>
+                <a href="#" id="q42Btn" onClick="q42()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err42" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="43">
+                <p>At the <strong>worst point, how seriously did you consider or intend on acting on your suicide plan(s)</strong>?</p>
+                <fieldset id="q43fd" data-role="controlgroup">
+                    <input name="q43Op1" id="q43Op1" value="0" type="radio">
+                    <label id="q43lb1" for="q43Op1" class="chkbox">0 Absolutely no intent/did not seriously consider acting on my plan(s) at all</label>
+                    <input name="q43Op1" id="q43Op2" value="1" type="radio">
+                    <label id="q43lb2" for="q43Op2" class="chkbox">1</label>
+                    <input name="q43Op1" id="q43Op3" value="2" type="radio">
+                    <label id="q43lb3" for="q43Op3" class="chkbox">2</label>
+                    <input name="q43Op1" id="q43Op4" value="3" type="radio">
+                    <label id="q43lb4" for="q43Op4" class="chkbox">3</label>
+                    <input name="q43Op1" id="q43Op5" value="4" type="radio">
+                    <label id="q43lb5" for="q43Op5" class="chkbox">4</label>
+                    <input name="q43Op1" id="q43Op6" value="5" type="radio">
+                    <label id="q43lb6" for="q43Op6" class="chkbox">5</label>
+                    <input name="q43Op1" id="q43Op7" value="6" type="radio">
+                    <label id="q43lb7" for="q43Op7" class="chkbox">6</label>
+                    <input name="q43Op1" id="q43Op8" value="7" type="radio">
+                    <label id="q43lb8" for="q43Op8" class="chkbox">7</label>
+                    <input name="q43Op1" id="q43Op9" value="8" type="radio">
+                    <label id="q43lb9" for="q43Op9" class="chkbox">8</label>
+                    <input name="q43Op1" id="q43Op10" value="9" type="radio">
+                    <label id="q43lb10" for="q43Op10" class="chkbox">9</label>
+                    <input name="q43Op1" id="q43Op11" value="10" type="radio">
+                    <label id="q43lb11" for="q43Op11" class="chkbox">10 Extremely high intent/very seriously considered acting on my plan(s)</label>
+                </fieldset>
+                <a href="#" id="q43Btn" onClick="q43()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err43" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="44">
+                <p>What do you think the <strong>likelihood is that you will make or think about your suicide plan(s) in the future</strong>?  <i>Remember, this is how likely you think it will happen in the future, regardless of whether you want it to.</i></p>
+                <fieldset id="q44fd" data-role="controlgroup">
+                    <input name="q44Op1" id="q44Op1" value="0" type="radio">
+                    <label id="q44lb1" for="q44Op1" class="chkbox">0 Absolutely no intent/did not seriously consider acting on my plan(s) at all</label>
+                    <input name="q44Op1" id="q44Op2" value="1" type="radio">
+                    <label id="q44lb2" for="q44Op2" class="chkbox">1</label>
+                    <input name="q44Op1" id="q44Op3" value="2" type="radio">
+                    <label id="q44lb3" for="q44Op3" class="chkbox">2</label>
+                    <input name="q44Op1" id="q44Op4" value="3" type="radio">
+                    <label id="q44lb4" for="q44Op4" class="chkbox">3</label>
+                    <input name="q44Op1" id="q44Op5" value="4" type="radio">
+                    <label id="q44lb5" for="q44Op5" class="chkbox">4</label>
+                    <input name="q44Op1" id="q44Op6" value="5" type="radio">
+                    <label id="q44lb6" for="q44Op6" class="chkbox">5</label>
+                    <input name="q44Op1" id="q44Op7" value="6" type="radio">
+                    <label id="q44lb7" for="q44Op7" class="chkbox">6</label>
+                    <input name="q44Op1" id="q44Op8" value="7" type="radio">
+                    <label id="q44lb8" for="q44Op8" class="chkbox">7</label>
+                    <input name="q44Op1" id="q44Op9" value="8" type="radio">
+                    <label id="q44lb9" for="q44Op9" class="chkbox">8</label>
+                    <input name="q44Op1" id="q44Op10" value="9" type="radio">
+                    <label id="q44lb10" for="q44Op10" class="chkbox">9</label>
+                    <input name="q44Op1" id="q44Op11" value="10" type="radio">
+                    <label id="q44lb11" for="q44Op11" class="chkbox">10 Extremely high intent/very seriously considered acting on my plan(s)</label>
+                </fieldset>
+                <a href="#" id="q44Btn" onClick="q44()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err44" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="45">
+                <p>Have you ever done something to prepare to make a suicide attempt?  This includes things like gaining access to a method, looking up a method online, writing a suicide note, updating your will, saying goodbye, etc.</p>
+                <fieldset id="q45fd" data-role="controlgroup">
+                    <input name="q45Op1" id="q45Op1" value="0" type="radio">
+                    <label id="q45lb1" for="q45Op1" class="chkbox">No</label>
+                    <input name="q45Op1" id="q45Op2" value="1" type="radio">
+                    <label id="q45lb2" for="q45Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q45Btn" onClick="q45()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err45" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="46">
+                <p>When you did those things, how confident were you that you were going to kill yourself?</p>
+                <fieldset id="q46fd" data-role="controlgroup">
+                    <input name="q46Op1" id="q46Op1" value="0" type="radio">
+                    <label id="q46lb1" for="q46Op1" class="chkbox">0 Not at all confident</label>
+                    <input name="q46Op1" id="q46Op2" value="1" type="radio">
+                    <label id="q46lb2" for="q46Op2" class="chkbox">1</label>
+                    <input name="q46Op1" id="q46Op3" value="2" type="radio">
+                    <label id="q46lb3" for="q46Op3" class="chkbox">2</label>
+                    <input name="q46Op1" id="q46Op4" value="3" type="radio">
+                    <label id="q46lb4" for="q46Op4" class="chkbox">3</label>
+                    <input name="q46Op1" id="q46Op5" value="4" type="radio">
+                    <label id="q46lb5" for="q46Op5" class="chkbox">4</label>
+                    <input name="q46Op1" id="q46Op6" value="5" type="radio">
+                    <label id="q46lb6" for="q46Op6" class="chkbox">5</label>
+                    <input name="q46Op1" id="q46Op7" value="6" type="radio">
+                    <label id="q46lb7" for="q46Op7" class="chkbox">6</label>
+                    <input name="q46Op1" id="q46Op8" value="7" type="radio">
+                    <label id="q46lb8" for="q46Op8" class="chkbox">7</label>
+                    <input name="q46Op1" id="q46Op9" value="8" type="radio">
+                    <label id="q46lb9" for="q46Op9" class="chkbox">8</label>
+                    <input name="q46Op1" id="q46Op10" value="9" type="radio">
+                    <label id="q46lb10" for="q46Op10" class="chkbox">9</label>
+                    <input name="q46Op1" id="q46Op11" value="10" type="radio">
+                    <label id="q46lb11" for="q46Op11" class="chkbox">10 Extremely confident</label>
+                </fieldset>
+                <a href="#" id="q46Btn" onClick="q46()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err46" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s3Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s3FinBtn" onClick="s3Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

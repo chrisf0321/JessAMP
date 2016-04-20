@@ -1,0 +1,211 @@
+<div data-role="page" id="base2" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst1">
+                <p><b>Instructions:</b>  For the following questions, we will be asking about times when you have purposely hurt yourself without wanting to die, including things like cutting or burning your skin.</p>
+                <br/>
+                <p>In answering these questions, <b><i>please <ins>do not include</ins> times where you have hurt yourself in minor ways, like picking at wounds, biting your lips or nails, or getting tattoos or piercings.  Also, do not include times when you have indirectly hurt yourself, such as starving yourself or overdosing without wanting to die.</i></b></p>
+                <a href="#" id="bInst1Btn" onClick="bInst1()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="11">
+                <p>Have you ever purposely hurt yourself without wanting to die?</p>
+                <fieldset id="q11fd" data-role="controlgroup">
+                    <input name="q11Op1" id="q11Op1" value="0" type="radio">
+                    <label id="q11lb1" for="q11Op1" class="chkbox">No</label>
+                    <input name="q11Op1" id="q11Op2" value="1" type="radio">
+                    <label id="q11lb2" for="q11Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q11Btn" onClick="q11()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err11" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="12">
+                <label for="age2">How old were you the first time you purposefully hurt yourself without wanting to die?</label>
+                <input name="age12" id="age2" pattern="[0-9]*" type="number">
+                <a href="#" id="q12Btn" onClick="q12()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err12" class="errmsg"><b>Please enter a valid age.</b></p>
+            </div>
+            <div id="13">
+                <label for="age3">How old were you the last time you purposefully hurt yourself without wanting to die?</label>
+                <input name="age13" id="age3" pattern="[0-9]*" type="number">
+                <a href="#" id="q13Btn" onClick="q13()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err13" class="errmsg"><b>Please enter a valid age.</b></p>
+            </div>
+            <div id="baseInst2">
+                <p><b>Instructions:</b>  For the following questions, we are curious about the <b>number of episodes/instances</b> in which you have intentionally hurt yourself without wanting to die using specific methods.  We realize it can be hard to know the exact number of times you've done these things, but please give your best estimate.</p>
+                <a href="#" id="bInst2Btn" onClick="bInst2()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="14">
+                <p>Have you ever cut or carved your skin on purpose <i>without</i> wanting to die?</p>
+                <fieldset id="q14fd" data-role="controlgroup">
+                    <input name="q14Op1" id="q14Op1" value="0" type="radio">
+                    <label id="q14lb1" for="q14Op1" class="chkbox">No</label>
+                    <input name="q14Op1" id="q14Op2" value="1" type="radio">
+                    <label id="q14lb2" for="q14Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q14Btn" onClick="q14()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err14" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="15">
+                <label for="age5">How many episodes in the <strong>past week</strong> have you <strong>cut or carved your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age15" id="age5" pattern="[0-9]*" type="number" placeholder="episodes in the past week">
+                <a href="#" id="q15Btn" onClick="q15()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err15" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="16">
+                <label for="age6">How many episodes in the <strong>past month</strong> have you <strong>cut or carved your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age16" id="age6" pattern="[0-9]*" type="number" placeholder="episodes in the past month">
+                <a href="#" id="q16Btn" onClick="q16()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err16" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="17">
+                <label for="age7">How many episodes in the <strong>past year</strong> have you <strong>cut or carved your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age17" id="age7" pattern="[0-9]*" type="number" placeholder="episodes in the past year">
+                <a href="#" id="q17Btn" onClick="q17()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err17" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="18">
+                <label for="age8">How many episodes in the <strong>your life</strong> have you <strong>cut or carved your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age18" id="age8" pattern="[0-9]*" type="number" placeholder="episodes in my lifetime">
+                <a href="#" id="q18Btn" onClick="q18()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err18" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="19">
+                <p>Have you ever <strong>burned your skin</strong> on purpose <i>without</i> wanting to die?</p>
+                <fieldset id="q19fd" data-role="controlgroup">
+                    <input name="q19Op1" id="q19Op1" value="0" type="radio">
+                    <label id="q19lb1" for="q19Op1" class="chkbox">No</label>
+                    <input name="q19Op1" id="q19Op2" value="1" type="radio">
+                    <label id="q19lb2" for="q19Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q19Btn" onClick="q19()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err19" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="20">
+                <label for="age9">How many episodes in the <strong>past week</strong> have you <strong>burned your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age20" id="age9" pattern="[0-9]*" type="number" placeholder="episodes in the past week">
+                <a href="#" id="q20Btn" onClick="q20()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err20" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="21">
+                <label for="age10">How many episodes in the <strong>past month</strong> have you <strong>burned your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age21" id="age10" pattern="[0-9]*" type="number" placeholder="episodes in the past month">
+                <a href="#" id="q21Btn" onClick="q21()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err21" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="22">
+                <label for="age11">How many episodes in the <strong>past year</strong> have you <strong>burned your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age22" id="age11" pattern="[0-9]*" type="number" placeholder="episodes in the past year">
+                <a href="#" id="q22Btn" onClick="q22()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err22" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="23">
+                <label for="age12">How many episodes in the <strong>your life</strong> have you <strong>burned your skin <i>without wanting to die</i>?</strong></label>
+                <input name="age23" id="age12" pattern="[0-9]*" type="number" placeholder="episodes in my lifetime">
+                <a href="#" id="q23Btn" onClick="q23()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err23" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="24">
+                <p>Have you ever harmed yourself on purpose <i>without</i> wanting to die using a method other than cutting or burning?</p>
+                <fieldset id="q24fd" data-role="controlgroup">
+                    <input name="q24Op1" id="q24Op1" value="0" type="radio">
+                    <label id="q24lb1" for="q24Op1" class="chkbox">No</label>
+                    <input name="q24Op1" id="q24Op2" value="1" type="radio">
+                    <label id="q24lb2" for="q24Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q24Btn" onClick="q24()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err24" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="25">
+                <label for="age13">How many episodes in the <strong>past week</strong> have you harmed yourself on purpose without wanting to die using a method other than cutting or burning?</label>
+                <input name="age25" id="age13" pattern="[0-9]*" type="number" placeholder="episodes in the past week">
+                <a href="#" id="q25Btn" onClick="q25()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err25" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="26">
+                <label for="age14">How many episodes in the <strong>past month</strong> have you harmed yourself on purpose without wanting to die using a method other than cutting or burning?></label>
+                <input name="age26" id="age14" pattern="[0-9]*" type="number" placeholder="episodes in the past month">
+                <a href="#" id="q26Btn" onClick="q26()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err26" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="27">
+                <label for="age15">How many episodes in the <strong>past year</strong> have you harmed yourself on purpose without wanting to die using a method other than cutting or burning?</label>
+                <input name="age27" id="age15" pattern="[0-9]*" type="number" placeholder="episodes in the past year">
+                <a href="#" id="q27Btn" onClick="q27()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err27" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="28">
+                <label for="age16">How many episodes in the <strong>your life</strong> have you harmed yourself on purpose without wanting to die using a method other than cutting or burning?</label>
+                <input name="age28" id="age16" pattern="[0-9]*" type="number" placeholder="episodes in my lifetime">
+                <a href="#" id="q28Btn" onClick="q28()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err28" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="29">
+                <p>How much do you <strong>want to stop</strong> purposely hurting yourself without wanting to die?  <i>If you have already stopped engaging in these behaviors, and you have no desire to start again in the future, select 10.</i></p>
+                <fieldset id="q29fd" data-role="controlgroup">
+                    <input name="q29Op1" id="q29Op1" value="0" type="radio">
+                    <label id="q29lb1" for="q29Op1" class="chkbox">0 Do not want at all</label>
+                    <input name="q29Op1" id="q29Op2" value="1" type="radio">
+                    <label id="q29lb2" for="q29Op2" class="chkbox">1</label>
+                    <input name="q29Op1" id="q29Op3" value="2" type="radio">
+                    <label id="q29lb3" for="q29Op3" class="chkbox">2</label>
+                    <input name="q29Op1" id="q29Op4" value="3" type="radio">
+                    <label id="q29lb4" for="q29Op4" class="chkbox">3</label>
+                    <input name="q29Op1" id="q29Op5" value="4" type="radio">
+                    <label id="q29lb5" for="q29Op5" class="chkbox">4</label>
+                    <input name="q29Op1" id="q29Op6" value="5" type="radio">
+                    <label id="q29lb6" for="q29Op6" class="chkbox">5</label>
+                    <input name="q29Op1" id="q29Op7" value="6" type="radio">
+                    <label id="q29lb7" for="q29Op7" class="chkbox">6</label>
+                    <input name="q29Op1" id="q29Op8" value="7" type="radio">
+                    <label id="q29lb8" for="q29Op8" class="chkbox">7</label>
+                    <input name="q29Op1" id="q29Op9" value="8" type="radio">
+                    <label id="q29lb9" for="q29Op9" class="chkbox">8</label>
+                    <input name="q29Op1" id="q29Op10" value="9" type="radio">
+                    <label id="q29lb10" for="q29Op10" class="chkbox">9</label>
+                    <input name="q29Op1" id="q29Op11" value="10" type="radio">
+                    <label id="q29lb11" for="q29Op11" class="chkbox">10 Very much want</label>
+                </fieldset>
+                <a href="#" id="q29Btn" onClick="q29()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err29" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="30">
+                <p>What do you think the <strong>likelihood</strong> is that you will purposely hurt yourself without wanting to die in the future?  <i>Remember, this is how likely you think it will happen in the future, regardless of whether you want it to.</i></p>
+                <fieldset id="q30fd" data-role="controlgroup">
+                    <input name="q30Op1" id="q30Op1" value="0" type="radio">
+                    <label id="q30lb1" for="q30Op1" class="chkbox">0 Not at all Likely</label>
+                    <input name="q30Op1" id="q30Op2" value="1" type="radio">
+                    <label id="q30lb2" for="q30Op2" class="chkbox">1</label>
+                    <input name="q30Op1" id="q30Op3" value="2" type="radio">
+                    <label id="q30lb3" for="q30Op3" class="chkbox">2</label>
+                    <input name="q30Op1" id="q30Op4" value="3" type="radio">
+                    <label id="q30lb4" for="q30Op4" class="chkbox">3</label>
+                    <input name="q30Op1" id="q30Op5" value="4" type="radio">
+                    <label id="q30lb5" for="q30Op5" class="chkbox">4</label>
+                    <input name="q30Op1" id="q30Op6" value="5" type="radio">
+                    <label id="q30lb6" for="q30Op6" class="chkbox">5</label>
+                    <input name="q30Op1" id="q30Op7" value="6" type="radio">
+                    <label id="q30lb7" for="q30Op7" class="chkbox">6</label>
+                    <input name="q30Op1" id="q30Op8" value="7" type="radio">
+                    <label id="q30lb8" for="q30Op8" class="chkbox">7</label>
+                    <input name="q30Op1" id="q30Op9" value="8" type="radio">
+                    <label id="q30lb9" for="q30Op9" class="chkbox">8</label>
+                    <input name="q30Op1" id="q30Op10" value="9" type="radio">
+                    <label id="q30lb10" for="q30Op10" class="chkbox">9</label>
+                    <input name="q30Op1" id="q30Op11" value="10" type="radio">
+                    <label id="q30lb11" for="q30Op11" class="chkbox">10 Extremely Likely</label>
+                </fieldset>
+                <a href="#" id="q30Btn" onClick="q30()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err30" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s2Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s2FinBtn" onClick="s2Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

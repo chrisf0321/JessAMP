@@ -3,7 +3,6 @@ h2 {
 }
 
 p {
-    font-weight: bold;
     margin-top: 0px;
 }
 
@@ -48,7 +47,8 @@ p {
     background-color: rgba(0, 108, 250, 1) !important;
 }
 
-#stBtn, #q1Btn, #q2Btn, #q10Btn, #s1FinBtn {
+#stBtn, #q1Btn, #q2Btn, #q10Btn, #s1FinBtn, #q12Btn, #q13Btn, #bInst2Btn, #q15Btn, #q16Btn, #q17Btn, #q18Btn, #q20Btn,
+#q21Btn, #q22Btn, #q23Btn, #q25Btn, #q26Btn, #q27Btn, #q28Btn, #s2FinBtn, #bInst1Btn, #bInst3Btn, #q40Btn {
     font-size: 15px;
     background-color: rgba(0, 108, 250, 1);
     color: white;
