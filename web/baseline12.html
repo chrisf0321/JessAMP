@@ -1,0 +1,214 @@
+<div data-role="page" id="base12" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst12">
+                <p><b>Instructions:</b>  Please respond to each question by considering what is true for you <strong>recently (e.g., over the last 1-2 weeks)</strong>.</p>
+                <a href="#" id="bInst12Btn" onClick="bInst12()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="211">
+                <p>On average, what time do you get up on an average weekday?</p>
+                <fieldset id="q211fd" data-role="controlgroup">
+                    <input name="q211Op1" id="q211Op1" value="0" type="radio">
+                    <label id="q211lb1" for="q211Op1" class="chkbox">Before 9am</label>
+                    <input name="q211Op1" id="q211Op2" value="1" type="radio">
+                    <label id="q211lb2" for="q211Op2" class="chkbox">9-11am</label>
+                    <input name="q211Op1" id="q211Op3" value="2" type="radio">
+                    <label id="q211lb3" for="q211Op3" class="chkbox">11am-1pm</label>
+                    <input name="q211Op1" id="q211Op4" value="3" type="radio">
+                    <label id="q211lb4" for="q211Op4" class="chkbox">After 1pm</label>
+                </fieldset>
+                <a href="#" id="q211Btn" onClick="q211()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err211" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="212">
+                <p>On average, what time do you get up on an average weekend?</p>
+                <fieldset id="q212fd" data-role="controlgroup">
+                    <input name="q212Op1" id="q212Op1" value="0" type="radio">
+                    <label id="q212lb1" for="q212Op1" class="chkbox">Before 9am</label>
+                    <input name="q212Op1" id="q212Op2" value="1" type="radio">
+                    <label id="q212lb2" for="q212Op2" class="chkbox">9-11am</label>
+                    <input name="q212Op1" id="q212Op3" value="2" type="radio">
+                    <label id="q212lb3" for="q212Op3" class="chkbox">11am-1pm</label>
+                    <input name="q212Op1" id="q212Op4" value="3" type="radio">
+                    <label id="q212lb4" for="q212Op4" class="chkbox">After 1pm</label>
+                </fieldset>
+                <a href="#" id="q212Btn" onClick="q212()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err212" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="213">
+                <p>Recently, how many hours of the waking day do you usually spend alone (e.g., in your room alone, walking alone, watching TV alone, etc.)?</p>
+                <fieldset id="q213fd" data-role="controlgroup">
+                    <input name="q213Op1" id="q213Op1" value="0" type="radio">
+                    <label id="q213lb1" for="q213Op1" class="chkbox">Very little time (0-3 hours alone)</label>
+                    <input name="q213Op1" id="q213Op2" value="1" type="radio">
+                    <label id="q213lb2" for="q213Op2" class="chkbox">Some of the time (3-6 hours alone)</label>
+                    <input name="q213Op1" id="q213Op3" value="2" type="radio">
+                    <label id="q213lb3" for="q213Op3" class="chkbox">Quite a lot of the time (6-9 hours alone)</label>
+                    <input name="q213Op1" id="q213Op4" value="3" type="radio">
+                    <label id="q213lb4" for="q213Op4" class="chkbox">A great deal of the time (9-12 hours alone)</label>
+                    <input name="q213Op1" id="q213Op5" value="4" type="radio">
+                    <label id="q213lb5" for="q213Op5" class="chkbox">Practically all the time (more than 12 hours)</label>
+                </fieldset>
+                <a href="#" id="q213Btn" onClick="q213()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err213" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="214">
+                <p>Recently, how often will you start a conversation at home?</p>
+                <fieldset id="q214fd" data-role="controlgroup">
+                    <input name="q214Op1" id="q214Op1" value="0" type="radio">
+                    <label id="q214lb1" for="q214Op1" class="chkbox">Almost never</label>
+                    <input name="q214Op1" id="q214Op2" value="1" type="radio">
+                    <label id="q214lb2" for="q214Op2" class="chkbox">Rarely</label>
+                    <input name="q214Op1" id="q214Op3" value="2" type="radio">
+                    <label id="q214lb3" for="q214Op3" class="chkbox">Sometimes</label>
+                    <input name="q214Op1" id="q214Op4" value="3" type="radio">
+                    <label id="q214lb4" for="q214Op4" class="chkbox">Often</label>
+                </fieldset>
+                <a href="#" id="q214Btn" onClick="q214()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err214" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="215">
+                <p>Recently, how often will you leave the house for any reason?</p>
+                <fieldset id="q215fd" data-role="controlgroup">
+                    <input name="q215Op1" id="q215Op1" value="0" type="radio">
+                    <label id="q215lb1" for="q215Op1" class="chkbox">Almost never</label>
+                    <input name="q215Op1" id="q215Op2" value="1" type="radio">
+                    <label id="q215lb2" for="q215Op2" class="chkbox">Rarely</label>
+                    <input name="q215Op1" id="q215Op3" value="2" type="radio">
+                    <label id="q215lb3" for="q215Op3" class="chkbox">Sometimes</label>
+                    <input name="q215Op1" id="q215Op4" value="3" type="radio">
+                    <label id="q215lb4" for="q215Op4" class="chkbox">Often</label>
+                </fieldset>
+                <a href="#" id="q215Btn" onClick="q215()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err215" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="216">
+                <p>How many friends do you have at the moment (people whom you see regularly, talk with, do activities with, etc.)?</p>
+                <fieldset id="q216fd" data-role="controlgroup">
+                    <input name="q216Op1" id="q216Op1" value="0" type="radio">
+                    <label id="q216lb1" for="q216Op1" class="chkbox">None</label>
+                    <input name="q216Op1" id="q216Op2" value="1" type="radio">
+                    <label id="q216lb2" for="q216Op2" class="chkbox">One friend</label>
+                    <input name="q216Op1" id="q216Op3" value="2" type="radio">
+                    <label id="q216lb3" for="q216Op3" class="chkbox">Two friends</label>
+                    <input name="q216Op1" id="q216Op4" value="3" type="radio">
+                    <label id="q216lb4" for="q216Op4" class="chkbox">Three or more friends</label>
+                </fieldset>
+                <a href="#" id="q216Btn" onClick="q216()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err216" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="217">
+                <p>Do you have someone you find it easy to discuss feelings/difficulties with?</p>
+                <fieldset id="q217fd" data-role="controlgroup">
+                    <input name="q217Op1" id="q217Op1" value="0" type="radio">
+                    <label id="q217lb1" for="q217Op1" class="chkbox">No</label>
+                    <input name="q217Op1" id="q217Op2" value="1" type="radio">
+                    <label id="q217lb2" for="q217Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q217Btn" onClick="q217()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err217" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="218">
+                <p>How often have you confided in them recently?</p>
+                <fieldset id="q218fd" data-role="controlgroup">
+                    <input name="q218Op1" id="q218Op1" value="0" type="radio">
+                    <label id="q218lb1" for="q218Op1" class="chkbox">Almost never</label>
+                    <input name="q218Op1" id="q218Op2" value="1" type="radio">
+                    <label id="q218lb2" for="q218Op2" class="chkbox">Rarely</label>
+                    <input name="q218Op1" id="q218Op3" value="2" type="radio">
+                    <label id="q218lb3" for="q218Op3" class="chkbox">Sometimes</label>
+                    <input name="q218Op1" id="q218Op4" value="3" type="radio">
+                    <label id="q218lb4" for="q218Op4" class="chkbox">Often</label>
+                </fieldset>
+                <a href="#" id="q218Btn" onClick="q218()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err218" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="219">
+                <p>Do other people discuss their problems with you?</p>
+                <fieldset id="q219fd" data-role="controlgroup">
+                    <input name="q219Op1" id="q219Op1" value="0" type="radio">
+                    <label id="q219lb1" for="q219Op1" class="chkbox">Almost never</label>
+                    <input name="q219Op1" id="q219Op2" value="1" type="radio">
+                    <label id="q219lb2" for="q219Op2" class="chkbox">Rarely</label>
+                    <input name="q219Op1" id="q219Op3" value="2" type="radio">
+                    <label id="q219lb3" for="q219Op3" class="chkbox">Sometimes</label>
+                    <input name="q219Op1" id="q219Op4" value="3" type="radio">
+                    <label id="q219lb4" for="q219Op4" class="chkbox">Often</label>
+                </fieldset>
+                <a href="#" id="q219Btn" onClick="q219()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err219" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="220">
+                <p>Have you had arguments with friends, relatives or neighbors recently?</p>
+                <fieldset id="q220fd" data-role="controlgroup">
+                    <input name="q220Op1" id="q220Op1" value="0" type="radio">
+                    <label id="q220lb1" for="q220Op1" class="chkbox">None</label>
+                    <input name="q220Op1" id="q220Op2" value="1" type="radio">
+                    <label id="q220lb2" for="q220Op2" class="chkbox">1 or 2 minor</label>
+                    <input name="q220Op1" id="q220Op3" value="2" type="radio">
+                    <label id="q220lb3" for="q220Op3" class="chkbox">Continued minor or 1 major</label>
+                    <input name="q220Op1" id="q220Op4" value="3" type="radio">
+                    <label id="q220lb4" for="q220Op4" class="chkbox">Many major</label>
+                </fieldset>
+                <a href="#" id="q220Btn" onClick="q220()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err220" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="221">
+                <p>How easy or difficult do you find talking to people at present?</p>
+                <fieldset id="q221fd" data-role="controlgroup">
+                    <input name="q221Op1" id="q221Op1" value="0" type="radio">
+                    <label id="q221lb1" for="q221Op1" class="chkbox">Very easy</label>
+                    <input name="q221Op1" id="q221Op2" value="1" type="radio">
+                    <label id="q221lb2" for="q221Op2" class="chkbox">Quite easy</label>
+                    <input name="q221Op1" id="q221Op3" value="2" type="radio">
+                    <label id="q221lb3" for="q221Op3" class="chkbox">Average</label>
+                    <input name="q221Op1" id="q221Op4" value="3" type="radio">
+                    <label id="q221lb4" for="q221Op4" class="chkbox">Quite difficult</label>
+                    <input name="q221Op1" id="q221Op5" value="4" type="radio">
+                    <label id="q221lb5" for="q221Op5" class="chkbox">Very difficult</label>
+                </fieldset>
+                <a href="#" id="q221Btn" onClick="q221()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err221" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="222">
+                <p>Recently, do you feel uneasy with groups of people?</p>
+                <fieldset id="q222fd" data-role="controlgroup">
+                    <input name="q222Op1" id="q222Op1" value="0" type="radio">
+                    <label id="q222lb1" for="q222Op1" class="chkbox">Almost never</label>
+                    <input name="q222Op1" id="q222Op2" value="1" type="radio">
+                    <label id="q222lb2" for="q222Op2" class="chkbox">Rarely</label>
+                    <input name="q222Op1" id="q222Op3" value="2" type="radio">
+                    <label id="q222lb3" for="q222Op3" class="chkbox">Sometimes</label>
+                    <input name="q222Op1" id="q222Op4" value="3" type="radio">
+                    <label id="q222lb4" for="q222Op4" class="chkbox">Often</label>
+                </fieldset>
+                <a href="#" id="q222Btn" onClick="q222()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err222" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="223">
+                <p>Recently, do you prefer to spend time on your own?</p>
+                <fieldset id="q223fd" data-role="controlgroup">
+                    <input name="q223Op1" id="q223Op1" value="0" type="radio">
+                    <label id="q223lb1" for="q223Op1" class="chkbox">Almost never</label>
+                    <input name="q223Op1" id="q223Op2" value="1" type="radio">
+                    <label id="q223lb2" for="q223Op2" class="chkbox">Rarely</label>
+                    <input name="q223Op1" id="q223Op3" value="2" type="radio">
+                    <label id="q223lb3" for="q223Op3" class="chkbox">Sometimes</label>
+                    <input name="q223Op1" id="q223Op4" value="3" type="radio">
+                    <label id="q223lb4" for="q223Op4" class="chkbox">Often</label>
+                </fieldset>
+                <a href="#" id="q223Btn" onClick="q223()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err223" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s12Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s12FinBtn" onClick="s12Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

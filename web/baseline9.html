@@ -1,0 +1,325 @@
+<div data-role="page" id="base9" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst9">
+                <p><b>Instructions:</b>  Please think about how much each of the following problems has <strong>distressed or bothered you</strong> during the <strong>past 7 days, including today</strong></p>
+                <a href="#" id="bInst9Btn" onClick="bInst9()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="161">
+                <p>How much were you distressed by <strong>faintness or dizziness</strong></p>
+                <fieldset id="q161fd" data-role="controlgroup">
+                    <input name="q161Op1" id="q161Op1" value="0" type="radio">
+                    <label id="q161lb1" for="q161Op1" class="chkbox">Not at all</label>
+                    <input name="q161Op1" id="q161Op2" value="1" type="radio">
+                    <label id="q161lb2" for="q161Op2" class="chkbox">A little bit</label>
+                    <input name="q161Op1" id="q161Op3" value="2" type="radio">
+                    <label id="q161lb3" for="q161Op3" class="chkbox">Moderately</label>
+                    <input name="q161Op1" id="q161Op4" value="3" type="radio">
+                    <label id="q161lb4" for="q161Op4" class="chkbox">Quite a bit</label>
+                    <input name="q161Op1" id="q161Op5" value="4" type="radio">
+                    <label id="q161lb5" for="q161Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q161Btn" onClick="q161()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err161" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="162">
+                <p>How much were you distressed by <strong>feeling no interest in things</strong></p>
+                <fieldset id="q162fd" data-role="controlgroup">
+                    <input name="q162Op1" id="q162Op1" value="0" type="radio">
+                    <label id="q162lb1" for="q162Op1" class="chkbox">Not at all</label>
+                    <input name="q162Op1" id="q162Op2" value="1" type="radio">
+                    <label id="q162lb2" for="q162Op2" class="chkbox">A little bit</label>
+                    <input name="q162Op1" id="q162Op3" value="2" type="radio">
+                    <label id="q162lb3" for="q162Op3" class="chkbox">Moderately</label>
+                    <input name="q162Op1" id="q162Op4" value="3" type="radio">
+                    <label id="q162lb4" for="q162Op4" class="chkbox">Quite a bit</label>
+                    <input name="q162Op1" id="q162Op5" value="4" type="radio">
+                    <label id="q162lb5" for="q162Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q162Btn" onClick="q162()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err162" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="163">
+                <p>How much were you distressed by <strong>nervousness or shakiness inside</strong></p>
+                <fieldset id="q163fd" data-role="controlgroup">
+                    <input name="q163Op1" id="q163Op1" value="0" type="radio">
+                    <label id="q163lb1" for="q163Op1" class="chkbox">Not at all</label>
+                    <input name="q163Op1" id="q163Op2" value="1" type="radio">
+                    <label id="q163lb2" for="q163Op2" class="chkbox">A little bit</label>
+                    <input name="q163Op1" id="q163Op3" value="2" type="radio">
+                    <label id="q163lb3" for="q163Op3" class="chkbox">Moderately</label>
+                    <input name="q163Op1" id="q163Op4" value="3" type="radio">
+                    <label id="q163lb4" for="q163Op4" class="chkbox">Quite a bit</label>
+                    <input name="q163Op1" id="q163Op5" value="4" type="radio">
+                    <label id="q163lb5" for="q163Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q163Btn" onClick="q163()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err163" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="164">
+                <p>How much were you distressed by <strong>pains in heart or chest</strong></p>
+                <fieldset id="q164fd" data-role="controlgroup">
+                    <input name="q164Op1" id="q164Op1" value="0" type="radio">
+                    <label id="q164lb1" for="q164Op1" class="chkbox">Not at all</label>
+                    <input name="q164Op1" id="q164Op2" value="1" type="radio">
+                    <label id="q164lb2" for="q164Op2" class="chkbox">A little bit</label>
+                    <input name="q164Op1" id="q164Op3" value="2" type="radio">
+                    <label id="q164lb3" for="q164Op3" class="chkbox">Moderately</label>
+                    <input name="q164Op1" id="q164Op4" value="3" type="radio">
+                    <label id="q164lb4" for="q164Op4" class="chkbox">Quite a bit</label>
+                    <input name="q164Op1" id="q164Op5" value="4" type="radio">
+                    <label id="q164lb5" for="q164Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q164Btn" onClick="q164()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err164" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="165">
+                <p>How much were you distressed by <strong>feeling lonely</strong></p>
+                <fieldset id="q165fd" data-role="controlgroup">
+                    <input name="q165Op1" id="q165Op1" value="0" type="radio">
+                    <label id="q165lb1" for="q165Op1" class="chkbox">Not at all</label>
+                    <input name="q165Op1" id="q165Op2" value="1" type="radio">
+                    <label id="q165lb2" for="q165Op2" class="chkbox">A little bit</label>
+                    <input name="q165Op1" id="q165Op3" value="2" type="radio">
+                    <label id="q165lb3" for="q165Op3" class="chkbox">Moderately</label>
+                    <input name="q165Op1" id="q165Op4" value="3" type="radio">
+                    <label id="q165lb4" for="q165Op4" class="chkbox">Quite a bit</label>
+                    <input name="q165Op1" id="q165Op5" value="4" type="radio">
+                    <label id="q165lb5" for="q165Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q165Btn" onClick="q165()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err165" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="166">
+                <p>How much were you distressed by <strong>feeling tense or keyed up</strong></p>
+                <fieldset id="q166fd" data-role="controlgroup">
+                    <input name="q166Op1" id="q166Op1" value="0" type="radio">
+                    <label id="q166lb1" for="q166Op1" class="chkbox">Not at all</label>
+                    <input name="q166Op1" id="q166Op2" value="1" type="radio">
+                    <label id="q166lb2" for="q166Op2" class="chkbox">A little bit</label>
+                    <input name="q166Op1" id="q166Op3" value="2" type="radio">
+                    <label id="q166lb3" for="q166Op3" class="chkbox">Moderately</label>
+                    <input name="q166Op1" id="q166Op4" value="3" type="radio">
+                    <label id="q166lb4" for="q166Op4" class="chkbox">Quite a bit</label>
+                    <input name="q166Op1" id="q166Op5" value="4" type="radio">
+                    <label id="q166lb5" for="q166Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q166Btn" onClick="q166()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err166" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="167">
+                <p>How much were you distressed by <strong>nausea or upset stomach</strong></p>
+                <fieldset id="q167fd" data-role="controlgroup">
+                    <input name="q167Op1" id="q167Op1" value="0" type="radio">
+                    <label id="q167lb1" for="q167Op1" class="chkbox">Not at all</label>
+                    <input name="q167Op1" id="q167Op2" value="1" type="radio">
+                    <label id="q167lb2" for="q167Op2" class="chkbox">A little bit</label>
+                    <input name="q167Op1" id="q167Op3" value="2" type="radio">
+                    <label id="q167lb3" for="q167Op3" class="chkbox">Moderately</label>
+                    <input name="q167Op1" id="q167Op4" value="3" type="radio">
+                    <label id="q167lb4" for="q167Op4" class="chkbox">Quite a bit</label>
+                    <input name="q167Op1" id="q167Op5" value="4" type="radio">
+                    <label id="q167lb5" for="q167Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q167Btn" onClick="q167()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err167" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="168">
+                <p>How much were you distressed by <strong>feeling blue</strong></p>
+                <fieldset id="q168fd" data-role="controlgroup">
+                    <input name="q168Op1" id="q168Op1" value="0" type="radio">
+                    <label id="q168lb1" for="q168Op1" class="chkbox">Not at all</label>
+                    <input name="q168Op1" id="q168Op2" value="1" type="radio">
+                    <label id="q168lb2" for="q168Op2" class="chkbox">A little bit</label>
+                    <input name="q168Op1" id="q168Op3" value="2" type="radio">
+                    <label id="q168lb3" for="q168Op3" class="chkbox">Moderately</label>
+                    <input name="q168Op1" id="q168Op4" value="3" type="radio">
+                    <label id="q168lb4" for="q168Op4" class="chkbox">Quite a bit</label>
+                    <input name="q168Op1" id="q168Op5" value="4" type="radio">
+                    <label id="q168lb5" for="q168Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q168Btn" onClick="q168()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err168" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="169">
+                <p>How much were you distressed by <strong>suddenly scared for no reason</strong></p>
+                <fieldset id="q169fd" data-role="controlgroup">
+                    <input name="q169Op1" id="q169Op1" value="0" type="radio">
+                    <label id="q169lb1" for="q169Op1" class="chkbox">Not at all</label>
+                    <input name="q169Op1" id="q169Op2" value="1" type="radio">
+                    <label id="q169lb2" for="q169Op2" class="chkbox">A little bit</label>
+                    <input name="q169Op1" id="q169Op3" value="2" type="radio">
+                    <label id="q169lb3" for="q169Op3" class="chkbox">Moderately</label>
+                    <input name="q169Op1" id="q169Op4" value="3" type="radio">
+                    <label id="q169lb4" for="q169Op4" class="chkbox">Quite a bit</label>
+                    <input name="q169Op1" id="q169Op5" value="4" type="radio">
+                    <label id="q169lb5" for="q169Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q169Btn" onClick="q169()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err169" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="170">
+                <p>How much were you distressed by <strong>trouble getting your breath</strong></p>
+                <fieldset id="q170fd" data-role="controlgroup">
+                    <input name="q170Op1" id="q170Op1" value="0" type="radio">
+                    <label id="q170lb1" for="q170Op1" class="chkbox">Not at all</label>
+                    <input name="q170Op1" id="q170Op2" value="1" type="radio">
+                    <label id="q170lb2" for="q170Op2" class="chkbox">A little bit</label>
+                    <input name="q170Op1" id="q170Op3" value="2" type="radio">
+                    <label id="q170lb3" for="q170Op3" class="chkbox">Moderately</label>
+                    <input name="q170Op1" id="q170Op4" value="3" type="radio">
+                    <label id="q170lb4" for="q170Op4" class="chkbox">Quite a bit</label>
+                    <input name="q170Op1" id="q170Op5" value="4" type="radio">
+                    <label id="q170lb5" for="q170Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q170Btn" onClick="q170()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err170" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="171">
+                <p>How much were you distressed by <strong>feelings of worthlessness</strong></p>
+                <fieldset id="q171fd" data-role="controlgroup">
+                    <input name="q171Op1" id="q171Op1" value="0" type="radio">
+                    <label id="q171lb1" for="q171Op1" class="chkbox">Not at all</label>
+                    <input name="q171Op1" id="q171Op2" value="1" type="radio">
+                    <label id="q171lb2" for="q171Op2" class="chkbox">A little bit</label>
+                    <input name="q171Op1" id="q171Op3" value="2" type="radio">
+                    <label id="q171lb3" for="q171Op3" class="chkbox">Moderately</label>
+                    <input name="q171Op1" id="q171Op4" value="3" type="radio">
+                    <label id="q171lb4" for="q171Op4" class="chkbox">Quite a bit</label>
+                    <input name="q171Op1" id="q171Op5" value="4" type="radio">
+                    <label id="q171lb5" for="q171Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q171Btn" onClick="q171()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err171" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="172">
+                <p>How much were you distressed by <strong>spells of terror or panic</strong></p>
+                <fieldset id="q172fd" data-role="controlgroup">
+                    <input name="q172Op1" id="q172Op1" value="0" type="radio">
+                    <label id="q172lb1" for="q172Op1" class="chkbox">Not at all</label>
+                    <input name="q172Op1" id="q172Op2" value="1" type="radio">
+                    <label id="q172lb2" for="q172Op2" class="chkbox">A little bit</label>
+                    <input name="q172Op1" id="q172Op3" value="2" type="radio">
+                    <label id="q172lb3" for="q172Op3" class="chkbox">Moderately</label>
+                    <input name="q172Op1" id="q172Op4" value="3" type="radio">
+                    <label id="q172lb4" for="q172Op4" class="chkbox">Quite a bit</label>
+                    <input name="q172Op1" id="q172Op5" value="4" type="radio">
+                    <label id="q172lb5" for="q172Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q172Btn" onClick="q172()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err172" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="173">
+                <p>How much were you distressed by <strong>numbness or tingling in parts of your body</strong></p>
+                <fieldset id="q173fd" data-role="controlgroup">
+                    <input name="q173Op1" id="q173Op1" value="0" type="radio">
+                    <label id="q173lb1" for="q173Op1" class="chkbox">Not at all</label>
+                    <input name="q173Op1" id="q173Op2" value="1" type="radio">
+                    <label id="q173lb2" for="q173Op2" class="chkbox">A little bit</label>
+                    <input name="q173Op1" id="q173Op3" value="2" type="radio">
+                    <label id="q173lb3" for="q173Op3" class="chkbox">Moderately</label>
+                    <input name="q173Op1" id="q173Op4" value="3" type="radio">
+                    <label id="q173lb4" for="q173Op4" class="chkbox">Quite a bit</label>
+                    <input name="q173Op1" id="q173Op5" value="4" type="radio">
+                    <label id="q173lb5" for="q173Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q173Btn" onClick="q173()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err173" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="174">
+                <p>How much were you distressed by <strong>feeling hopeless about the future</strong></p>
+                <fieldset id="q174fd" data-role="controlgroup">
+                    <input name="q174Op1" id="q174Op1" value="0" type="radio">
+                    <label id="q174lb1" for="q174Op1" class="chkbox">Not at all</label>
+                    <input name="q174Op1" id="q174Op2" value="1" type="radio">
+                    <label id="q174lb2" for="q174Op2" class="chkbox">A little bit</label>
+                    <input name="q174Op1" id="q174Op3" value="2" type="radio">
+                    <label id="q174lb3" for="q174Op3" class="chkbox">Moderately</label>
+                    <input name="q174Op1" id="q174Op4" value="3" type="radio">
+                    <label id="q174lb4" for="q174Op4" class="chkbox">Quite a bit</label>
+                    <input name="q174Op1" id="q174Op5" value="4" type="radio">
+                    <label id="q174lb5" for="q174Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q174Btn" onClick="q174()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err174" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="175">
+                <p>How much were you distressed by <strong>feeling so restless you couldn't sit still</strong></p>
+                <fieldset id="q175fd" data-role="controlgroup">
+                    <input name="q175Op1" id="q175Op1" value="0" type="radio">
+                    <label id="q175lb1" for="q175Op1" class="chkbox">Not at all</label>
+                    <input name="q175Op1" id="q175Op2" value="1" type="radio">
+                    <label id="q175lb2" for="q175Op2" class="chkbox">A little bit</label>
+                    <input name="q175Op1" id="q175Op3" value="2" type="radio">
+                    <label id="q175lb3" for="q175Op3" class="chkbox">Moderately</label>
+                    <input name="q175Op1" id="q175Op4" value="3" type="radio">
+                    <label id="q175lb4" for="q175Op4" class="chkbox">Quite a bit</label>
+                    <input name="q175Op1" id="q175Op5" value="4" type="radio">
+                    <label id="q175lb5" for="q175Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q175Btn" onClick="q175()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err175" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="176">
+                <p>How much were you distressed by <strong>feeling weak in parts of your body</strong></p>
+                <fieldset id="q176fd" data-role="controlgroup">
+                    <input name="q176Op1" id="q176Op1" value="0" type="radio">
+                    <label id="q176lb1" for="q176Op1" class="chkbox">Not at all</label>
+                    <input name="q176Op1" id="q176Op2" value="1" type="radio">
+                    <label id="q176lb2" for="q176Op2" class="chkbox">A little bit</label>
+                    <input name="q176Op1" id="q176Op3" value="2" type="radio">
+                    <label id="q176lb3" for="q176Op3" class="chkbox">Moderately</label>
+                    <input name="q176Op1" id="q176Op4" value="3" type="radio">
+                    <label id="q176lb4" for="q176Op4" class="chkbox">Quite a bit</label>
+                    <input name="q176Op1" id="q176Op5" value="4" type="radio">
+                    <label id="q176lb5" for="q176Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q176Btn" onClick="q176()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err176" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="177">
+                <p>How much were you distressed by <strong>thoughts of ending your life</strong></p>
+                <fieldset id="q177fd" data-role="controlgroup">
+                    <input name="q177Op1" id="q177Op1" value="0" type="radio">
+                    <label id="q177lb1" for="q177Op1" class="chkbox">Not at all</label>
+                    <input name="q177Op1" id="q177Op2" value="1" type="radio">
+                    <label id="q177lb2" for="q177Op2" class="chkbox">A little bit</label>
+                    <input name="q177Op1" id="q177Op3" value="2" type="radio">
+                    <label id="q177lb3" for="q177Op3" class="chkbox">Moderately</label>
+                    <input name="q177Op1" id="q177Op4" value="3" type="radio">
+                    <label id="q177lb4" for="q177Op4" class="chkbox">Quite a bit</label>
+                    <input name="q177Op1" id="q177Op5" value="4" type="radio">
+                    <label id="q177lb5" for="q177Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q177Btn" onClick="q177()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err177" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="178">
+                <p>How much were you distressed by <strong>feeling fearful</strong></p>
+                <fieldset id="q178fd" data-role="controlgroup">
+                    <input name="q178Op1" id="q178Op1" value="0" type="radio">
+                    <label id="q178lb1" for="q178Op1" class="chkbox">Not at all</label>
+                    <input name="q178Op1" id="q178Op2" value="1" type="radio">
+                    <label id="q178lb2" for="q178Op2" class="chkbox">A little bit</label>
+                    <input name="q178Op1" id="q178Op3" value="2" type="radio">
+                    <label id="q178lb3" for="q178Op3" class="chkbox">Moderately</label>
+                    <input name="q178Op1" id="q178Op4" value="3" type="radio">
+                    <label id="q178lb4" for="q178Op4" class="chkbox">Quite a bit</label>
+                    <input name="q178Op1" id="q178Op5" value="4" type="radio">
+                    <label id="q178lb5" for="q178Op5" class="chkbox">Extremely</label>
+                </fieldset>
+                <a href="#" id="q178Btn" onClick="q178()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err178" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s9Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s9FinBtn" onClick="s9Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -55,7 +55,21 @@ var surArry = {DOB : "", Age : "", Gender : "", Language : "", Race : "", Educat
                AltNSSI_yn_t1 : "", AltNSSI_wk_t1 : "", AltNSSI_mth_t1 : "", AltNSSI_yr_t1 : "", AltNSSI_life_t1 : "", NSSI_desirestop_t1 : "",
                NSSI_likelihood_t1 : "", Plan_yn_t1 : "", Plan_lethal_t1 : "", Plan_place_t1 : "", Plan_time_t1 : "", Plan_placetime_t1 : "",
                Plan_freq_t1 : "", Plan_wk_t1 : "", Plan_mth_t1 : "", Plan_yr_t1 : "", Plan_life_t1 : "", Plan_intent_t1 : "", wPlan_freq_t1 : "",
-               wPlan_intent_t1 : "", Plan_likelihood_t1 : "", Prep_yn_t1 : "", Prep_conf_t1 : ""}
+               wPlan_intent_t1 : "", Plan_likelihood_t1 : "", Prep_yn_t1 : "", Prep_conf_t1 : "", AbortedSA_yn_t1 : "", AbortedSA_wk_t1 : "",
+               AbortedSA_mth_t1 : "", AbortedSA_yr_t1 : "", AbortedSA_life_t1 : "", InteruptSA_yn_t1 : "", InteruptSA_wk_t1 : "", InteruptSA_mth_t1 : "",
+               InteruptSA_yr_t1 : "", InteruptSA_life_t1 : "", Attempt_yn_t1 : "", Attempt_wk_t1 : "", Attempt_mth_t1 : "", Attempt_yr_t1 : "",
+               Attempt_life_t1 : "", Attempt_agestart_t1 : "", Attempt_agelast_t1 : "", Attempt_method_t1 : "", Attempt_inj_t1 : "", Attempt_desire_t1 : "",
+               Attempt_conf_t1 : "", RecentSevere_yn_t1 : "", sevAttempt_age_t1 : "", sevAttempt_method_t1 : "", sevAttempt_inj_t1 : "", sevAttempt_desire_t1 : "",
+               sevAttempt_conf_t1 : "", AllAttempt_method_t1 : "", AllAttempt_desire_t1 : "", AllAttempt_conf_t1 : "", Attempt_likelihood_t1 : "",
+               ACSS1_t1 : "", ACSS2_t1 : "", ACSS3_t1 : "", ACSS4_t1 : "", ACSS5_t1 : "", ACSS6_t1 : "", ACSS7_t1 : "", BAM1_t1 : "", BAM2_t1 : "", BAM3_t1 : "",
+               ISI1_t1 : "", ISI2_t1 : "", ISI3_t1 : "", ISI4_t1 : "", ISI5_t1 : "", ISI6_t1 : "", ISI7_t1 : "", ASQanx_t1 : "", ASQanx_dist_t1 : "",
+               ASQanx_dur_t1 : "", ASQanx_inc_t1 : "", ASQanx_time_t1 : "", ASQrage_t1 : "", ASQrage_dist_t1 : "", ASQrage_dur_t1 : "", ASQrage_inc_t1 : "",
+               ASQrage_time_t1 : "", ASQdesp_t1 : "", ASQdesp_dist_t1 : "", ASQdesp_dur_t1 : "", ASQdesp_inc_t1 : "", ASQdesp_time_t1 : "", ASQlonely_t1 : "",
+               ASQlonely_dist_t1 : "", ASQlonely_dur_t1 : "", ASQlonely_inc_t1 : "", ASQlonely_time_t1 : "", ASQhope_t1 : "", ASQhope_dist_t1 : "", ASQhope_dur_t1 : "",
+               ASQhope_inc_t1 : "", ASQhope_time_t1 : "", ASQaban_t1 : "", ASQaban_dist_t1 : "", ASQaban_dur_t1 : "", ASQaban_inc_t1 : "", ASQaban_time_t1 : "",
+               ASQselfhate_t1 : "", ASQselfhate_dist_t1 : "", ASQselfhate_dur_t1 : "", ASQselfhate_inc_t1 : "", ASQselfhate_time_t1 : "", ASQguilt_t1 : "",
+               ASQguilt_dist_t1 : "", ASQguilt_dur_t1 : "", ASQguilt_inc_t1 : "", ASQguilt_time_t1 : "", ASQhumil_t1 : "", ASQhumil_dist_t1 : "", ASQhumil_dur_t1 : "",
+               ASQhumil_inc_t1 : "", ASQhumil_time_t1 : ""}
 
 $(window).on('popstate', function(e) {
     e.preventDefault();
@@ -170,6 +184,15 @@ $(document).on('pagebeforeshow', '#base3', function() {
     bindBase3();
 });
 
+$(document).on('pagebeforeshow', '#base4', function() {
+    navArry = [];
+    $("#47, #48, #49, #50, #51, #52, #53, #54, #55, #s4Fin, #back, #56").hide();
+    vis = ["#q47Btn", "#q48Btn", "#q49Btn", "#q50Btn", "#q51Btn", "#q52Btn", "#q53Btn", "#q54Btn", "#q55Btn", "#q56Btn",
+        "#bInst4Btn"];
+    FastClick.attach(document.body);
+    bindBase4();
+});
+
     $(window).on('orientationchange', function (e) {
     if (e.orientation == 'landscape') {
         $('.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d').removeClass('full_width');
@@ -192,7 +215,7 @@ $(document).on('pagebeforeshow', '#inst', function(){
     sizeC();
     preloadAmp();
     btnDelay();
-    $(":mobile-pagecontainer" ).pagecontainer( "load", "baseline.html", { showLoadMsg: false } );
+    $(":mobile-pagecontainer" ).pagecontainer( "load", "baseline13.html", { showLoadMsg: false } );
 });
 
 // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
@@ -771,8 +794,28 @@ function bindBase3() {
 
     $("#q46Op1, #q46Op2, #q46Op3, #q46Op4, #q46Op5, #q46Op6, #q46Op7, #q46Op8, #q46Op9, #q46Op10, #q46Op11").on('change', function() {
         surArry.Prep_conf_t1 = $(this).val();
+        if (!base3Loaded) {
+            base3Loaded = true;
+            $(":mobile-pagecontainer").pagecontainer("load", "baseline4.html", {showLoadMsg: false});
+        }
         setTimeout(function() {
             q46();
+        }, 200);
+    });
+}
+
+function bindBase4() {
+    $("#q47Op1, #q47Op2").on('change', function () {
+        surArry.AbortedSA_yn_t1 = $(this).val();
+        setTimeout(function () {
+            q45();
+        }, 200);
+    });
+
+    $("#q52Op1, #q52Op2").on('change', function () {
+        surArry.InteruptSA_yn_t1 = $(this).val();
+        setTimeout(function () {
+            q45();
         }, 200);
     });
 }
@@ -921,7 +964,7 @@ function q10() {
         $("#s1Fin").show();
         $("#fwd").hide();
         addArry(q9);
-        $(":mobile-pagecontainer" ).pagecontainer( "load", "baseline2.html", { showLoadMsg: false } );
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline2.html", {showLoadMsg: false});
     }
     else {
         $("#err10").show();
@@ -942,6 +985,7 @@ function base2St() {
 }
 
 function bInst1() {
+    base3Loaded = false;
     $("#baseInst1").hide();
     $("#err11").hide();
     $("#11").show();
@@ -1380,75 +1424,330 @@ function base3St() {
     $("#baseInst3").show();
 }
 
-function bInst3Btn() {
-
+function bInst3() {
+    base3Loaded = false;
+    $("#baseInst3").hide();
+    $("#err31").hide();
+    $("#31").show();
+    $("#back").show();
+    addArry(base3St);
 }
 
 function q31() {
-
+    if (surArry.Plan_yn_t1 != "") {
+        $("#err31").hide();
+        $("#err32").hide();
+        $("#err45").hide();
+        $("#31").hide();
+        $("#fwd").show();
+        if (surArry.Plan_yn_t1 == "0") {
+            q31logic = true;
+            surArry.Plan_lethal_t1 = "";
+            surArry.Plan_place_t1 = "";
+            surArry.Plan_time_t1 = "";
+            surArry.Plan_placetime_t1 = "";
+            surArry.Plan_freq_t1 = "";
+            surArry.Plan_wk_t1  = "";
+            surArry.Plan_mth_t1 = "";
+            surArry.Plan_yr_t1 = "";
+            surArry.Plan_life_t1 = "";
+            surArry.Plan_intent_t1 = "";
+            surArry.wPlan_freq_t1 = "";
+            surArry.wPlan_intent_t1 = "";
+            surArry.Plan_likelihood_t1 = "";
+            $("#40").find("input").each(function() {
+                $(this).val("");
+            });
+            $("#32, #33, #34, #35, #36, #37, #38, #39, #41, #42, #43, #44").find("input").each(function() {
+                if ($(this).is(":checked")) {
+                    $(this).prop("checked", false).checkboxradio("refresh");
+                }
+            });
+            $("#45").show();
+        }
+        else {
+            q31logic = false;
+            $("#32").show();
+        }
+        addArry(bInst3);
+    }
+    else {
+        $("#err31").show();
+    }
 }
 
 function q32() {
-
+    if (surArry.Plan_lethal_t1 != "") {
+        $("#err32").hide();
+        $("#err33").hide();
+        $("#32").hide();
+        $("#33").show();
+        addArry(q31);
+    }
+    else {
+        $("#err32").show();
+    }
 }
 
 function q33() {
-
+    if (surArry.Plan_place_t1 != "") {
+        $("#err33").hide();
+        $("#err34").hide();
+        $("#33").hide();
+        $("#34").show();
+        addArry(q32);
+    }
+    else {
+        $("#err33").show();
+    }
 }
 
 function q34() {
-
+    if (surArry.Plan_time_t1 != "") {
+        $("#err34").hide();
+        $("#err35").hide();
+        $("#34").hide();
+        $("#35").show();
+        addArry(q33);
+    }
+    else {
+        $("#err34").show();
+    }
 }
 
 function q35() {
-
+    if (surArry.Plan_placetime_t1 != "") {
+        $("#err35").hide();
+        $("#err36").hide();
+        $("#35").hide();
+        $("#36").show();
+        addArry(q34);
+    }
+    else {
+        $("#err35").show();
+    }
 }
 
 function q36() {
-
+    if (surArry.Plan_freq_t1 != "") {
+        $("#err36").hide();
+        $("#err37").hide();
+        $("#36").hide();
+        $("#37").show();
+        addArry(q35);
+    }
+    else {
+        $("#err36").show();
+    }
 }
 
 function q37() {
-
+    if (surArry.Plan_wk_t1 != "") {
+        $("#err37").hide();
+        $("#err38").hide();
+        $("#37").hide();
+        $("#38").show();
+        addArry(q36);
+    }
+    else {
+        $("#err37").show();
+    }
 }
 
 function q38() {
-
+    if (surArry.Plan_mth_t1 != "") {
+        $("#err38").hide();
+        $("#err39").hide();
+        $("#38").hide();
+        $("#39").show();
+        addArry(q37);
+    }
+    else {
+        $("#err38").show();
+    }
 }
 
 function q39() {
-
+    if (surArry.Plan_yr_t1 != "") {
+        $("#err39").hide();
+        $("#err40").hide();
+        $("#39").hide();
+        $("#40").show();
+        addArry(q38);
+    }
+    else {
+        $("#err39").show();
+    }
 }
 
 function q40() {
-
+    var period = parseInt($("#periods").val());
+    if (period > 0 && period < 100000) {
+        surArry.Plan_life_t1 = period.toString();
+        $("#err40").hide();
+        $("#err41").hide();
+        $("#40").hide();
+        $("#41").show();
+        addArry(q39);
+    }
+    else {
+        $("#err40").show();
+    }
 }
 
 function q41() {
-
+    if (surArry.Plan_intent_t1 != "") {
+        $("#err41").hide();
+        $("#err42").hide();
+        $("#41").hide();
+        $("#42").show();
+        addArry(q40);
+    }
+    else {
+        $("#err41").show();
+    }
 }
 
 function q42() {
-
+    if (surArry.wPlan_freq_t1 != "") {
+        $("#err42").hide();
+        $("#err43").hide();
+        $("#42").hide();
+        $("#43").show();
+        addArry(q41);
+    }
+    else {
+        $("#err42").show();
+    }
 }
 
 function q43() {
-
+    if (surArry.wPlan_intent_t1 != "") {
+        $("#err43").hide();
+        $("#err44").hide();
+        $("#43").hide();
+        $("#44").show();
+        addArry(q42);
+    }
+    else {
+        $("#err43").show();
+    }
 }
 
 function q44() {
-
+    if (surArry.Plan_likelihood_t1 != "") {
+        $("#err44").hide();
+        $("#err45").hide();
+        $("#44").hide();
+        $("#45").show();
+        addArry(q43);
+    }
+    else {
+        $("#err44").show();
+    }
 }
 
 function q45() {
-
+    if (surArry.Prep_yn_t1 != "") {
+        $("#err45").hide();
+        $("#err46").hide();
+        $("#45").hide();
+        if (surArry.Prep_yn_t1 == "0") {
+            q45logic = true;
+            $("#fwd").hide();
+            surArry.Prep_conf_t1 = "";
+            $("#32, #33, #34, #35, #36, #37, #38, #39, #41, #42, #43, #44").find("input").each(function() {
+                if ($(this).is(":checked")) {
+                    $(this).prop("checked", false).checkboxradio("refresh");
+                }
+            });
+            $("#s3Fin").show();
+        }
+        else {
+            q45logic = false;
+            $("#fwd").show();
+            $("#46").show();
+        }
+        if (q31logic) {
+            addArry(q31);
+        }
+        else {
+            addArry(q44);
+        }
+    }
+    else {
+        $("#err45").show();
+    }
 }
 
 function q46() {
-
+    if (surArry.Prep_conf_t1 != "") {
+        $("#err46").hide();
+        $("#46").hide();
+        $("#fwd").hide();
+        $("#s3Fin").show();
+        addArry(q45);
+    }
+    else {
+        $("#err46").show();
+    }
 }
 
 function s3Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base4");
+}
+
+function base4St() {
+
+}
+
+function bInst4() {
+
+}
+
+function q47() {
+
+}
+
+function q48() {
+
+}
+
+function q49() {
+
+}
+
+function q50() {
+
+}
+
+function q51() {
+
+}
+
+function q52() {
+
+}
+
+function q53() {
+
+}
+
+function q54() {
+
+}
+
+function q55() {
+
+}
+
+function q56() {
+
+}
+
+function s4Fin() {
 
 }
 
@@ -1489,6 +1788,7 @@ function forwardBtn() {
 
 function hideAll() {
     $("#1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #s1Fin").hide();
-    $("#baseInst1, #11, #12, #13, #14, #baseInst2, #15, #16, #17, #18, #19, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30, #s2Fin").hide();
+    $("#11, #12, #13, #14, #baseInst2, #15, #16, #17, #18, #19, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30, #s2Fin").hide();
+    $("#31, #32, #33, #34, #35, #36, #37, #38, #39, #s3Fin, #40, #41, #42, #43, #44, #45, #46").hide();
     return true;
 }

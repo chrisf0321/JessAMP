@@ -1,0 +1,31 @@
+<div data-role="page" id="base13" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst13">
+                <p><b>Instructions:</b>  The next set of questions you will be asked to <strong>rate images in terms of how pleasant or unpleasant you find them</strong>.</p>
+                <a href="#" id="bInst13Btn" onClick="bInst13()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="224">
+                <img id="img1" src="resources/images/e17.jpg" />
+            </div>
+            <div class="full-slide">
+                <input name="slide1" id="slide1" min="-5" max="5" value="0" step="1" show-data-value="true" data-popup-enabled="true" type="range">
+                <label for="slide1" class="ui-hidden-accessible"></label>
+            </div>
+            <div>
+                <div class="left">
+                    <p>Extremely Unpleasant</p>
+                </div>
+                <div class="right">
+                    <p>Extremely Pleasant</p>
+                </div>
+            </div>
+            <a href="#" id="q224Btn" onClick="q224()" class="ui-btn ui-corner-all btnSize2">Next</a>
+        </div>
+    </div>
+</div>
