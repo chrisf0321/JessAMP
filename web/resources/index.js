@@ -140,7 +140,7 @@ $(document).on('pagebeforeshow', '#inst', function(){
     sizeC();
     preloadAmp();
     btnDelay();
-    $(":mobile-pagecontainer" ).pagecontainer( "load", "baseline13.html", { showLoadMsg: false } );
+    $(":mobile-pagecontainer" ).pagecontainer( "load", "baseline.html", { showLoadMsg: false } );
 });
 
 // Validates that the input string is a valid date formatted as "mm/dd/yyyy"

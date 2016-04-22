@@ -29,6 +29,8 @@ var q130logic = false;
 var q133logic = false;
 var q135logic = false;
 var q138logic = false;
+var q144logic = false;
+var q159logic = false;
 var base3Loaded = false;
 var navArry = [];
 var vis = [];
@@ -59,7 +61,17 @@ var surArry = {DOB : "", Age : "", Gender : "", Language : "", Race : "", Educat
     ASQhope_inc_t1 : "", ASQhope_time_t1 : "", ASQaban_t1 : "", ASQaban_dist_t1 : "", ASQaban_dur_t1 : "", ASQaban_inc_t1 : "", ASQaban_time_t1 : "",
     ASQselfhate_t1 : "", ASQselfhate_dist_t1 : "", ASQselfhate_dur_t1 : "", ASQselfhate_inc_t1 : "", ASQselfhate_time_t1 : "", ASQguilt_t1 : "",
     ASQguilt_dist_t1 : "", ASQguilt_dur_t1 : "", ASQguilt_inc_t1 : "", ASQguilt_time_t1 : "", ASQhumil_t1 : "", ASQhumil_dist_t1 : "", ASQhumil_dur_t1 : "",
-    ASQhumil_inc_t1 : "", ASQhumil_time_t1 : ""}
+    ASQhumil_inc_t1 : "", ASQhumil_time_t1 : "", BSS1_t1 : "", BSS2_t1 : "", BSS3_t1 : "", BSS4_t1 : "", BSS5_t1 : "", BSS6_t1 : "", BSS7_t1 : "", BSS8_t1 : ""
+    , BSS9_t1 : "", BSS10_t1 : "", BSS11_t1 : "", BSS12_t1 : "", BSS13_t1 : "", BSS14_t1 : "", BSS15_t1 : "", BSS16_t1 : "", BSS17_t1 : "", BSS18_t1 : ""
+    , BSS19_t1 : "", BSS20_t1 : "", BSS21_t1 : "", BSI1_t1 : "", BSI2_t1 : "", BSI3_t1 : "", BSI4_t1 : "", BSI5_t1 : "", BSI6_t1 : "", BSI7_t1 : ""
+    , BSI8_t1 : "", BSI9_t1 : "", BSI10_t1 : "", BSI11_t1 : "", BSI12_t1 : "", BSI13_t1 : "", BSI14_t1 : "", BSI15_t1 : "", BSI16_t1 : "", BSI17_t1 : "", BSI18_t1 : ""
+    , BHS1_t1 : "", BHS2_t1 : "", BHS3_t1 : "", BHS4_t1 : "", BHS5_t1 : "", BHS6_t1 : "", BHS7_t1 : "", BHS8_t1 : "", BHS9_t1 : "", BHS10_t1 : "", BHS11_t1 : ""
+    , BHS12_t1 : "", BHS13_t1 : "", BHS14_t1 : "", BHS15_t1 : "", BHS16_t1 : "", BHS17_t1 : "", BHS18_t1 : "", BHS19_t1 : "", BHS20_t1 : ""
+    , DSWS1_t1 : "", DSWS2_t1 : "", DSWS3_t1 : "", DSWS4_t1 : "", DSWS5_t1 : "", DSWS6_t1 : "", DSWS7_t1 : "", DSWS8_t1 : "", DSWS9_t1 : "", DSWS10_t1 : ""
+    , DSWS11_t1 : "", DSWS12_t1 : "", SFS1_t1 : "", SFS2_t1 : "", SFS3_t1 : "", SFS4_t1 : "", SFS5_t1 : "", SFS6_t1 : "", SFS7_t1 : "", SFS8_t1 : ""
+    , SFS9_t1 : "", SFS10_t1 : "", SFS11_t1 : "", SFS12_t1 : "", SFS13_t1 : "", Height_t1 : "", Suffocation_t1 : "", Bodybag_t1 : "", Guntohead_t1 : ""
+    , Noose_t1 : "", Bloodygun_t1 : "", Bloodywrist_t1 : "", Drowning_t1 : "", Hanged_t1 : "", Burned_t1 : "", Positive1_t1 : "", Positive2_t1 : ""
+    , Positive3_t1 : "", Positive4_t1 : "", Positive5_t1 : ""}
 
 $(document).on('pagebeforeshow', '#base', function() {
     navArry = [];
@@ -131,6 +143,60 @@ $(document).on('pagebeforeshow', '#base7', function() {
         , "#q137Btn", "#q138Btn", "#q139Btn"];
     FastClick.attach(document.body);
     bindBase7();
+});
+
+$(document).on('pagebeforeshow', '#base8', function() {
+    navArry = [];
+    $("#140, #141, #142, #143, #144, #145, #146, #147, #148, #s8Fin, #back, #149, #150, #151, #152, #153, #154, #155, #156, #157, #158, #159, #160").hide();
+    vis = ["#q140Btn", "#q141Btn", "#q142Btn", "#q143Btn", "#q144Btn", "#q145Btn", "#q146Btn", "#q147Btn", "#q148Btn", "#q149Btn",
+        "#bInst8Btn", "#q150Btn", "#q151Btn", "#q152Btn", "#q153Btn", "#q154Btn", "#q155Btn", "#q156Btn", "#q157Btn", "#q158Btn"
+        , "#q159Btn", "#q160Btn"];
+    FastClick.attach(document.body);
+    bindBase8();
+});
+
+$(document).on('pagebeforeshow', '#base9', function() {
+    navArry = [];
+    $("#161, #162, #163, #164, #165, #166, #167, #168, #169, #s9Fin, #back, #170, #171, #172, #173, #174, #175, #176, #177, #178").hide();
+    vis = ["#q161Btn", "#q162Btn", "#q163Btn", "#q164Btn", "#q165Btn", "#q166Btn", "#q167Btn", "#q168Btn", "#q169Btn", "#q170Btn",
+        "#bInst9Btn", "#q171Btn", "#q172Btn", "#q173Btn", "#q174Btn", "#q175Btn", "#q176Btn", "#q177Btn", "#q178Btn"];
+    FastClick.attach(document.body);
+    bindBase9();
+});
+
+$(document).on('pagebeforeshow', '#base10', function() {
+    navArry = [];
+    $("#179, #180, #181, #182, #183, #184, #185, #186, #187, #s10Fin, #back, #188, #189, #190, #191, #192, #193, #194, #195, #196, #197, #198").hide();
+    vis = ["#q179Btn", "#q180Btn", "#q181Btn", "#q182Btn", "#q183Btn", "#q184Btn", "#q185Btn", "#q186Btn", "#q187Btn", "#q188Btn",
+        "#bInst10Btn", "#q189Btn", "#q190Btn", "#q191Btn", "#q192Btn", "#q193Btn", "#q194Btn", "#q195Btn", "#q196Btn", "#q197Btn", "#q198Btn"];
+    FastClick.attach(document.body);
+    bindBase10();
+});
+
+$(document).on('pagebeforeshow', '#base11', function() {
+    navArry = [];
+    $("#199, #200, #201, #202, #203, #204, #205, #206, #207, #s11Fin, #back, #208, #209, #210").hide();
+    vis = ["#q199Btn", "#q200Btn", "#q201Btn", "#q202Btn", "#q203Btn", "#q204Btn", "#q205Btn", "#q206Btn", "#q207Btn", "#q208Btn",
+        "#bInst11Btn", "#q209Btn", "#q210Btn"];
+    FastClick.attach(document.body);
+    bindBase11();
+});
+
+$(document).on('pagebeforeshow', '#base12', function() {
+    navArry = [];
+    $("#211, #212, #213, #214, #215, #216, #217, #218, #219, #s12Fin, #back, #220, #221, #222, #223").hide();
+    vis = ["#q211Btn", "#q212Btn", "#q213Btn", "#q214Btn", "#q215Btn", "#q216Btn", "#q217Btn", "#q218Btn", "#q219Btn", "#q220Btn",
+        "#bInst12Btn", "#q221Btn", "#q222Btn", "#q223Btn"];
+    FastClick.attach(document.body);
+    bindBase12();
+});
+
+$(document).on('pagebeforeshow', '#base13', function() {
+    navArry = [];
+    $("#224, #225, #226, #227, #228, #229, #230, #231, #232, #s13Fin, #back, #233, #234, #235, #236, #237, #238").hide();
+    vis = ["#q224Btn", "#q225Btn", "#q226Btn", "#q227Btn", "#q228Btn", "#q229Btn", "#q230Btn", "#q231Btn", "#q232Btn", "#q233Btn",
+        "#bInst13Btn", "#q234Btn", "#q235Btn", "#q236Btn", "#q237Btn", "#q238Btn"];
+    FastClick.attach(document.body);
 });
 
 function bindBase() {
@@ -347,14 +413,14 @@ function bindBase4() {
     $("#q47Op1, #q47Op2").on('change', function () {
         surArry.AbortedSA_yn_t1 = $(this).val();
         setTimeout(function () {
-            q45();
+            q47();
         }, 200);
     });
 
     $("#q52Op1, #q52Op2").on('change', function () {
         surArry.InteruptSA_yn_t1 = $(this).val();
         setTimeout(function () {
-            q45();
+            q52();
         }, 200);
     });
 }
@@ -565,14 +631,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q96Op1, #q96Op2, #q96Op3, #q96Op4").on('change', function () {
+    $("#q96Op2, #q96Op2, #q96Op3, #q96Op5").on('change', function () {
         surArry.ASQanx_dist_t1 = $(this).val();
         setTimeout(function () {
             q96();
         }, 200);
     });
 
-    $("#q97Op1, #q97Op2, #q97Op3, #q97Op4").on('change', function () {
+    $("#q97Op2, #q97Op2, #q97Op3, #q97Op5").on('change', function () {
         surArry.ASQanx_dur_t1 = $(this).val();
         setTimeout(function () {
             q97();
@@ -586,7 +652,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q99Op1, #q99Op2, #q99Op3, #q99Op4").on('change', function () {
+    $("#q99Op2, #q99Op2, #q99Op3, #q99Op5").on('change', function () {
         surArry.ASQanx_time_t1 = $(this).val();
         setTimeout(function () {
             q99();
@@ -600,14 +666,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q101Op1, #q101Op2, #q101Op3, #q101Op4").on('change', function () { 
+    $("#q101Op2, #q101Op2, #q101Op3, #q101Op5").on('change', function () { 
         surArry.ASQrage_dist_t1 = $(this).val(); 
         setTimeout(function () { 
             q101(); 
         }, 200); 
     });
 
-    $("#q102Op1, #q102Op2, #q102Op3, #q102Op4").on('change', function () { 
+    $("#q102Op2, #q102Op2, #q102Op3, #q102Op5").on('change', function () { 
         surArry.ASQrage_dur_t1 = $(this).val();
         setTimeout(function () {
             q102(); 
@@ -621,7 +687,7 @@ function bindBase7() {
         }, 200);
      });
 
-    $("#q104Op1, #q104Op2, #q104Op3, #q104Op4").on('change', function () { 
+    $("#q104Op2, #q104Op2, #q104Op3, #q104Op5").on('change', function () { 
         surArry.ASQrage_time_t1 = $(this).val(); 
         setTimeout(function () { 
             q104(); 
@@ -635,14 +701,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q106Op1, #q106Op2, #q106Op3, #q106Op4").on('change', function () {
+    $("#q106Op2, #q106Op2, #q106Op3, #q106Op5").on('change', function () {
         surArry.ASQdesp_dist_t1 = $(this).val();
         setTimeout(function () {
             q106();
         }, 200);
     });
 
-    $("#q107Op1, #q107Op2, #q107Op3, #q107Op4").on('change', function () {
+    $("#q107Op2, #q107Op2, #q107Op3, #q107Op5").on('change', function () {
         surArry.ASQdesp_dur_t1 = $(this).val();
         setTimeout(function () {
             q107();
@@ -656,7 +722,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q109Op1, #q109Op2, #q109Op3, #q109Op4").on('change', function () {
+    $("#q109Op2, #q109Op2, #q109Op3, #q109Op5").on('change', function () {
         surArry.ASQdesp_time_t1 = $(this).val();
         setTimeout(function () {
             q109();
@@ -670,14 +736,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q111Op1, #q111Op2, #q111Op3, #q111Op4").on('change', function () {
+    $("#q111Op2, #q111Op2, #q111Op3, #q111Op5").on('change', function () {
         surArry.ASQlonely_dist_t1 = $(this).val();
         setTimeout(function () {
             q111();
         }, 200);
     });
 
-    $("#q112Op1, #q112Op2, #q112Op3, #q112Op4").on('change', function () {
+    $("#q112Op2, #q112Op2, #q112Op3, #q112Op5").on('change', function () {
         surArry.ASQlonely_dur_t1 = $(this).val();
         setTimeout(function () {
             q112();
@@ -691,7 +757,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q114Op1, #q114Op2, #q114Op3, #q114Op4").on('change', function () {
+    $("#q114Op2, #q114Op2, #q114Op3, #q114Op5").on('change', function () {
         surArry.ASQlonely_time_t1 = $(this).val();
         setTimeout(function () {
             q114();
@@ -705,14 +771,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q116Op1, #q116Op2, #q116Op3, #q116Op4").on('change', function () {
+    $("#q116Op2, #q116Op2, #q116Op3, #q116Op5").on('change', function () {
         surArry.ASQhope_dist_t1 = $(this).val();
         setTimeout(function () {
             q116();
         }, 200);
     });
 
-    $("#q117Op1, #q117Op2, #q117Op3, #q117Op4").on('change', function () {
+    $("#q117Op2, #q117Op2, #q117Op3, #q117Op5").on('change', function () {
         surArry.ASQhope_dur_t1 = $(this).val();
         setTimeout(function () {
             q117();
@@ -726,7 +792,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q119Op1, #q119Op2, #q119Op3, #q119Op4").on('change', function () {
+    $("#q119Op2, #q119Op2, #q119Op3, #q119Op5").on('change', function () {
         surArry.ASQhope_time_t1 = $(this).val();
         setTimeout(function () {
             q119();
@@ -740,14 +806,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q121Op1, #q121Op2, #q121Op3, #q121Op4").on('change', function () {
+    $("#q121Op2, #q121Op2, #q121Op3, #q121Op5").on('change', function () {
         surArry.ASQaban_dist_t1 = $(this).val();
         setTimeout(function () {
             q121();
         }, 200);
     });
 
-    $("#q122Op1, #q122Op2, #q122Op3, #q122Op4").on('change', function () {
+    $("#q122Op2, #q122Op2, #q122Op3, #q122Op5").on('change', function () {
         surArry.ASQaban_dur_t1 = $(this).val();
         setTimeout(function () {
             q122();
@@ -761,7 +827,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q124Op1, #q124Op2, #q124Op3, #q124Op4").on('change', function () {
+    $("#q124Op2, #q124Op2, #q124Op3, #q124Op5").on('change', function () {
         surArry.ASQaban_time_t1 = $(this).val();
         setTimeout(function () {
             q124();
@@ -775,14 +841,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q126Op1, #q126Op2, #q126Op3, #q126Op4").on('change', function () {
+    $("#q126Op2, #q126Op2, #q126Op3, #q126Op5").on('change', function () {
         surArry.ASQselfhate_dist_t1 = $(this).val();
         setTimeout(function () {
             q126();
         }, 200);
     });
 
-    $("#q127Op1, #q127Op2, #q127Op3, #q127Op4").on('change', function () {
+    $("#q127Op2, #q127Op2, #q127Op3, #q127Op5").on('change', function () {
         surArry.ASQselfhate_dur_t1 = $(this).val();
         setTimeout(function () {
             q127();
@@ -796,7 +862,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q129Op1, #q129Op2, #q129Op3, #q129Op4").on('change', function () {
+    $("#q129Op2, #q129Op2, #q129Op3, #q129Op5").on('change', function () {
         surArry.ASQselfhate_time_t1 = $(this).val();
         setTimeout(function () {
             q129();
@@ -810,14 +876,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q131Op1, #q131Op2, #q131Op3, #q131Op4").on('change', function () {
+    $("#q131Op2, #q131Op2, #q131Op3, #q131Op5").on('change', function () {
         surArry.ASQguilt_dist_t1 = $(this).val();
         setTimeout(function () {
             q131();
         }, 200);
     });
 
-    $("#q132Op1, #q132Op2, #q132Op3, #q132Op4").on('change', function () {
+    $("#q132Op2, #q132Op2, #q132Op3, #q132Op5").on('change', function () {
         surArry.ASQguilt_dur_t1 = $(this).val();
         setTimeout(function () {
             q132();
@@ -831,7 +897,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q134Op1, #q134Op2, #q134Op3, #q134Op4").on('change', function () {
+    $("#q134Op2, #q134Op2, #q134Op3, #q134Op5").on('change', function () {
         surArry.ASQguilt_time_t1 = $(this).val();
         setTimeout(function () {
             q134();
@@ -845,14 +911,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q136Op1, #q136Op2, #q136Op3, #q136Op4").on('change', function () {
+    $("#q136Op2, #q136Op2, #q136Op3, #q136Op5").on('change', function () {
         surArry.ASQhumil_dist_t1 = $(this).val();
         setTimeout(function () {
             q136();
         }, 200);
     });
 
-    $("#q137Op1, #q137Op2, #q137Op3, #q137Op4").on('change', function () {
+    $("#q137Op2, #q137Op2, #q137Op3, #q137Op5").on('change', function () {
         surArry.ASQhumil_dur_t1 = $(this).val();
         setTimeout(function () {
             q137();
@@ -866,13 +932,610 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q139Op1, #q139Op2, #q139Op3, #q139Op4").on('change', function () {
+    $("#q139Op2, #q139Op2, #q139Op3, #q139Op5").on('change', function () {
         surArry.ASQhumil_time_t1 = $(this).val();
         setTimeout(function () {
             q139();
         }, 200);
     });
+}
 
+function bindBase8() {
+    $("#q140Op1, #q140Op2, #q140Op3").on('change', function () {
+        surArry.BSS1_t1 = $(this).val();
+        setTimeout(function () {
+            q140();
+        }, 200);
+    });
+
+    $("#q141Op1, #q141Op2, #q141Op3").on('change', function () {
+        surArry.BSS2_t1 = $(this).val();
+        setTimeout(function () {
+            q141();
+        }, 200);
+    });
+
+    $("#q142Op1, #q142Op2, #q142Op3").on('change', function () {
+        surArry.BSS3_t1 = $(this).val();
+        setTimeout(function () {
+            q142();
+        }, 200);
+    });
+
+    $("#q143Op1, #q143Op2, #q143Op3").on('change', function () {
+        surArry.BSS4_t1 = $(this).val();
+        setTimeout(function () {
+            q143();
+        }, 200);
+    });
+
+    $("#q144Op1, #q144Op2, #q144Op3").on('change', function () {
+        surArry.BSS5_t1 = $(this).val();
+        setTimeout(function () {
+            q144();
+        }, 200);
+    });
+
+    $("#q145Op1, #q145Op2, #q145Op3").on('change', function () {
+        surArry.BSS6_t1 = $(this).val();
+        setTimeout(function () {
+            q145();
+        }, 200);
+    });
+
+    $("#q146Op1, #q146Op2, #q146Op3").on('change', function () {
+        surArry.BSS7_t1 = $(this).val();
+        setTimeout(function () {
+            q146();
+        }, 200);
+    });
+
+    $("#q147Op1, #q147Op2, #q147Op3").on('change', function () {
+        surArry.BSS8_t1 = $(this).val();
+        setTimeout(function () {
+            q147();
+        }, 200);
+    });
+
+    $("#q148Op1, #q148Op2, #q148Op3").on('change', function () {
+        surArry.BSS9_t1 = $(this).val();
+        setTimeout(function () {
+            q148();
+        }, 200);
+    });
+
+    $("#q149Op1, #q149Op2, #q149Op3").on('change', function () {
+        surArry.BSS10_t1 = $(this).val();
+        setTimeout(function () {
+            q149();
+        }, 200);
+    });
+
+    $("#q150Op1, #q150Op2, #q150Op3").on('change', function () {
+        surArry.BSS11_t1 = $(this).val();
+        setTimeout(function () {
+            q150();
+        }, 200);
+    });
+
+    $("#q151Op1, #q151Op2, #q151Op3").on('change', function () {
+        surArry.BSS12_t1 = $(this).val();
+        setTimeout(function () {
+            q151();
+        }, 200);
+    });
+
+    $("#q152Op1, #q152Op2, #q152Op3").on('change', function () {
+        surArry.BSS13_t1 = $(this).val();
+        setTimeout(function () {
+            q152();
+        }, 200);
+    });
+
+    $("#q153Op1, #q153Op2, #q153Op3").on('change', function () {
+        surArry.BSS14_t1 = $(this).val();
+        setTimeout(function () {
+            q153();
+        }, 200);
+    });
+
+    $("#q154Op1, #q154Op2, #q154Op3").on('change', function () {
+        surArry.BSS15_t1 = $(this).val();
+        setTimeout(function () {
+            q154();
+        }, 200);
+    });
+
+    $("#q155Op1, #q155Op2, #q155Op3").on('change', function () {
+        surArry.BSS16_t1 = $(this).val();
+        setTimeout(function () {
+            q155();
+        }, 200);
+    });
+
+    $("#q156Op1, #q156Op2, #q156Op3").on('change', function () {
+        surArry.BSS17_t1 = $(this).val();
+        setTimeout(function () {
+            q156();
+        }, 200);
+    });
+
+    $("#q157Op1, #q157Op2, #q157Op3").on('change', function () {
+        surArry.BSS18_t1 = $(this).val();
+        setTimeout(function () {
+            q157();
+        }, 200);
+    });
+
+    $("#q158Op1, #q158Op2, #q158Op3").on('change', function () {
+        surArry.BSS19_t1 = $(this).val();
+        setTimeout(function () {
+            q158();
+        }, 200);
+    });
+
+    $("#q159Op1, #q159Op2, #q159Op3").on('change', function () {
+        surArry.BSS20_t1 = $(this).val();
+        setTimeout(function () {
+            q159();
+        }, 200);
+    });
+
+    $("#q160Op1, #q160Op2, #q160Op3").on('change', function () {
+        surArry.BSS21_t1 = $(this).val();
+        setTimeout(function () {
+            q160();
+        }, 200);
+    });
+}
+
+function bindBase9() {
+    $("#q161Op1, #q161Op2, #q161Op3, #q161Op4, #q161Op5").on('change', function () {
+        surArry.BSI1_t1 = $(this).val();
+        setTimeout(function () {
+            q161();
+        }, 200);
+    });
+
+    $("#q162Op1, #q162Op2, #q162Op3, #q162Op4, #q162Op5").on('change', function () {
+        surArry.BSI2_t1 = $(this).val();
+        setTimeout(function () {
+            q162();
+        }, 200);
+    });
+
+    $("#q163Op1, #q163Op2, #q163Op3, #q163Op4, #q163Op5").on('change', function () {
+        surArry.BSI3_t1 = $(this).val();
+        setTimeout(function () {
+            q163();
+        }, 200);
+    });
+
+    $("#q164Op1, #q164Op2, #q164Op3, #q164Op4, #q164Op5").on('change', function () {
+        surArry.BSI4_t1 = $(this).val();
+        setTimeout(function () {
+            q164();
+        }, 200);
+    });
+
+    $("#q165Op1, #q165Op2, #q165Op3, #q165Op4, #q165Op5").on('change', function () {
+        surArry.BSI5_t1 = $(this).val();
+        setTimeout(function () {
+            q165();
+        }, 200);
+    });
+
+    $("#q166Op1, #q166Op2, #q166Op3, #q166Op4, #q166Op5").on('change', function () {
+        surArry.BSI6_t1 = $(this).val();
+        setTimeout(function () {
+            q166();
+        }, 200);
+    });
+
+    $("#q167Op1, #q167Op2, #q167Op3, #q167Op4, #q167Op5").on('change', function () {
+        surArry.BSI7_t1 = $(this).val();
+        setTimeout(function () {
+            q167();
+        }, 200);
+    });
+
+    $("#q168Op1, #q168Op2, #q168Op3, #q168Op4, #q168Op5").on('change', function () {
+        surArry.BSI8_t1 = $(this).val();
+        setTimeout(function () {
+            q168();
+        }, 200);
+    });
+
+    $("#q169Op1, #q169Op2, #q169Op3, #q169Op4, #q169Op5").on('change', function () {
+        surArry.BSI9_t1 = $(this).val();
+        setTimeout(function () {
+            q169();
+        }, 200);
+    });
+
+    $("#q170Op1, #q170Op2, #q170Op3, #q170Op4, #q170Op5").on('change', function () {
+        surArry.BSI10_t1 = $(this).val();
+        setTimeout(function () {
+            q170();
+        }, 200);
+    });
+
+    $("#q171Op1, #q171Op2, #q171Op3, #q171Op4, #q171Op5").on('change', function () {
+        surArry.BSI11_t1 = $(this).val();
+        setTimeout(function () {
+            q171();
+        }, 200);
+    });
+
+    $("#q172Op1, #q172Op2, #q172Op3, #q172Op4, #q172Op5").on('change', function () {
+        surArry.BSI12_t1 = $(this).val();
+        setTimeout(function () {
+            q172();
+        }, 200);
+    });
+
+    $("#q173Op1, #q173Op2, #q173Op3, #q173Op4, #q173Op5").on('change', function () {
+        surArry.BSI13_t1 = $(this).val();
+        setTimeout(function () {
+            q173();
+        }, 200);
+    });
+
+    $("#q174Op1, #q174Op2, #q174Op3, #q174Op4, #q174Op5").on('change', function () {
+        surArry.BSI14_t1 = $(this).val();
+        setTimeout(function () {
+            q174();
+        }, 200);
+    });
+
+    $("#q175Op1, #q175Op2, #q175Op3, #q175Op4, #q175Op5").on('change', function () {
+        surArry.BSI15_t1 = $(this).val();
+        setTimeout(function () {
+            q175();
+        }, 200);
+    });
+
+    $("#q176Op1, #q176Op2, #q176Op3, #q176Op4, #q176Op5").on('change', function () {
+        surArry.BSI16_t1 = $(this).val();
+        setTimeout(function () {
+            q176();
+        }, 200);
+    });
+
+    $("#q177Op1, #q177Op2, #q177Op3, #q177Op4, #q177Op5").on('change', function () {
+        surArry.BSI17_t1 = $(this).val();
+        setTimeout(function () {
+            q177();
+        }, 200);
+    });
+
+    $("#q178Op1, #q178Op2, #q178Op3, #q178Op4, #q178Op5").on('change', function () {
+        surArry.BSI18_t1 = $(this).val();
+        setTimeout(function () {
+            q178();
+        }, 200);
+    });
+}
+
+function bindBase10() {
+    $("#q179Op1, #q179Op2").on('change', function () {
+        surArry.BHS1_t1 = $(this).val();
+        setTimeout(function () {
+            q179();
+        }, 200);
+    });
+
+    $("#q180Op1, #q180Op2").on('change', function () {
+        surArry.BHS2_t1 = $(this).val();
+        setTimeout(function () {
+            q180();
+        }, 200);
+    });
+
+    $("#q181Op1, #q181Op2").on('change', function () {
+        surArry.BHS3_t1 = $(this).val();
+        setTimeout(function () {
+            q181();
+        }, 200);
+    });
+
+    $("#q182Op1, #q182Op2").on('change', function () {
+        surArry.BHS4_t1 = $(this).val();
+        setTimeout(function () {
+            q182();
+        }, 200);
+    });
+
+    $("#q183Op1, #q183Op2").on('change', function () {
+        surArry.BHS5_t1 = $(this).val();
+        setTimeout(function () {
+            q183();
+        }, 200);
+    });
+
+    $("#q184Op1, #q184Op2").on('change', function () {
+        surArry.BHS6_t1 = $(this).val();
+        setTimeout(function () {
+            q184();
+        }, 200);
+    });
+
+    $("#q185Op1, #q185Op2").on('change', function () {
+        surArry.BHS7_t1 = $(this).val();
+        setTimeout(function () {
+            q185();
+        }, 200);
+    });
+
+    $("#q186Op1, #q186Op2").on('change', function () {
+        surArry.BHS8_t1 = $(this).val();
+        setTimeout(function () {
+            q186();
+        }, 200);
+    });
+
+    $("#q187Op1, #q187Op2").on('change', function () {
+        surArry.BHS9_t1 = $(this).val();
+        setTimeout(function () {
+            q187();
+        }, 200);
+    });
+
+    $("#q188Op1, #q188Op2").on('change', function () {
+        surArry.BHS10_t1 = $(this).val();
+        setTimeout(function () {
+            q188();
+        }, 200);
+    });
+
+    $("#q189Op1, #q189Op2").on('change', function () {
+        surArry.BHS11_t1 = $(this).val();
+        setTimeout(function () {
+            q189();
+        }, 200);
+    });
+
+    $("#q190Op1, #q190Op2").on('change', function () {
+        surArry.BHS12_t1 = $(this).val();
+        setTimeout(function () {
+            q190();
+        }, 200);
+    });
+
+    $("#q191Op1, #q191Op2").on('change', function () {
+        surArry.BHS13_t1 = $(this).val();
+        setTimeout(function () {
+            q191();
+        }, 200);
+    });
+
+    $("#q192Op1, #q192Op2").on('change', function () {
+        surArry.BHS14_t1 = $(this).val();
+        setTimeout(function () {
+            q192();
+        }, 200);
+    });
+
+    $("#q193Op1, #q193Op2").on('change', function () {
+        surArry.BHS15_t1 = $(this).val();
+        setTimeout(function () {
+            q193();
+        }, 200);
+    });
+
+    $("#q194Op1, #q194Op2").on('change', function () {
+        surArry.BHS16_t1 = $(this).val();
+        setTimeout(function () {
+            q194();
+        }, 200);
+    });
+
+    $("#q195Op1, #q195Op2").on('change', function () {
+        surArry.BHS17_t1 = $(this).val();
+        setTimeout(function () {
+            q195();
+        }, 200);
+    });
+
+    $("#q196Op1, #q196Op2").on('change', function () {
+        surArry.BHS18_t1 = $(this).val();
+        setTimeout(function () {
+            q196();
+        }, 200);
+    });
+
+    $("#q197Op1, #q197Op2").on('change', function () {
+        surArry.BHS19_t1 = $(this).val();
+        setTimeout(function () {
+            q197();
+        }, 200);
+    });
+
+    $("#q198Op1, #q198Op2").on('change', function () {
+        surArry.BHS20_t1 = $(this).val();
+        setTimeout(function () {
+            q198();
+        }, 200);
+    });
+}
+
+function bindBase11() {
+    $("#q199Op1, #q199Op2, #q199Op3, #q199Op4, #q199Op5, #q199Op6, #q199Op7").on('change', function () {
+        surArry.DSWS1_t1 = $(this).val();
+        setTimeout(function () {
+            q199();
+        }, 200);
+    });
+
+    $("#q200Op1, #q200Op2, #q200Op3, #q200Op4, #q200Op5, #q200Op6, #q200Op7").on('change', function () {
+        surArry.DSWS2_t1 = $(this).val();
+        setTimeout(function () {
+            q200();
+        }, 200);
+    });
+
+    $("#q201Op1, #q201Op2, #q201Op3, #q201Op4, #q201Op5, #q201Op6, #q201Op7").on('change', function () {
+        surArry.DSWS3_t1 = $(this).val();
+        setTimeout(function () {
+            q201();
+        }, 200);
+    });
+
+    $("#q202Op1, #q202Op2, #q202Op3, #q202Op4, #q202Op5, #q202Op6, #q202Op7").on('change', function () {
+        surArry.DSWS4_t1 = $(this).val();
+        setTimeout(function () {
+            q202();
+        }, 200);
+    });
+
+    $("#q203Op1, #q203Op2, #q203Op3, #q203Op4, #q203Op5, #q203Op6, #q203Op7").on('change', function () {
+        surArry.DSWS5_t1 = $(this).val();
+        setTimeout(function () {
+            q203();
+        }, 200);
+    });
+
+    $("#q204Op1, #q204Op2, #q204Op3, #q204Op4, #q204Op5, #q204Op6, #q204Op7").on('change', function () {
+        surArry.DSWS6_t1 = $(this).val();
+        setTimeout(function () {
+            q204();
+        }, 200);
+    });
+
+    $("#q205Op1, #q205Op2, #q205Op3, #q205Op4, #q205Op5, #q205Op6, #q205Op7").on('change', function () {
+        surArry.DSWS7_t1 = $(this).val();
+        setTimeout(function () {
+            q205();
+        }, 200);
+    });
+
+    $("#q206Op1, #q206Op2, #q206Op3, #q206Op4, #q206Op5, #q206Op6, #q206Op7").on('change', function () {
+        surArry.DSWS8_t1 = $(this).val();
+        setTimeout(function () {
+            q206();
+        }, 200);
+    });
+
+    $("#q207Op1, #q207Op2, #q207Op3, #q207Op4, #q207Op5, #q207Op6, #q207Op7").on('change', function () {
+        surArry.DSWS9_t1 = $(this).val();
+        setTimeout(function () {
+            q207();
+        }, 200);
+    });
+
+    $("#q208Op1, #q208Op2, #q208Op3, #q208Op4, #q208Op5, #q208Op6, #q208Op7").on('change', function () {
+        surArry.DSWS10_t1 = $(this).val();
+        setTimeout(function () {
+            q208();
+        }, 200);
+    });
+
+    $("#q209Op1, #q209Op2, #q209Op3, #q209Op4, #q209Op5, #q209Op6, #q209Op7").on('change', function () {
+        surArry.DSWS11_t1 = $(this).val();
+        setTimeout(function () {
+            q209();
+        }, 200);
+    });
+
+    $("#q210Op1, #q210Op2, #q210Op3, #q210Op4, #q210Op5, #q210Op6, #q210Op7").on('change', function () {
+        surArry.DSWS12_t1 = $(this).val();
+        setTimeout(function () {
+            q210();
+        }, 200);
+    });
+}
+
+function bindBase12() {
+    $("#q211Op1, #q211Op2, #q211Op3, #q211Op4").on('change', function () {
+        surArry.SFS1_t1 = $(this).val();
+        setTimeout(function () {
+            q211();
+        }, 212);
+    });
+
+    $("#q212Op1, #q212Op2, #q212Op3, #q212Op4").on('change', function () {
+        surArry.SFS2_t1 = $(this).val();
+        setTimeout(function () {
+            q212();
+        }, 212);
+    });
+
+    $("#q213Op1, #q213Op2, #q213Op3, #q213Op4, #q213Op5").on('change', function () {
+        surArry.SFS3_t1 = $(this).val();
+        setTimeout(function () {
+            q213();
+        }, 212);
+    });
+
+    $("#q214Op1, #q214Op2, #q214Op3, #q214Op4").on('change', function () {
+        surArry.SFS4_t1 = $(this).val();
+        setTimeout(function () {
+            q214();
+        }, 212);
+    });
+
+    $("#q215Op1, #q215Op2, #q215Op3, #q215Op4").on('change', function () {
+        surArry.SFS5_t1 = $(this).val();
+        setTimeout(function () {
+            q215();
+        }, 212);
+    });
+
+    $("#q216Op1, #q216Op2, #q216Op3, #q216Op4").on('change', function () {
+        surArry.SFS6_t1 = $(this).val();
+        setTimeout(function () {
+            q216();
+        }, 212);
+    });
+
+    $("#q217Op1, #q217Op2").on('change', function () {
+        surArry.SFS7_t1 = $(this).val();
+        setTimeout(function () {
+            q217();
+        }, 212);
+    });
+
+    $("#q218Op1, #q218Op2, #q218Op3, #q218Op4").on('change', function () {
+        surArry.SFS8_t1 = $(this).val();
+        setTimeout(function () {
+            q218();
+        }, 212);
+    });
+
+    $("#q219Op1, #q219Op2, #q219Op3, #q219Op4").on('change', function () {
+        surArry.SFS9_t1 = $(this).val();
+        setTimeout(function () {
+            q219();
+        }, 212);
+    });
+
+    $("#q220Op1, #q220Op2, #q220Op3, #q220Op4").on('change', function () {
+        surArry.SFS10_t1 = $(this).val();
+        setTimeout(function () {
+            q220();
+        }, 212);
+    });
+
+    $("#q221Op1, #q221Op2, #q221Op3, #q221Op4, #q221Op5").on('change', function () {
+        surArry.SFS11_t1 = $(this).val();
+        setTimeout(function () {
+            q221();
+        }, 212);
+    });
+
+    $("#q222Op1, #q222Op2, #q222Op3, #q222Op4").on('change', function () {
+        surArry.SFS12_t1 = $(this).val();
+        setTimeout(function () {
+            q222();
+        }, 212);
+    });
+
+    $("#q223Op1, #q223Op2, #q223Op3, #q223Op4").on('change', function () {
+        surArry.SFS13_t1 = $(this).val();
+        setTimeout(function () {
+            q223();
+        }, 212);
+    });
 }
 
 function baseSt() {
@@ -1717,6 +2380,7 @@ function q45() {
                 }
             });
             $("#s3Fin").show();
+            $(":mobile-pagecontainer").pagecontainer("load", "baseline4.html", {showLoadMsg: false});
         }
         else {
             q45logic = false;
@@ -2636,7 +3300,7 @@ function q76() {
 }
 
 function q77() {
-    if (surArry.Attempt_likelihood_t1 != "") {
+    if (surArry.AllAttempt_likelihood_t1 != "") {
         $("#err77").hide();
         $("#77").hide();
         $("#fwd").hide();
@@ -3925,6 +4589,1477 @@ function s7Fin() {
     $.mobile.changePage("#base8");
 }
 
+function base8St() {
+    $("#140").hide();
+    $("#err140").hide();
+    $("#back").hide();
+    $("#fwd").show();
+    $("#baseInst8").show();
+}
+
+function bInst8() {
+    base3Loaded = false;
+    $("#baseInst8").hide();
+    $("#err140").hide();
+    $("#140").show();
+    $("#back").show();
+    addArry(base8St);
+}
+
+function q140() {
+    if (surArry.BSS1_t1 != "") {
+        $("#err140").hide();
+        $("#err141").hide();
+        $("#140").hide();
+        $("#fwd").show();
+        $("#141").show();
+        addArry(bInst8);
+    }
+    else {
+        $("#err140").show();
+    }
+}
+
+function q141() {
+    if (surArry.BSS2_t1 != "") {
+        $("#err141").hide();
+        $("#err142").hide();
+        $("#141").hide();
+        $("#fwd").show();
+        $("#142").show();
+        addArry(q140);
+    }
+    else {
+        $("#err141").show();
+    }
+}
+
+function q142() {
+    if (surArry.BSS3_t1 != "") {
+        $("#err142").hide();
+        $("#err143").hide();
+        $("#142").hide();
+        $("#fwd").show();
+        $("#143").show();
+        addArry(q141);
+    }
+    else {
+        $("#err142").show();
+    }
+}
+
+function q143() {
+    if (surArry.BSS4_t1 != "") {
+        $("#err143").hide();
+        $("#err144").hide();
+        $("#143").hide();
+        $("#fwd").show();
+        $("#144").show();
+        addArry(q142);
+    }
+    else {
+        $("#err143").show();
+    }
+}
+
+function q144() {
+    if (surArry.BSS5_t1 != "") {
+        $("#err144").hide();
+        $("#err145").hide();
+        $("#144").hide();
+        $("#fwd").show();
+        if (surArry.BSS4_t1 == "0" && surArry.BSS5_t1 == "0") {
+            q144logic = true;
+            surArry.BSS6_t1 = "";
+            surArry.BSS7_t1 = "";
+            surArry.BSS8_t1 = "";
+            surArry.BSS9_t1 = "";
+            surArry.BSS10_t1 = "";
+            surArry.BSS11_t1 = "";
+            surArry.BSS12_t1 = "";
+            surArry.BSS13_t1 = "";
+            surArry.BSS14_t1 = "";
+            surArry.BSS15_t1 = "";
+            surArry.BSS16_t1 = "";
+            surArry.BSS17_t1 = "";
+            surArry.BSS18_t1 = "";
+            surArry.BSS19_t1 = "";
+            $("#159").show();
+        }
+        else {
+            q144logic = false;
+            $("#145").show();
+        }
+        addArry(q143);
+    }
+    else {
+        $("#err144").show();
+    }
+}
+
+function q145() {
+    if (surArry.BSS6_t1 != "") {
+        $("#err145").hide();
+        $("#err146").hide();
+        $("#145").hide();
+        $("#fwd").show();
+        $("#146").show();
+        addArry(q144);
+    }
+    else {
+        $("#err145").show();
+    }
+}
+
+function q146() {
+    if (surArry.BSS7_t1 != "") {
+        $("#err146").hide();
+        $("#err147").hide();
+        $("#146").hide();
+        $("#fwd").show();
+        $("#147").show();
+        addArry(q145);
+    }
+    else {
+        $("#err146").show();
+    }
+}
+
+function q147() {
+    if (surArry.BSS8_t1 != "") {
+        $("#err147").hide();
+        $("#err148").hide();
+        $("#147").hide();
+        $("#fwd").show();
+        $("#148").show();
+        addArry(q146);
+    }
+    else {
+        $("#err147").show();
+    }
+}
+
+function q148() {
+    if (surArry.BSS9_t1 != "") {
+        $("#err148").hide();
+        $("#err149").hide();
+        $("#148").hide();
+        $("#fwd").show();
+        $("#149").show();
+        addArry(q147);
+    }
+    else {
+        $("#err148").show();
+    }
+}
+
+function q149() {
+    if (surArry.BSS10_t1 != "") {
+        $("#err149").hide();
+        $("#err150").hide();
+        $("#149").hide();
+        $("#fwd").show();
+        $("#150").show();
+        addArry(q148);
+    }
+    else {
+        $("#err149").show();
+    }
+}
+
+function q150() {
+    if (surArry.BSS11_t1 != "") {
+        $("#err150").hide();
+        $("#err151").hide();
+        $("#150").hide();
+        $("#fwd").show();
+        $("#151").show();
+        addArry(q149);
+    }
+    else {
+        $("#err150").show();
+    }
+}
+
+function q151() {
+    if (surArry.BSS12_t1 != "") {
+        $("#err151").hide();
+        $("#err152").hide();
+        $("#151").hide();
+        $("#fwd").show();
+        $("#152").show();
+        addArry(q150);
+    }
+    else {
+        $("#err151").show();
+    }
+}
+
+function q152() {
+    if (surArry.BSS13_t1 != "") {
+        $("#err152").hide();
+        $("#err153").hide();
+        $("#152").hide();
+        $("#fwd").show();
+        $("#153").show();
+        addArry(q151);
+    }
+    else {
+        $("#err152").show();
+    }
+}
+
+function q153() {
+    if (surArry.BSS14_t1 != "") {
+        $("#err153").hide();
+        $("#err154").hide();
+        $("#153").hide();
+        $("#fwd").show();
+        $("#154").show();
+        addArry(q152);
+    }
+    else {
+        $("#err153").show();
+    }
+}
+
+function q154() {
+    if (surArry.BSS15_t1 != "") {
+        $("#err154").hide();
+        $("#err155").hide();
+        $("#154").hide();
+        $("#fwd").show();
+        $("#155").show();
+        addArry(q153);
+    }
+    else {
+        $("#err154").show();
+    }
+}
+
+function q155() {
+    if (surArry.BSS16_t1 != "") {
+        $("#err155").hide();
+        $("#err156").hide();
+        $("#155").hide();
+        $("#fwd").show();
+        $("#156").show();
+        addArry(q154);
+    }
+    else {
+        $("#err155").show();
+    }
+}
+
+function q156() {
+    if (surArry.BSS17_t1 != "") {
+        $("#err156").hide();
+        $("#err157").hide();
+        $("#156").hide();
+        $("#fwd").show();
+        $("#157").show();
+        addArry(q155);
+    }
+    else {
+        $("#err156").show();
+    }
+}
+
+function q157() {
+    if (surArry.BSS18_t1 != "") {
+        $("#err157").hide();
+        $("#err158").hide();
+        $("#157").hide();
+        $("#fwd").show();
+        $("#158").show();
+        addArry(q156);
+    }
+    else {
+        $("#err157").show();
+    }
+}
+
+function q158() {
+    if (surArry.BSS19_t1 != "") {
+        $("#err158").hide();
+        $("#err159").hide();
+        $("#158").hide();
+        $("#fwd").show();
+        $("#159").show();
+        addArry(q157);
+    }
+    else {
+        $("#err158").show();
+    }
+}
+
+function q159() {
+    if (surArry.BSS20_t1 != "") {
+        $("#err159").hide();
+        $("#err160").hide();
+        $("#159").hide();
+        $("#fwd").show();
+        if (surArry.BSS20_t1 == "0") {
+            q159logic = true;
+            $("#fwd").hide();
+            surArry.BSS21_t1 = "";
+            $("#s8Fin").show();
+        }
+        else {
+            q159logic = false;
+            $("#160").show();
+        }
+        if (q144logic) {
+            addArry(q144);
+        }
+        else {
+            addArry(q158);
+        }
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline9.html", {showLoadMsg: false});
+    }
+    else {
+        $("#err159").show();
+    }
+}
+
+function q160() {
+    if (surArry.BSS21_t1 != "") {
+        $("#err160").hide();
+        $("#160").hide();
+        $("#fwd").hide();
+        $("#s8Fin").show();
+        addArry(q159);
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline9.html", {showLoadMsg: false});
+    }
+    else {
+        $("#err160").show();
+    }
+}
+
+function s8Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base9");
+}
+
+function base9St() {
+    $("#161").hide();
+    $("#err161").hide();
+    $("#back").hide();
+    $("#fwd").show();
+    $("#baseInst9").show();
+}
+
+function bInst9() {
+    base3Loaded = false;
+    $("#baseInst9").hide();
+    $("#err161").hide();
+    $("#161").show();
+    $("#back").show();
+    addArry(base9St);
+}
+
+function q161() {
+    if (surArry.BSI1_t1 != "") {
+        $("#err161").hide();
+        $("#err162").hide();
+        $("#161").hide();
+        $("#fwd").show();
+        $("#162").show();
+        addArry(bInst9);
+    }
+    else {
+        $("#err161").show();
+    }
+}
+
+function q162() {
+    if (surArry.BSI2_t1 != "") {
+        $("#err162").hide();
+        $("#err163").hide();
+        $("#162").hide();
+        $("#fwd").show();
+        $("#163").show();
+        addArry(q161);
+    }
+    else {
+        $("#err162").show();
+    }
+}
+
+function q163() {
+    if (surArry.BSI3_t1 != "") {
+        $("#err163").hide();
+        $("#err164").hide();
+        $("#163").hide();
+        $("#fwd").show();
+        $("#164").show();
+        addArry(q162);
+    }
+    else {
+        $("#err163").show();
+    }
+}
+
+function q164() {
+    if (surArry.BSI4_t1 != "") {
+        $("#err164").hide();
+        $("#err165").hide();
+        $("#164").hide();
+        $("#fwd").show();
+        $("#165").show();
+        addArry(q163);
+    }
+    else {
+        $("#err164").show();
+    }
+}
+
+function q165() {
+    if (surArry.BSI5_t1 != "") {
+        $("#err165").hide();
+        $("#err166").hide();
+        $("#165").hide();
+        $("#fwd").show();
+        $("#166").show();
+        addArry(q164);
+    }
+    else {
+        $("#err165").show();
+    }
+}
+
+function q166() {
+    if (surArry.BSI6_t1 != "") {
+        $("#err166").hide();
+        $("#err167").hide();
+        $("#166").hide();
+        $("#fwd").show();
+        $("#167").show();
+        addArry(q165);
+    }
+    else {
+        $("#err166").show();
+    }
+}
+
+function q167() {
+    if (surArry.BSI7_t1 != "") {
+        $("#err167").hide();
+        $("#err168").hide();
+        $("#167").hide();
+        $("#fwd").show();
+        $("#168").show();
+        addArry(q166);
+    }
+    else {
+        $("#err167").show();
+    }
+}
+
+function q168() {
+    if (surArry.BSI8_t1 != "") {
+        $("#err168").hide();
+        $("#err169").hide();
+        $("#168").hide();
+        $("#fwd").show();
+        $("#169").show();
+        addArry(q167);
+    }
+    else {
+        $("#err168").show();
+    }
+}
+
+function q169() {
+    if (surArry.BSI9_t1 != "") {
+        $("#err169").hide();
+        $("#err170").hide();
+        $("#169").hide();
+        $("#fwd").show();
+        $("#170").show();
+        addArry(q168);
+    }
+    else {
+        $("#err169").show();
+    }
+}
+
+function q170() {
+    if (surArry.BSI10_t1 != "") {
+        $("#err170").hide();
+        $("#err171").hide();
+        $("#170").hide();
+        $("#fwd").show();
+        $("#171").show();
+        addArry(q169);
+    }
+    else {
+        $("#err170").show();
+    }
+}
+
+function q171() {
+    if (surArry.BSI11_t1 != "") {
+        $("#err171").hide();
+        $("#err172").hide();
+        $("#171").hide();
+        $("#fwd").show();
+        $("#172").show();
+        addArry(q170);
+    }
+    else {
+        $("#err171").show();
+    }
+}
+
+function q172() {
+    if (surArry.BSI12_t1 != "") {
+        $("#err172").hide();
+        $("#err173").hide();
+        $("#172").hide();
+        $("#fwd").show();
+        $("#173").show();
+        addArry(q171);
+    }
+    else {
+        $("#err172").show();
+    }
+}
+
+function q173() {
+    if (surArry.BSI13_t1 != "") {
+        $("#err173").hide();
+        $("#err174").hide();
+        $("#173").hide();
+        $("#fwd").show();
+        $("#174").show();
+        addArry(q172);
+    }
+    else {
+        $("#err173").show();
+    }
+}
+
+function q174() {
+    if (surArry.BSI14_t1 != "") {
+        $("#err174").hide();
+        $("#err175").hide();
+        $("#174").hide();
+        $("#fwd").show();
+        $("#175").show();
+        addArry(q173);
+    }
+    else {
+        $("#err174").show();
+    }
+}
+
+function q175() {
+    if (surArry.BSI15_t1 != "") {
+        $("#err175").hide();
+        $("#err176").hide();
+        $("#175").hide();
+        $("#fwd").show();
+        $("#176").show();
+        addArry(q174);
+    }
+    else {
+        $("#err175").show();
+    }
+}
+
+function q176() {
+    if (surArry.BSI16_t1 != "") {
+        $("#err176").hide();
+        $("#err177").hide();
+        $("#176").hide();
+        $("#fwd").show();
+        $("#177").show();
+        addArry(q175);
+    }
+    else {
+        $("#err176").show();
+    }
+}
+
+function q177() {
+    if (surArry.BSI17_t1 != "") {
+        $("#err177").hide();
+        $("#err178").hide();
+        $("#177").hide();
+        $("#fwd").show();
+        $("#178").show();
+        addArry(q176);
+    }
+    else {
+        $("#err177").show();
+    }
+}
+
+function q178() {
+    if (surArry.BSI18_t1 != "") {
+        $("#err178").hide();
+        $("#178").hide();
+        $("#fwd").hide();
+        $("#s9Fin").show();
+        addArry(q177);
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline10.html", {showLoadMsg: false});
+    }
+    else {
+        $("#err178").show();
+    }
+}
+
+function s9Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base10");
+}
+
+function base10St() {
+    $("#179").hide();
+    $("#err179").hide();
+    $("#back").hide();
+    $("#fwd").show();
+    $("#baseInst10").show();
+}
+
+function bInst10() {
+    base3Loaded = false;
+    $("#baseInst10").hide();
+    $("#err179").hide();
+    $("#179").show();
+    $("#back").show();
+    addArry(base10St);
+}
+
+function q179() {
+    if (surArry.BHS1_t1 != "") {
+        $("#err179").hide();
+        $("#err180").hide();
+        $("#179").hide();
+        $("#fwd").show();
+        $("#180").show();
+        addArry(bInst10);
+    }
+    else {
+        $("#err179").show();
+    }
+}
+
+function q180() {
+    if (surArry.BHS2_t1 != "") {
+        $("#err180").hide();
+        $("#err181").hide();
+        $("#180").hide();
+        $("#fwd").show();
+        $("#181").show();
+        addArry(q179);
+    }
+    else {
+        $("#err180").show();
+    }
+}
+
+function q181() {
+    if (surArry.BHS3_t1 != "") {
+        $("#err181").hide();
+        $("#err182").hide();
+        $("#181").hide();
+        $("#fwd").show();
+        $("#182").show();
+        addArry(q180);
+    }
+    else {
+        $("#err181").show();
+    }
+}
+
+function q182() {
+    if (surArry.BHS4_t1 != "") {
+        $("#err182").hide();
+        $("#err183").hide();
+        $("#182").hide();
+        $("#fwd").show();
+        $("#183").show();
+        addArry(q181);
+    }
+    else {
+        $("#err182").show();
+    }
+}
+
+function q183() {
+    if (surArry.BHS5_t1 != "") {
+        $("#err183").hide();
+        $("#err184").hide();
+        $("#183").hide();
+        $("#fwd").show();
+        $("#184").show();
+        addArry(q182);
+    }
+    else {
+        $("#err183").show();
+    }
+}
+
+function q184() {
+    if (surArry.BHS6_t1 != "") {
+        $("#err184").hide();
+        $("#err185").hide();
+        $("#184").hide();
+        $("#fwd").show();
+        $("#185").show();
+        addArry(q183);
+    }
+    else {
+        $("#err184").show();
+    }
+}
+
+function q185() {
+    if (surArry.BHS7_t1 != "") {
+        $("#err185").hide();
+        $("#err186").hide();
+        $("#185").hide();
+        $("#fwd").show();
+        $("#186").show();
+        addArry(q184);
+    }
+    else {
+        $("#err185").show();
+    }
+}
+
+function q186() {
+    if (surArry.BHS8_t1 != "") {
+        $("#err186").hide();
+        $("#err187").hide();
+        $("#186").hide();
+        $("#fwd").show();
+        $("#187").show();
+        addArry(q185);
+    }
+    else {
+        $("#err186").show();
+    }
+}
+
+function q187() {
+    if (surArry.BHS9_t1 != "") {
+        $("#err187").hide();
+        $("#err188").hide();
+        $("#187").hide();
+        $("#fwd").show();
+        $("#188").show();
+        addArry(q186);
+    }
+    else {
+        $("#err187").show();
+    }
+}
+
+function q188() {
+    if (surArry.BHS10_t1 != "") {
+        $("#err188").hide();
+        $("#err189").hide();
+        $("#188").hide();
+        $("#fwd").show();
+        $("#189").show();
+        addArry(q187);
+    }
+    else {
+        $("#err188").show();
+    }
+}
+
+function q189() {
+    if (surArry.BHS11_t1 != "") {
+        $("#err189").hide();
+        $("#err190").hide();
+        $("#189").hide();
+        $("#fwd").show();
+        $("#190").show();
+        addArry(q188);
+    }
+    else {
+        $("#err189").show();
+    }
+}
+
+function q190() {
+    if (surArry.BHS12_t1 != "") {
+        $("#err190").hide();
+        $("#err191").hide();
+        $("#190").hide();
+        $("#fwd").show();
+        $("#191").show();
+        addArry(q189);
+    }
+    else {
+        $("#err190").show();
+    }
+}
+
+function q191() {
+    if (surArry.BHS13_t1 != "") {
+        $("#err191").hide();
+        $("#err192").hide();
+        $("#191").hide();
+        $("#fwd").show();
+        $("#192").show();
+        addArry(q190);
+    }
+    else {
+        $("#err191").show();
+    }
+}
+
+function q192() {
+    if (surArry.BHS14_t1 != "") {
+        $("#err192").hide();
+        $("#err193").hide();
+        $("#192").hide();
+        $("#fwd").show();
+        $("#193").show();
+        addArry(q191);
+    }
+    else {
+        $("#err192").show();
+    }
+}
+
+function q193() {
+    if (surArry.BHS15_t1 != "") {
+        $("#err193").hide();
+        $("#err194").hide();
+        $("#193").hide();
+        $("#fwd").show();
+        $("#194").show();
+        addArry(q192);
+    }
+    else {
+        $("#err193").show();
+    }
+}
+
+function q194() {
+    if (surArry.BHS16_t1 != "") {
+        $("#err194").hide();
+        $("#err195").hide();
+        $("#194").hide();
+        $("#fwd").show();
+        $("#195").show();
+        addArry(q193);
+    }
+    else {
+        $("#err194").show();
+    }
+}
+
+function q195() {
+    if (surArry.BHS17_t1 != "") {
+        $("#err195").hide();
+        $("#err196").hide();
+        $("#195").hide();
+        $("#fwd").show();
+        $("#196").show();
+        addArry(q194);
+    }
+    else {
+        $("#err195").show();
+    }
+}
+
+function q196() {
+    if (surArry.BHS18_t1 != "") {
+        $("#err196").hide();
+        $("#err197").hide();
+        $("#196").hide();
+        $("#fwd").show();
+        $("#197").show();
+        addArry(q195);
+    }
+    else {
+        $("#err196").show();
+    }
+}
+
+function q197() {
+    if (surArry.BHS19_t1 != "") {
+        $("#err197").hide();
+        $("#err198").hide();
+        $("#197").hide();
+        $("#fwd").show();
+        $("#198").show();
+        addArry(q196);
+    }
+    else {
+        $("#err197").show();
+    }
+}
+
+function q198() {
+    if (surArry.BHS20_t1 != "") {
+        $("#err198").hide();
+        $("#198").hide();
+        $("#fwd").hide();
+        $("#s10Fin").show();
+        addArry(q197);
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline11.html", {showLoadMsg: false});
+    }
+    else {
+        $("#err198").show();
+    }
+}
+
+function s10Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base11");
+}
+
+function base11St() {
+    $("#199").hide();
+    $("#err199").hide();
+    $("#back").hide();
+    $("#fwd").show();
+    $("#baseInst11").show();
+}
+
+function bInst11() {
+    base3Loaded = false;
+    $("#baseInst11").hide();
+    $("#err199").hide();
+    $("#199").show();
+    $("#back").show();
+    addArry(base11St);
+}
+
+function q199() {
+    if (surArry.DSWS1_t1 != "") {
+        $("#err199").hide();
+        $("#err200").hide();
+        $("#199").hide();
+        $("#fwd").show();
+        $("#200").show();
+        addArry(bInst11);
+    }
+    else {
+        $("#err199").show();
+    }
+}
+
+function q200() {
+    if (surArry.DSWS2_t1 != "") {
+        $("#err200").hide();
+        $("#err201").hide();
+        $("#200").hide();
+        $("#fwd").show();
+        $("#201").show();
+        addArry(q199);
+    }
+    else {
+        $("#err200").show();
+    }
+}
+
+function q201() {
+    if (surArry.DSWS3_t1 != "") {
+        $("#err201").hide();
+        $("#err202").hide();
+        $("#201").hide();
+        $("#fwd").show();
+        $("#202").show();
+        addArry(q200);
+    }
+    else {
+        $("#err201").show();
+    }
+}
+
+function q202() {
+    if (surArry.DSWS4_t1 != "") {
+        $("#err202").hide();
+        $("#err203").hide();
+        $("#202").hide();
+        $("#fwd").show();
+        $("#203").show();
+        addArry(q201);
+    }
+    else {
+        $("#err202").show();
+    }
+}
+
+function q203() {
+    if (surArry.DSWS5_t1 != "") {
+        $("#err203").hide();
+        $("#err204").hide();
+        $("#203").hide();
+        $("#fwd").show();
+        $("#204").show();
+        addArry(q202);
+    }
+    else {
+        $("#err203").show();
+    }
+}
+
+function q204() {
+    if (surArry.DSWS6_t1 != "") {
+        $("#err204").hide();
+        $("#err205").hide();
+        $("#204").hide();
+        $("#fwd").show();
+        $("#205").show();
+        addArry(q203);
+    }
+    else {
+        $("#err204").show();
+    }
+}
+
+function q205() {
+    if (surArry.DSWS7_t1 != "") {
+        $("#err205").hide();
+        $("#err206").hide();
+        $("#205").hide();
+        $("#fwd").show();
+        $("#206").show();
+        addArry(q204);
+    }
+    else {
+        $("#err205").show();
+    }
+}
+
+function q206() {
+    if (surArry.DSWS8_t1 != "") {
+        $("#err206").hide();
+        $("#err207").hide();
+        $("#206").hide();
+        $("#fwd").show();
+        $("#207").show();
+        addArry(q205);
+    }
+    else {
+        $("#err206").show();
+    }
+}
+
+function q207() {
+    if (surArry.DSWS9_t1 != "") {
+        $("#err207").hide();
+        $("#err208").hide();
+        $("#207").hide();
+        $("#fwd").show();
+        $("#208").show();
+        addArry(q206);
+    }
+    else {
+        $("#err207").show();
+    }
+}
+
+function q208() {
+    if (surArry.DSWS10_t1 != "") {
+        $("#err208").hide();
+        $("#err209").hide();
+        $("#208").hide();
+        $("#fwd").show();
+        $("#209").show();
+        addArry(q207);
+    }
+    else {
+        $("#err208").show();
+    }
+}
+
+function q209() {
+    if (surArry.DSWS11_t1 != "") {
+        $("#err209").hide();
+        $("#err210").hide();
+        $("#209").hide();
+        $("#fwd").show();
+        $("#210").show();
+        addArry(q208);
+    }
+    else {
+        $("#err209").show();
+    }
+}
+
+function q210() {
+    if (surArry.DSWS12_t1 != "") {
+        $("#err210").hide();
+        $("#210").hide();
+        $("#fwd").hide();
+        $("#s11Fin").show();
+        addArry(q209);
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline12.html", {showLoadMsg: false});
+    }
+    else {
+        $("#err210").show();
+    }
+}
+
+function s11Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base12");
+}
+
+function base12St() {
+    $("#211").hide();
+    $("#err211").hide();
+    $("#back").hide();
+    $("#fwd").show();
+    $("#baseInst12").show();
+}
+
+function bInst12() {
+    base3Loaded = false;
+    $("#baseInst12").hide();
+    $("#err211").hide();
+    $("#211").show();
+    $("#back").show();
+    addArry(base12St);
+}
+
+function q211() {
+    if (surArry.SFS1_t1 != "") {
+        $("#err211").hide();
+        $("#err212").hide();
+        $("#211").hide();
+        $("#fwd").show();
+        $("#212").show();
+        addArry(bInst12);
+    }
+    else {
+        $("#err211").show();
+    }
+}
+
+function q212() {
+    if (surArry.SFS2_t1 != "") {
+        $("#err212").hide();
+        $("#err213").hide();
+        $("#212").hide();
+        $("#fwd").show();
+        $("#213").show();
+        addArry(q211);
+    }
+    else {
+        $("#err212").show();
+    }
+}
+
+function q213() {
+    if (surArry.SFS3_t1 != "") {
+        $("#err213").hide();
+        $("#err214").hide();
+        $("#213").hide();
+        $("#fwd").show();
+        $("#214").show();
+        addArry(q212);
+    }
+    else {
+        $("#err213").show();
+    }
+}
+
+function q214() {
+    if (surArry.SFS4_t1 != "") {
+        $("#err214").hide();
+        $("#err215").hide();
+        $("#214").hide();
+        $("#fwd").show();
+        $("#215").show();
+        addArry(q213);
+    }
+    else {
+        $("#err214").show();
+    }
+}
+
+function q215() {
+    if (surArry.SFS5_t1 != "") {
+        $("#err215").hide();
+        $("#err216").hide();
+        $("#215").hide();
+        $("#fwd").show();
+        $("#216").show();
+        addArry(q214);
+    }
+    else {
+        $("#err215").show();
+    }
+}
+
+function q216() {
+    if (surArry.SFS6_t1 != "") {
+        $("#err216").hide();
+        $("#err217").hide();
+        $("#216").hide();
+        $("#fwd").show();
+        $("#217").show();
+        addArry(q215);
+    }
+    else {
+        $("#err216").show();
+    }
+}
+
+function q217() {
+    if (surArry.SFS7_t1 != "") {
+        $("#err217").hide();
+        $("#err218").hide();
+        $("#217").hide();
+        $("#fwd").show();
+        $("#218").show();
+        addArry(q216);
+    }
+    else {
+        $("#err217").show();
+    }
+}
+
+function q218() {
+    if (surArry.SFS8_t1 != "") {
+        $("#err218").hide();
+        $("#err219").hide();
+        $("#218").hide();
+        $("#fwd").show();
+        $("#219").show();
+        addArry(q217);
+    }
+    else {
+        $("#err218").show();
+    }
+}
+
+function q219() {
+    if (surArry.SFS9_t1 != "") {
+        $("#err219").hide();
+        $("#err220").hide();
+        $("#219").hide();
+        $("#fwd").show();
+        $("#220").show();
+        addArry(q218);
+    }
+    else {
+        $("#err219").show();
+    }
+}
+
+function q220() {
+    if (surArry.SFS10_t1 != "") {
+        $("#err220").hide();
+        $("#err221").hide();
+        $("#220").hide();
+        $("#fwd").show();
+        $("#221").show();
+        addArry(q219);
+    }
+    else {
+        $("#err220").show();
+    }
+}
+
+function q221() {
+    if (surArry.SFS11_t1 != "") {
+        $("#err221").hide();
+        $("#err222").hide();
+        $("#221").hide();
+        $("#fwd").show();
+        $("#222").show();
+        addArry(q220);
+    }
+    else {
+        $("#err221").show();
+    }
+}
+
+function q222() {
+    if (surArry.SFS12_t1 != "") {
+        $("#err222").hide();
+        $("#err223").hide();
+        $("#222").hide();
+        $("#fwd").show();
+        $("#223").show();
+        addArry(q221);
+    }
+    else {
+        $("#err222").show();
+    }
+}
+
+function q223() {
+    if (surArry.SFS12_t1 != "") {
+        $("#err223").hide();
+        $("#223").hide();
+        $("#fwd").hide();
+        $("#s12Fin").show();
+        addArry(q222);
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline13.html", {showLoadMsg: false});
+    }
+    else {
+        $("#err223").show();
+    }
+}
+
+function s12Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#base13");
+}
+
+function base13St() {
+    $("#224").hide();
+    $("#back").hide();
+    $("#fwd").show();
+    $("#baseInst13").show();
+}
+
+function bInst13() {
+    base3Loaded = false;
+    $("#baseInst13").hide();
+    $("#224").show();
+    $("#back").show();
+    addArry(base13St);
+}
+
+function q224() {
+    surArry.Height_t1 = $("#slide1").val();
+    $("#224").hide();
+    $("#fwd").show();
+    $("#225").show();
+    addArry(bInst13);
+}
+
+function q225() {
+    surArry.Suffocation_t1 = $("#slide2").val();
+    $("#225").hide();
+    $("#fwd").show();
+    $("#226").show();
+    addArry(q224);
+}
+
+function q226() {
+    surArry.Bodybag_t1 = $("#slide3").val();
+    $("#226").hide();
+    $("#fwd").show();
+    $("#227").show();
+    addArry(q225);
+
+}
+
+function q227() {
+    surArry.Guntohead_t1 = $("#slide4").val();
+    $("#227").hide();
+    $("#fwd").show();
+    $("#228").show();
+    addArry(q226);
+
+}
+
+function q228() {
+    surArry.Noose_t1 = $("#slide5").val();
+    $("#228").hide();
+    $("#fwd").show();
+    $("#229").show();
+    addArry(q227);
+}
+
+function q229() {
+    surArry.Bloodygun_t1 = $("#slide6").val();
+    $("#229").hide();
+    $("#fwd").show();
+    $("#230").show();
+    addArry(q228);
+}
+
+function q230() {
+    surArry.Bloodywrist_t1 = $("#slide7").val();
+    $("#230").hide();
+    $("#fwd").show();
+    $("#231").show();
+    addArry(q229);
+}
+
+function q231() {
+    surArry.Drowning_t1 = $("#slide8").val();
+    $("#231").hide();
+    $("#fwd").show();
+    $("#232").show();
+    addArry(q230);
+}
+
+function q232() {
+    surArry.Hanged_t1 = $("#slide9").val();
+    $("#232").hide();
+    $("#fwd").show();
+    $("#233").show();
+    addArry(q231);
+}
+
+function q233() {
+    surArry.Burned_t1 = $("#slide10").val();
+    $("#233").hide();
+    $("#fwd").show();
+    $("#234").show();
+    addArry(q232);
+}
+
+function q234() {
+    surArry.Positive1_t1 = $("#slide11").val();
+    $("#234").hide();
+    $("#fwd").show();
+    $("#235").show();
+    addArry(q233);
+}
+
+function q235() {
+    surArry.Positive2_t1 = $("#slide12").val();
+    $("#235").hide();
+    $("#fwd").show();
+    $("#236").show();
+    addArry(q234);
+}
+
+function q236() {
+    surArry.Positive3_t1 = $("#slide13").val();
+    $("#236").hide();
+    $("#fwd").show();
+    $("#237").show();
+    addArry(q235);
+}
+
+function q237() {
+    surArry.Positive4_t1 = $("#slide14").val();
+    $("#237").hide();
+    $("#fwd").show();
+    $("#238").show();
+    addArry(q236);
+}
+
+function q238() {
+    surArry.Positive5_t1 = $("#slide15").val();
+    $("#238").hide();
+    $("#fwd").show();
+    $("#s13Fin").show();
+    addArry(q237);
+    $(":mobile-pagecontainer").pagecontainer("load", "finished.html", {showLoadMsg: false});
+}
+
+function s13Fin() {
+    navArry = [];
+    navPos = 0;
+    $.mobile.changePage("#finish");
+}
+
 function addArry(blk) {
     if ($.inArray(blk, navArry) === -1) {
         navArry.push(blk);
@@ -3964,10 +6099,17 @@ function hideAll() {
     $("#1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #s1Fin").hide();
     $("#11, #12, #13, #14, #baseInst2, #15, #16, #17, #18, #19, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30, #s2Fin").hide();
     $("#31, #32, #33, #34, #35, #36, #37, #38, #39, #s3Fin, #40, #41, #42, #43, #44, #45, #46").hide();
+    $("#47, #48, #49, #50, #51, #52, #53, #54, #55, #s4Fin, #56").hide();
     $("#57, #58, #59, #60, #61, #62, #63, #64, #65, #s5Fin, #66, #67, #68, #69, #70, #71, #72, #73, #74, #75, #76, #77").hide();
-    $("#78, #79, #80, #81, #82, #83, #84, #85, #86, #s6Fin, #back, #87, #baseInst6-1").hide();
+    $("#78, #79, #80, #81, #82, #83, #84, #85, #86, #s6Fin, #87, #baseInst6-1").hide();
     $("#88, #89, #90, #91, #92, #93, #94, #95, #96, #s7Fin, #97, #98, #99, #100, #101, #102, #103, #104, #105, #106, #107").hide();
     $("#108, #109, #110, #111, #112, #113, #114, #115, #116, #117, #118, #119, #120, #121, #122, #123, #124, #125, #126, #127, #128").hide();
     $("#129, #130, #131, #132, #133, #134, #135, #136, #137, #138, #139").hide();
+    $("#140, #141, #142, #143, #144, #145, #146, #147, #148, #s8Fin, #149, #150, #151, #152, #153, #154, #155, #156, #157, #158, #159, #160").hide();
+    $("#161, #162, #163, #164, #165, #166, #167, #168, #169, #s9Fin, #170, #171, #172, #173, #174, #175, #176, #177, #178").hide();
+    $("#179, #180, #181, #182, #183, #184, #185, #186, #187, #s10Fin, #188, #189, #190, #191, #192, #193, #194, #195, #196, #197, #198").hide();
+    $("#199, #200, #201, #202, #203, #204, #205, #206, #207, #s11Fin, #208, #209, #210").hide();
+    $("#211, #212, #213, #214, #215, #216, #217, #218, #219, #s12Fin, #220, #221, #222, #223").hide();
+    $("#224, #225, #226, #227, #228, #229, #230, #231, #232, #s13Fin, #233, #234, #235, #236, #237, #238").hide();
     return true;
 }
