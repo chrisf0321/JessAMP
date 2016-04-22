@@ -72,7 +72,10 @@ p {
 }
 
 #stBtn, #q1Btn, #q2Btn, #q10Btn, #s1FinBtn, #q12Btn, #q13Btn, #bInst2Btn, #q15Btn, #q16Btn, #q17Btn, #q18Btn, #q20Btn,
-#q21Btn, #q22Btn, #q23Btn, #q25Btn, #q26Btn, #q27Btn, #q28Btn, #s2FinBtn, #bInst1Btn, #bInst3Btn, #q40Btn {
+#q21Btn, #q22Btn, #q23Btn, #q25Btn, #q26Btn, #q27Btn, #q28Btn, #s2FinBtn, #bInst1Btn, #bInst3Btn, #bInst4Btn, #q40Btn,#q58Btn, #q59Btn,
+#q60Btn, #q61Btn, #q62Btn, #q63Btn, #q64Btn,#bInst5Btn,#q69Btn, #q70Btn, #q74Btn, #bInst5Btn, #bInst6Btn, #bInst6_1Btn, #bInst7Btn,
+#bInst8Btn, #bInst9Btn, #bInst10Btn, #bInst11Btn, #bInst12Btn, #bInst13Btn, #s3Fin, #s4Fin, #s5Fin, #s6Fin, #s7Fin, #s8Fin, #s9Fin,
+#s10Fin, #s11Fin, #s12Fin, #s13Fin, #q48Btn, #q49Btn, #q50Btn, #q51Btn, #q53Btn, #q54Btn, #q55Btn, #q56Btn {
     font-size: 15px;
     background-color: rgba(0, 108, 250, 1);
     color: white;
