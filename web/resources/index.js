@@ -1,6 +1,6 @@
-$(function() {
+/*$(function() {
     FastClick.attach(document.body);
-});
+});*/
 var rootURL = "http://amptest.elasticbeanstalk.com/rest/tec";
 var hasTouch = ('ontouchstart' in window);
 var TOUCH_START = hasTouch ? "touchstart" : "mousedown";
@@ -73,7 +73,7 @@ var fArry = ["resources/images/f1.jpg", "resources/images/f2.jpg", "resources/im
     , "resources/images/f7.jpg", "resources/images/f8.jpg", "resources/images/f9.jpg", "resources/images/f10.jpg", "resources/images/f11.jpg", "resources/images/f12.jpg"
     , "resources/images/f13.jpg", "resources/images/f14.jpg"];
 
-$("a").on(TOUCH_START, function() {
+/*$("a").on(TOUCH_START, function() {
     var linkID = $(this).attr('id');
     var parID = '#' + $(this).parent().attr('id');
 
@@ -83,7 +83,7 @@ $("a").on(TOUCH_START, function() {
             //countClick(num, parID);
         }
     }
-});
+});*/
 
 function loadSur() {
     var gameJS = $("<script type='text/javascript' src='resources/game.js'>");
