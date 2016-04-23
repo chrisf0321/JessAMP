@@ -1,0 +1,47 @@
+<div data-role="page" id="base4" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst4">
+                <p><b>Instructions:</b>  The following questions will ask you about times <strong><ins>since the first time you filled out surveys for our study</ins></strong> where you were close to killing yourself, but then YOU decided not to go through with killing yourself.  Next, we will ask about times when you were close to killing yourself but then SOMEONE or SOMETHING ELSE stopped you from killing yourself.</p>
+                <a href="#" id="bInst4Btn" onClick="bInst4()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="47">
+                <p><ins>Since the first time you filled out surveys for our study</ins>, have you ever been very close to killing yourself and <strong>at the last minute, you stopped yourself <ins>before you took any action</ins></strong> (e.g., held a bottle of pills in your hand but stopped yourself from taking any, set up a noose but stopped yourself from using it, pointed a gun at your head but stopped yourself from shooting it)?</p>
+                <fieldset id="q47fd" data-role="controlgroup">
+                    <input name="q47Op1" id="q47Op1" value="0" type="radio">
+                    <label id="q47lb1" for="q47Op1" class="chkbox">No</label>
+                    <input name="q47Op1" id="q47Op2" value="1" type="radio">
+                    <label id="q47lb2" for="q47Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q47Btn" onClick="q47()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err47" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="48">
+                <label for="times"><ins>Since the first time you filled out surveys for our study</ins>, have you been <strong>very close to killing yourself and in the last minute, you stopped yourself</strong> before you took an action?</label>
+                <input name="times1" id="times" pattern="[0-9]*" type="number" placeholder="times">
+                <a href="#" id="q48Btn" onClick="q48()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err48" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="52">
+                <p><ins>Since the first time you filled out surveys for our study</ins>, have you ever been very close to killing yourself and <strong>at the last minute, someone or something else stopped you <ins>before you took any action</ins></strong> (e.g., held a bottle of pills in your hand but someone walked in and stopped you before you took any pills, set up a noose but someone else walked in and stopped you from using it, pointed a gun at your head but someone came in and stopped you)?</p>
+                <fieldset id="q52fd" data-role="controlgroup">
+                    <input name="q52Op1" id="q52Op1" value="0" type="radio">
+                    <label id="q52lb1" for="q52Op1" class="chkbox">No</label>
+                    <input name="q52Op1" id="q52Op2" value="1" type="radio">
+                    <label id="q52lb2" for="q52Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q52Btn" onClick="q52()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err52" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s4Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s4FinBtn" onClick="s4Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,471 @@
+<div data-role="page" id="base7" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst7">
+                <p><b>Instructions:</b>  Please rate the CURRENT (i.e., last two weeks) severity of your insomnia problems <strong><ins>since the first time you filled out surveys for our study</ins></strong>.</p>
+                <a href="#" id="bInst7Btn" onClick="bInst7()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="88">
+                <p>Difficult falling asleep.</p>
+                <fieldset id="q88fd" data-role="controlgroup">
+                    <input name="q88Op1" id="q88Op1" value="0" type="radio">
+                    <label id="q88lb1" for="q88Op1" class="chkbox">None</label>
+                    <input name="q88Op1" id="q88Op2" value="1" type="radio">
+                    <label id="q88lb2" for="q88Op2" class="chkbox">Mild</label>
+                    <input name="q88Op1" id="q88Op3" value="2" type="radio">
+                    <label id="q88lb3" for="q88Op3" class="chkbox">Moderate</label>
+                    <input name="q88Op1" id="q88Op4" value="3" type="radio">
+                    <label id="q88lb4" for="q88Op4" class="chkbox">Severe</label>
+                    <input name="q88Op1" id="q88Op5" value="4" type="radio">
+                    <label id="q88lb5" for="q88Op5" class="chkbox">Very Severe</label>
+                </fieldset>
+                <a href="#" id="q88Btn" onClick="q88()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err88" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="89">
+                <p>Difficult staying asleep.</p>
+                <fieldset id="q89fd" data-role="controlgroup">
+                    <input name="q89Op1" id="q89Op1" value="0" type="radio">
+                    <label id="q89lb1" for="q89Op1" class="chkbox">None</label>
+                    <input name="q89Op1" id="q89Op2" value="1" type="radio">
+                    <label id="q89lb2" for="q89Op2" class="chkbox">Mild</label>
+                    <input name="q89Op1" id="q89Op3" value="2" type="radio">
+                    <label id="q89lb3" for="q89Op3" class="chkbox">Moderate</label>
+                    <input name="q89Op1" id="q89Op4" value="3" type="radio">
+                    <label id="q89lb4" for="q89Op4" class="chkbox">Severe</label>
+                    <input name="q89Op1" id="q89Op5" value="4" type="radio">
+                    <label id="q89lb5" for="q89Op5" class="chkbox">Very Severe</label>
+                </fieldset>
+                <a href="#" id="q89Btn" onClick="q89()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err89" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="90">
+                <p>Problems waking up too early.</p>
+                <fieldset id="q90fd" data-role="controlgroup">
+                    <input name="q90Op1" id="q90Op1" value="0" type="radio">
+                    <label id="q90lb1" for="q90Op1" class="chkbox">None</label>
+                    <input name="q90Op1" id="q90Op2" value="1" type="radio">
+                    <label id="q90lb2" for="q90Op2" class="chkbox">Mild</label>
+                    <input name="q90Op1" id="q90Op3" value="2" type="radio">
+                    <label id="q90lb3" for="q90Op3" class="chkbox">Moderate</label>
+                    <input name="q90Op1" id="q90Op4" value="3" type="radio">
+                    <label id="q90lb4" for="q90Op4" class="chkbox">Severe</label>
+                    <input name="q90Op1" id="q90Op5" value="4" type="radio">
+                    <label id="q90lb5" for="q90Op5" class="chkbox">Very Severe</label>
+                </fieldset>
+                <a href="#" id="q90Btn" onClick="q90()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err90" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="91">
+                <p>How SATISFIED/DISSATISFIED are you with your CURRENT sleep pattern?</p>
+                <fieldset id="q91fd" data-role="controlgroup">
+                    <input name="q91Op1" id="q91Op1" value="0" type="radio">
+                    <label id="q91lb1" for="q91Op1" class="chkbox">Very Satisfied</label>
+                    <input name="q91Op1" id="q91Op2" value="1" type="radio">
+                    <label id="q91lb2" for="q91Op2" class="chkbox">Satisfied</label>
+                    <input name="q91Op1" id="q91Op3" value="2" type="radio">
+                    <label id="q91lb3" for="q91Op3" class="chkbox">Moderately Satisfied</label>
+                    <input name="q91Op1" id="q91Op4" value="3" type="radio">
+                    <label id="q91lb4" for="q91Op4" class="chkbox">Dissatisfied</label>
+                    <input name="q91Op1" id="q91Op5" value="4" type="radio">
+                    <label id="q91lb5" for="q91Op5" class="chkbox">Very Dissatisfied</label>
+                </fieldset>
+                <a href="#" id="q91Btn" onClick="q91()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err91" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="92">
+                <p>How NOTICEABLE to others do you think your sleep problem is in terms of impairing the quality of your life?</p>
+                <fieldset id="q92fd" data-role="controlgroup">
+                    <input name="q92Op1" id="q92Op1" value="0" type="radio">
+                    <label id="q92lb1" for="q92Op1" class="chkbox">Not at all Noticeable</label>
+                    <input name="q92Op1" id="q92Op2" value="1" type="radio">
+                    <label id="q92lb2" for="q92Op2" class="chkbox">A little</label>
+                    <input name="q92Op1" id="q92Op3" value="2" type="radio">
+                    <label id="q92lb3" for="q92Op3" class="chkbox">Somewhat</label>
+                    <input name="q92Op1" id="q92Op4" value="3" type="radio">
+                    <label id="q92lb4" for="q92Op4" class="chkbox">Much</label>
+                    <input name="q92Op1" id="q92Op5" value="4" type="radio">
+                    <label id="q92lb5" for="q92Op5" class="chkbox">Very Much Noticeable</label>
+                </fieldset>
+                <a href="#" id="q92Btn" onClick="q92()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err92" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="93">
+                <p>How WORRIED/DISTRESSED are you about your current sleep problem?</p>
+                <fieldset id="q93fd" data-role="controlgroup">
+                    <input name="q93Op1" id="q93Op1" value="0" type="radio">
+                    <label id="q93lb1" for="q93Op1" class="chkbox">Not at all Worried</label>
+                    <input name="q93Op1" id="q93Op2" value="1" type="radio">
+                    <label id="q93lb2" for="q93Op2" class="chkbox">A little</label>
+                    <input name="q93Op1" id="q93Op3" value="2" type="radio">
+                    <label id="q93lb3" for="q93Op3" class="chkbox">Somewhat</label>
+                    <input name="q93Op1" id="q93Op4" value="3" type="radio">
+                    <label id="q93lb4" for="q93Op4" class="chkbox">Much</label>
+                    <input name="q93Op1" id="q93Op5" value="4" type="radio">
+                    <label id="q93lb5" for="q93Op5" class="chkbox">Very Much Worried</label>
+                </fieldset>
+                <a href="#" id="q93Btn" onClick="q93()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err93" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="94">
+                <p>To what extent do you consider your sleep problem to INTERFERE with your daily functioning (e.g., daytime fatigue, mood, ability to work/daily chores, concentration, memory, mood, etc.) CURRENTLY?</p>
+                <fieldset id="q94fd" data-role="controlgroup">
+                    <input name="q94Op1" id="q94Op1" value="0" type="radio">
+                    <label id="q94lb1" for="q94Op1" class="chkbox">Not interfering at all</label>
+                    <input name="q94Op1" id="q94Op2" value="1" type="radio">
+                    <label id="q94lb2" for="q94Op2" class="chkbox">A little</label>
+                    <input name="q94Op1" id="q94Op3" value="2" type="radio">
+                    <label id="q94lb3" for="q94Op3" class="chkbox">Somewhat</label>
+                    <input name="q94Op1" id="q94Op4" value="3" type="radio">
+                    <label id="q94lb4" for="q94Op4" class="chkbox">Much</label>
+                    <input name="q94Op1" id="q94Op5" value="4" type="radio">
+                    <label id="q94lb5" for="q94Op5" class="chkbox">Very Much Interfering</label>
+                </fieldset>
+                <a href="#" id="q94Btn" onClick="q94()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err94" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="95">
+                <p>Have you been experiencing feelings of <strong>anxiety</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q95fd" data-role="controlgroup">
+                    <input name="q95Op1" id="q95Op1" value="0" type="radio">
+                    <label id="q95lb1" for="q95Op1" class="chkbox">No</label>
+                    <input name="q95Op1" id="q95Op2" value="1" type="radio">
+                    <label id="q95lb2" for="q95Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q95Btn" onClick="q95()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err95" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="96">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>? </p>
+                <fieldset id="q96fd" data-role="controlgroup">
+                    <input name="q96Op1" id="q96Op2" value="1" type="radio">
+                    <label id="q96lb2" for="q96Op2" class="chkbox">Mild</label>
+                    <input name="q96Op1" id="q96Op3" value="2" type="radio">
+                    <label id="q96lb3" for="q96Op3" class="chkbox">Moderate</label>
+                    <input name="q96Op1" id="q96Op4" value="3" type="radio">
+                    <label id="q96lb4" for="q96Op4" class="chkbox">Severe</label>
+                    <input name="q96Op1" id="q96Op5" value="4" type="radio">
+                    <label id="q96lb5" for="q96Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q96Btn" onClick="q96()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err96" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="98">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q98fd" data-role="controlgroup">
+                    <input name="q98Op1" id="q98Op1" value="0" type="radio">
+                    <label id="q98lb1" for="q98Op1" class="chkbox">No</label>
+                    <input name="q98Op1" id="q98Op2" value="1" type="radio">
+                    <label id="q98lb2" for="q98Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q98Btn" onClick="q98()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err98" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="100">
+                <p>Have you been experiencing feelings of <strong>rage</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q100fd" data-role="controlgroup">
+                    <input name="q100Op1" id="q100Op1" value="0" type="radio">
+                    <label id="q100lb1" for="q100Op1" class="chkbox">No</label>
+                    <input name="q100Op1" id="q100Op2" value="1" type="radio">
+                    <label id="q100lb2" for="q100Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q100Btn" onClick="q100()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err100" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="101">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q101fd" data-role="controlgroup">
+                    <input name="q101Op1" id="q101Op2" value="1" type="radio">
+                    <label id="q101lb2" for="q101Op2" class="chkbox">Mild</label>
+                    <input name="q101Op1" id="q101Op3" value="2" type="radio">
+                    <label id="q101lb3" for="q101Op3" class="chkbox">Moderate</label>
+                    <input name="q101Op1" id="q101Op4" value="3" type="radio">
+                    <label id="q101lb4" for="q101Op4" class="chkbox">Severe</label>
+                    <input name="q101Op1" id="q101Op5" value="4" type="radio">
+                    <label id="q101lb5" for="q101Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q101Btn" onClick="q101()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err101" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="103">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q103fd" data-role="controlgroup">
+                    <input name="q103Op1" id="q103Op1" value="0" type="radio">
+                    <label id="q103lb1" for="q103Op1" class="chkbox">No</label>
+                    <input name="q103Op1" id="q103Op2" value="1" type="radio">
+                    <label id="q103lb2" for="q103Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q103Btn" onClick="q103()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err103" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="105">
+                <p>Have you been experiencing feelings of <strong>desperation</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q105fd" data-role="controlgroup">
+                    <input name="q105Op1" id="q105Op1" value="0" type="radio">
+                    <label id="q105lb1" for="q105Op1" class="chkbox">No</label>
+                    <input name="q105Op1" id="q105Op2" value="1" type="radio">
+                    <label id="q105lb2" for="q105Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q105Btn" onClick="q105()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err105" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="106">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q106fd" data-role="controlgroup">
+                    <input name="q106Op1" id="q106Op2" value="1" type="radio">
+                    <label id="q106lb2" for="q106Op2" class="chkbox">Mild</label>
+                    <input name="q106Op1" id="q106Op3" value="2" type="radio">
+                    <label id="q106lb3" for="q106Op3" class="chkbox">Moderate</label>
+                    <input name="q106Op1" id="q106Op4" value="3" type="radio">
+                    <label id="q106lb4" for="q106Op4" class="chkbox">Severe</label>
+                    <input name="q106Op1" id="q106Op5" value="4" type="radio">
+                    <label id="q106lb5" for="q106Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q106Btn" onClick="q106()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err106" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="108">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q108fd" data-role="controlgroup">
+                    <input name="q108Op1" id="q108Op1" value="0" type="radio">
+                    <label id="q108lb1" for="q108Op1" class="chkbox">No</label>
+                    <input name="q108Op1" id="q108Op2" value="1" type="radio">
+                    <label id="q108lb2" for="q108Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q108Btn" onClick="q108()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err108" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="110">
+                <p>Have you been experiencing feelings of <strong>loneliness</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q110fd" data-role="controlgroup">
+                    <input name="q110Op1" id="q110Op1" value="0" type="radio">
+                    <label id="q110lb1" for="q110Op1" class="chkbox">No</label>
+                    <input name="q110Op1" id="q110Op2" value="1" type="radio">
+                    <label id="q110lb2" for="q110Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q110Btn" onClick="q110()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err110" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="111">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q111fd" data-role="controlgroup">
+                    <input name="q111Op1" id="q111Op2" value="1" type="radio">
+                    <label id="q111lb2" for="q111Op2" class="chkbox">Mild</label>
+                    <input name="q111Op1" id="q111Op3" value="2" type="radio">
+                    <label id="q111lb3" for="q111Op3" class="chkbox">Moderate</label>
+                    <input name="q111Op1" id="q111Op4" value="3" type="radio">
+                    <label id="q111lb4" for="q111Op4" class="chkbox">Severe</label>
+                    <input name="q111Op1" id="q111Op5" value="4" type="radio">
+                    <label id="q111lb5" for="q111Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q111Btn" onClick="q111()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err111" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="113">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q113fd" data-role="controlgroup">
+                    <input name="q113Op1" id="q113Op1" value="0" type="radio">
+                    <label id="q113lb1" for="q113Op1" class="chkbox">No</label>
+                    <input name="q113Op1" id="q113Op2" value="1" type="radio">
+                    <label id="q113lb2" for="q113Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q113Btn" onClick="q113()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err113" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="115">
+                <p>Have you been experiencing feelings of <strong>hopelessness</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q115fd" data-role="controlgroup">
+                    <input name="q115Op1" id="q115Op1" value="0" type="radio">
+                    <label id="q115lb1" for="q115Op1" class="chkbox">No</label>
+                    <input name="q115Op1" id="q115Op2" value="1" type="radio">
+                    <label id="q115lb2" for="q115Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q115Btn" onClick="q115()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err115" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="116">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q116fd" data-role="controlgroup">
+                    <input name="q116Op1" id="q116Op2" value="1" type="radio">
+                    <label id="q116lb2" for="q116Op2" class="chkbox">Mild</label>
+                    <input name="q116Op1" id="q116Op3" value="2" type="radio">
+                    <label id="q116lb3" for="q116Op3" class="chkbox">Moderate</label>
+                    <input name="q116Op1" id="q116Op4" value="3" type="radio">
+                    <label id="q116lb4" for="q116Op4" class="chkbox">Severe</label>
+                    <input name="q116Op1" id="q116Op5" value="4" type="radio">
+                    <label id="q116lb5" for="q116Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q116Btn" onClick="q116()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err116" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="118">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q118fd" data-role="controlgroup">
+                    <input name="q118Op1" id="q118Op1" value="0" type="radio">
+                    <label id="q118lb1" for="q118Op1" class="chkbox">No</label>
+                    <input name="q118Op1" id="q118Op2" value="1" type="radio">
+                    <label id="q118lb2" for="q118Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q118Btn" onClick="q118()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err118" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="120">
+                <p>Have you been experiencing feelings of <strong>abandonment</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q120fd" data-role="controlgroup">
+                    <input name="q120Op1" id="q120Op1" value="0" type="radio">
+                    <label id="q120lb1" for="q120Op1" class="chkbox">No</label>
+                    <input name="q120Op1" id="q120Op2" value="1" type="radio">
+                    <label id="q120lb2" for="q120Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q120Btn" onClick="q120()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err120" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="121">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q121fd" data-role="controlgroup">
+                    <input name="q121Op1" id="q121Op2" value="1" type="radio">
+                    <label id="q121lb2" for="q121Op2" class="chkbox">Mild</label>
+                    <input name="q121Op1" id="q121Op3" value="2" type="radio">
+                    <label id="q121lb3" for="q121Op3" class="chkbox">Moderate</label>
+                    <input name="q121Op1" id="q121Op4" value="3" type="radio">
+                    <label id="q121lb4" for="q121Op4" class="chkbox">Severe</label>
+                    <input name="q121Op1" id="q121Op5" value="4" type="radio">
+                    <label id="q121lb5" for="q121Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q121Btn" onClick="q121()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err121" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="123">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q123fd" data-role="controlgroup">
+                    <input name="q123Op1" id="q123Op1" value="0" type="radio">
+                    <label id="q123lb1" for="q123Op1" class="chkbox">No</label>
+                    <input name="q123Op1" id="q123Op2" value="1" type="radio">
+                    <label id="q123lb2" for="q123Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q123Btn" onClick="q123()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err123" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="125">
+                <p>Have you been experiencing feelings of <strong>self-hatred</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q125fd" data-role="controlgroup">
+                    <input name="q125Op1" id="q125Op1" value="0" type="radio">
+                    <label id="q125lb1" for="q125Op1" class="chkbox">No</label>
+                    <input name="q125Op1" id="q125Op2" value="1" type="radio">
+                    <label id="q125lb2" for="q125Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q125Btn" onClick="q125()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err125" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="126">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q126fd" data-role="controlgroup">
+                    <input name="q126Op1" id="q126Op2" value="1" type="radio">
+                    <label id="q126lb2" for="q126Op2" class="chkbox">Mild</label>
+                    <input name="q126Op1" id="q126Op3" value="2" type="radio">
+                    <label id="q126lb3" for="q126Op3" class="chkbox">Moderate</label>
+                    <input name="q126Op1" id="q126Op4" value="3" type="radio">
+                    <label id="q126lb4" for="q126Op4" class="chkbox">Severe</label>
+                    <input name="q126Op1" id="q126Op5" value="4" type="radio">
+                    <label id="q126lb5" for="q126Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q126Btn" onClick="q126()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err126" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="128">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q128fd" data-role="controlgroup">
+                    <input name="q128Op1" id="q128Op1" value="0" type="radio">
+                    <label id="q128lb1" for="q128Op1" class="chkbox">No</label>
+                    <input name="q128Op1" id="q128Op2" value="1" type="radio">
+                    <label id="q128lb2" for="q128Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q128Btn" onClick="q128()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err128" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="130">
+                <p>Have you been experiencing feelings of <strong>guilt</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q130fd" data-role="controlgroup">
+                    <input name="q130Op1" id="q130Op1" value="0" type="radio">
+                    <label id="q130lb1" for="q130Op1" class="chkbox">No</label>
+                    <input name="q130Op1" id="q130Op2" value="1" type="radio">
+                    <label id="q130lb2" for="q130Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q130Btn" onClick="q130()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err130" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="131">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q131fd" data-role="controlgroup">
+                    <input name="q131Op1" id="q131Op2" value="1" type="radio">
+                    <label id="q131lb2" for="q131Op2" class="chkbox">Mild</label>
+                    <input name="q131Op1" id="q131Op3" value="2" type="radio">
+                    <label id="q131lb3" for="q131Op3" class="chkbox">Moderate</label>
+                    <input name="q131Op1" id="q131Op4" value="3" type="radio">
+                    <label id="q131lb4" for="q131Op4" class="chkbox">Severe</label>
+                    <input name="q131Op1" id="q131Op5" value="4" type="radio">
+                    <label id="q131lb5" for="q131Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q131Btn" onClick="q131()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err131" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="133">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q133fd" data-role="controlgroup">
+                    <input name="q133Op1" id="q133Op1" value="0" type="radio">
+                    <label id="q133lb1" for="q133Op1" class="chkbox">No</label>
+                    <input name="q133Op1" id="q133Op2" value="1" type="radio">
+                    <label id="q133lb2" for="q133Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q133Btn" onClick="q133()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err133" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="135">
+                <p>Have you been experiencing feelings of <strong>humiliation</strong> <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q135fd" data-role="controlgroup">
+                    <input name="q135Op1" id="q135Op1" value="0" type="radio">
+                    <label id="q135lb1" for="q135Op1" class="chkbox">No</label>
+                    <input name="q135Op1" id="q135Op2" value="1" type="radio">
+                    <label id="q135lb2" for="q135Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q135Btn" onClick="q135()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err135" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="136">
+                <p>how bothered have you been by these feelings <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q136fd" data-role="controlgroup">
+                    <input name="q136Op1" id="q136Op2" value="1" type="radio">
+                    <label id="q136lb2" for="q136Op2" class="chkbox">Mild</label>
+                    <input name="q136Op1" id="q136Op3" value="2" type="radio">
+                    <label id="q136lb3" for="q136Op3" class="chkbox">Moderate</label>
+                    <input name="q136Op1" id="q136Op4" value="3" type="radio">
+                    <label id="q136lb4" for="q136Op4" class="chkbox">Severe</label>
+                    <input name="q136Op1" id="q136Op5" value="4" type="radio">
+                    <label id="q136lb5" for="q136Op5" class="chkbox">Extreme</label>
+                </fieldset>
+                <a href="#" id="q136Btn" onClick="q136()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err136" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="138">
+                <p>Have these feelings increased <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q138fd" data-role="controlgroup">
+                    <input name="q138Op1" id="q138Op1" value="0" type="radio">
+                    <label id="q138lb1" for="q138Op1" class="chkbox">No</label>
+                    <input name="q138Op1" id="q138Op2" value="1" type="radio">
+                    <label id="q138lb2" for="q138Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q138Btn" onClick="q138()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err138" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s7Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s7FinBtn" onClick="s7Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

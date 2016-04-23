@@ -1,0 +1,181 @@
+<div data-role="page" id="base5" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst5">
+                <p><b>Instructions:</b>  The following questions ask about times when you took action and tried to kill yourself (i.e., purposefully hurting yourself with some intent to die) <strong<<ins>since the first time you filled out surveys for our study</ins></strong>.  We realize that people talk about these behaviors in different ways, but we are including <strong><i>any</i></strong> of the following events:</p>
+                <ul>
+                    <li>Times when you started to try to kill yourself but then stopped yourself <strong><i>after you had taken some action</i></strong> (e.g., took some pills as part of an overdose but then you stopped yourself from continuing)</li>
+                    <li>Times when you started to try to kill yourself, but then someone or something interrupted you <strong><i>after you had taken some action</i></strong> (e.g., started taking some pills as part of an overdose but then someone walked in and stopped your from continuing)</li>
+                    <li>Times where you tried to kill yourself and <strong><i>after you had taken some action</i></strong> you called for help (e.g., after you took pills as part of an overdose, you called for help)</li>
+                    <li>Times where you tried to kill yourself and no one found you</li>
+                </ul>
+                <a href="#" id="bInst5Btn" onClick="bInst5()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="57">
+                <p><ins>Since the first time you filled out surveys for our study</ins>, have you ever tried to kill yourself?  In other words, have you ever <strong>purposefully hurt yourself <i>with some</i> intent to die</strong>?</p>
+                <fieldset id="q57fd" data-role="controlgroup">
+                    <input name="q57Op1" id="q57Op1" value="0" type="radio">
+                    <label id="q57lb1" for="q57Op1" class="chkbox">No</label>
+                    <input name="q57Op1" id="q57Op2" value="1" type="radio">
+                    <label id="q57lb2" for="q57Op2" class="chkbox">Yes</label>
+                </fieldset>
+                <a href="#" id="q57Btn" onClick="q57()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err57" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="58">
+                <label for="times8">How many times <ins>since the first time you filled out surveys for our study</ins> have you <strong>purposefully hurt yourself with some intent to die</strong> (i.e., tried to kill yourself)?</label>
+                <input name="times9" id="times8" pattern="[0-9]*" type="number" placeholder="times">
+                <a href="#" id="q58Btn" onClick="q58()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err58" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
+            <div id="64">
+                <p>What method(s) did you use during the most recent suicide attempt that happened <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q64fd" data-role="controlgroup">
+                    <input name="q64Op1" id="q64Op1" value="1" type="checkbox">
+                    <label id="q64lb1" for="q64Op1" class="chkbox1">Overdose</label>
+                    <input name="q64Op2" id="q64Op2" value="1" type="checkbox">
+                    <label id="q64lb2" for="q64Op2" class="chkbox1">Cutting</label>
+                    <input name="q64Op3" id="q64Op3" value="1" type="checkbox">
+                    <label id="q64lb3" for="q64Op3" class="chkbox1">Auto Exhaust</label>
+                    <input name="q64Op4" id="q64Op4" value="1" type="checkbox">
+                    <label id="q64lb4" for="q64Op4" class="chkbox1">Other gases</label>
+                    <input name="q64Op5" id="q64Op5" value="1" type="checkbox">
+                    <label id="q64lb5" for="q64Op5" class="chkbox1">Poison</label>
+                    <input name="q64Op6" id="q64Op6" value="1" type="checkbox">
+                    <label id="q64lb6" for="q64Op6" class="chkbox1">Firearms</label>
+                    <input name="q64Op7" id="q64Op7" value="1" type="checkbox">
+                    <label id="q64lb7" for="q64Op7" class="chkbox1">Hanging</label>
+                    <input name="q64Op8" id="q64Op8" value="1" type="checkbox">
+                    <label id="q64lb8" for="q64Op8" class="chkbox1">Suffocation</label>
+                    <input name="q64Op9" id="q64Op9" value="1" type="checkbox">
+                    <label id="q64lb9" for="q64Op9" class="chkbox1">Stepping in front of car/train</label>
+                    <input name="q64Op10" id="q64Op10" value="1" type="checkbox">
+                    <label id="q64lb10" for="q64Op10" class="chkbox1">Crashing a car</label>
+                    <input name="q64Op11" id="q64Op11" value="1" type="checkbox">
+                    <label id="q64lb11" for="q64Op11" class="chkbox1">Jumping from a height</label>
+                    <input name="q64Op12" id="q64Op12" value="1" type="checkbox">
+                    <label id="q64lb12" for="q64Op12" class="chkbox1">Drowning</label>
+                    <input name="q64Op13" id="q64Op13" value="1" type="checkbox">
+                    <label id="q64lb13" for="q64Op13" class="chkbox1">Burning</label>
+                    <input name="q64Op14" id="q64Op14" value="1" type="checkbox">
+                    <label id="q64lb14" for="q64Op14" class="chkbox1">Other</label>
+                </fieldset>
+                <a href="#" id="q64Btn" onClick="q64()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err64" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="65">
+                <p>What level of physical damage resulted from your most recent suicide attempt that happened <ins>since the first time you filled out surveys for our study</ins>?</p>
+                <fieldset id="q65fd" data-role="controlgroup">
+                    <input name="q65Op1" id="q65Op1" value="0" type="radio">
+                    <label id="q65lb1" for="q65Op1" class="chkbox">No physical damage or very minor physical damage (e.g, surface scratches)</label>
+                    <input name="q65Op1" id="q65Op2" value="1" type="radio">
+                    <label id="q65lb2" for="q65Op2" class="chkbox">Minor physical damage (e.g., lethargic speech; first degree burns; mild bleeding; sprains)</label>
+                    <input name="q65Op1" id="q65Op3" value="2" type="radio">
+                    <label id="q65lb3" for="q65Op3" class="chkbox">Moderate physical damage; medical attention needed (e.g., conscious but sleepy, somewhat responsive; second-degree burns; bleeding of a major vessel)</label>
+                    <input name="q65Op1" id="q65Op4" value="3" type="radio">
+                    <label id="q65lb4" for="q65Op4" class="chkbox">Moderately severe physical damage; medical hospitalization and intensive care required (e.g., comatose with reflexes intact; third-degree burns on less than 20% of the body; extensive blood loss but can recover; major fractures)</label>
+                    <input name="q65Op1" id="q65Op5" value="4" type="radio">
+                    <label id="q65lb5" for="q65Op5" class="chkbox">Severe physical damage; medical hospitalization with intensive care required (e.g., comatose without reflexes; third-degree burns over 20% of body; extensive blood loss with unstable vital signs; major damage to vital area)</label>
+                </fieldset>
+                <a href="#" id="q65Btn" onClick="q65()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err65" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="66">
+                <p>How much did you want to die when you tried to kill yourself most recently?</p>
+                <fieldset id="q66fd" data-role="controlgroup">
+                    <input name="q66Op1" id="q66Op1" value="0" type="radio">
+                    <label id="q66lb1" for="q66Op1" class="chkbox">0 Not at all</label>
+                    <input name="q66Op1" id="q66Op2" value="1" type="radio">
+                    <label id="q66lb2" for="q66Op2" class="chkbox">1</label>
+                    <input name="q66Op1" id="q66Op3" value="2" type="radio">
+                    <label id="q66lb3" for="q66Op3" class="chkbox">2</label>
+                    <input name="q66Op1" id="q66Op4" value="3" type="radio">
+                    <label id="q66lb4" for="q66Op4" class="chkbox">3</label>
+                    <input name="q66Op1" id="q66Op5" value="4" type="radio">
+                    <label id="q66lb5" for="q66Op5" class="chkbox">4</label>
+                    <input name="q66Op1" id="q66Op6" value="5" type="radio">
+                    <label id="q66lb6" for="q66Op6" class="chkbox">5</label>
+                    <input name="q66Op1" id="q66Op7" value="6" type="radio">
+                    <label id="q66lb7" for="q66Op7" class="chkbox">6</label>
+                    <input name="q66Op1" id="q66Op8" value="7" type="radio">
+                    <label id="q66lb8" for="q66Op8" class="chkbox">7</label>
+                    <input name="q66Op1" id="q66Op9" value="8" type="radio">
+                    <label id="q66lb9" for="q66Op9" class="chkbox">8</label>
+                    <input name="q66Op1" id="q66Op10" value="9" type="radio">
+                    <label id="q66lb10" for="q66Op10" class="chkbox">9</label>
+                    <input name="q66Op1" id="q66Op11" value="10" type="radio">
+                    <label id="q66lb11" for="q66Op11" class="chkbox">10 Extremely</label>
+                </fieldset>
+                <a href="#" id="q66Btn" onClick="q66()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err66" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="67">
+                <p>How confident were you that using the method you used when you tried to kill yourself most recently would result in death?</p>
+                <fieldset id="q67fd" data-role="controlgroup">
+                    <input name="q67Op1" id="q67Op1" value="0" type="radio">
+                    <label id="q67lb1" for="q67Op1" class="chkbox">0 Not at all confident</label>
+                    <input name="q67Op1" id="q67Op2" value="1" type="radio">
+                    <label id="q67lb2" for="q67Op2" class="chkbox">1</label>
+                    <input name="q67Op1" id="q67Op3" value="2" type="radio">
+                    <label id="q67lb3" for="q67Op3" class="chkbox">2</label>
+                    <input name="q67Op1" id="q67Op4" value="3" type="radio">
+                    <label id="q67lb4" for="q67Op4" class="chkbox">3</label>
+                    <input name="q67Op1" id="q67Op5" value="4" type="radio">
+                    <label id="q67lb5" for="q67Op5" class="chkbox">4</label>
+                    <input name="q67Op1" id="q67Op6" value="5" type="radio">
+                    <label id="q67lb6" for="q67Op6" class="chkbox">5</label>
+                    <input name="q67Op1" id="q67Op7" value="6" type="radio">
+                    <label id="q67lb7" for="q67Op7" class="chkbox">6</label>
+                    <input name="q67Op1" id="q67Op8" value="7" type="radio">
+                    <label id="q67lb8" for="q67Op8" class="chkbox">7</label>
+                    <input name="q67Op1" id="q67Op9" value="8" type="radio">
+                    <label id="q67lb9" for="q67Op9" class="chkbox">8</label>
+                    <input name="q67Op1" id="q67Op10" value="9" type="radio">
+                    <label id="q67lb10" for="q67Op10" class="chkbox">9</label>
+                    <input name="q67Op1" id="q67Op11" value="10" type="radio">
+                    <label id="q67lb11" for="q67Op11" class="chkbox">10 Extremely confident</label>
+                </fieldset>
+                <a href="#" id="q67Btn" onClick="q67()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err67" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="77">
+                <p>Considering how you've been feeling <ins>since the first time you filled out surveys for our study</ins>, what do you think is the <strong>likelihood</strong> that you will try to kill yourself in the future?  <i>Remember, this is how likely you think it will happen in the future, regardless of whether you want it to.</i></p>
+                <fieldset id="q77fd" data-role="controlgroup">
+                    <input name="q77Op1" id="q77Op1" value="0" type="radio">
+                    <label id="q77lb1" for="q77Op1" class="chkbox">0 Not at all likely</label>
+                    <input name="q77Op1" id="q77Op2" value="1" type="radio">
+                    <label id="q77lb2" for="q77Op2" class="chkbox">1</label>
+                    <input name="q77Op1" id="q77Op3" value="2" type="radio">
+                    <label id="q77lb3" for="q77Op3" class="chkbox">2</label>
+                    <input name="q77Op1" id="q77Op4" value="3" type="radio">
+                    <label id="q77lb4" for="q77Op4" class="chkbox">3</label>
+                    <input name="q77Op1" id="q77Op5" value="4" type="radio">
+                    <label id="q77lb5" for="q77Op5" class="chkbox">4</label>
+                    <input name="q77Op1" id="q77Op6" value="5" type="radio">
+                    <label id="q77lb6" for="q77Op6" class="chkbox">5</label>
+                    <input name="q77Op1" id="q77Op7" value="6" type="radio">
+                    <label id="q77lb7" for="q77Op7" class="chkbox">6</label>
+                    <input name="q77Op1" id="q77Op8" value="7" type="radio">
+                    <label id="q77lb8" for="q77Op8" class="chkbox">7</label>
+                    <input name="q77Op1" id="q77Op9" value="8" type="radio">
+                    <label id="q77lb9" for="q77Op9" class="chkbox">8</label>
+                    <input name="q77Op1" id="q77Op10" value="9" type="radio">
+                    <label id="q77lb10" for="q77Op10" class="chkbox">9</label>
+                    <input name="q77Op1" id="q77Op11" value="10" type="radio">
+                    <label id="q77lb11" for="q77Op11" class="chkbox">10 Extremely likely</label>
+                </fieldset>
+                <a href="#" id="q77Btn" onClick="q77()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err77" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s5Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s5FinBtn" onClick="s5Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

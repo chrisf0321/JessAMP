@@ -1,0 +1,271 @@
+<div data-role="page" id="base8" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst8">
+                <p><b>Instructions:</b>  Please carefully read each group of statements.  Select the one statement in each group that <strong>best</strong> describes how you have been feeling <strong><ins>since the first time you filled out surveys for our study</ins></strong>.  Be sure to read all of the statements in each group before making a choice.</p>
+                <a href="#" id="bInst8Btn" onClick="bInst8()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="140">
+                <fieldset id="q140fd" data-role="controlgroup">
+                    <input name="q140Op1" id="q140Op1" value="0" type="radio">
+                    <label id="q140lb1" for="q140Op1" class="chkbox">I have a moderate to strong wish to live.</label>
+                    <input name="q140Op1" id="q140Op2" value="1" type="radio">
+                    <label id="q140lb2" for="q140Op2" class="chkbox">I have a weak wish to live.</label>
+                    <input name="q140Op1" id="q140Op3" value="2" type="radio">
+                    <label id="q140lb3" for="q140Op3" class="chkbox">I have no wish to live.</label>
+                </fieldset>
+                <a href="#" id="q140Btn" onClick="q140()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err140" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="141">
+                <fieldset id="q141fd" data-role="controlgroup">
+                    <input name="q141Op1" id="q141Op1" value="0" type="radio">
+                    <label id="q141lb1" for="q141Op1" class="chkbox">I have no wish to die.</label>
+                    <input name="q141Op1" id="q141Op2" value="1" type="radio">
+                    <label id="q141lb2" for="q141Op2" class="chkbox">I have a weak wish to die.</label>
+                    <input name="q141Op1" id="q141Op3" value="2" type="radio">
+                    <label id="q141lb3" for="q141Op3" class="chkbox">I have a moderate to strong wish to die.</label>
+                </fieldset>
+                <a href="#" id="q141Btn" onClick="q141()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err141" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="142">
+                <fieldset id="q142fd" data-role="controlgroup">
+                    <input name="q142Op1" id="q142Op1" value="0" type="radio">
+                    <label id="q142lb1" for="q142Op1" class="chkbox">My reasons for living outweigh my reasons for dying.</label>
+                    <input name="q142Op1" id="q142Op2" value="1" type="radio">
+                    <label id="q142lb2" for="q142Op2" class="chkbox">My reasons for living or dying are about equal.</label>
+                    <input name="q142Op1" id="q142Op3" value="2" type="radio">
+                    <label id="q142lb3" for="q142Op3" class="chkbox">My reasons for dying outweigh my reasons for living.</label>
+                </fieldset>
+                <a href="#" id="q142Btn" onClick="q142()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err142" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="143">
+                <fieldset id="q143fd" data-role="controlgroup">
+                    <input name="q143Op1" id="q143Op1" value="0" type="radio">
+                    <label id="q143lb1" for="q143Op1" class="chkbox">I have no desire to kill myself.</label>
+                    <input name="q143Op1" id="q143Op2" value="1" type="radio">
+                    <label id="q143lb2" for="q143Op2" class="chkbox">I have a weak desire to kill myself.</label>
+                    <input name="q143Op1" id="q143Op3" value="2" type="radio">
+                    <label id="q143lb3" for="q143Op3" class="chkbox">I have a moderate to strong desire to kill myself.</label>
+                </fieldset>
+                <a href="#" id="q143Btn" onClick="q143()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err143" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="144">
+                <fieldset id="q144fd" data-role="controlgroup">
+                    <input name="q144Op1" id="q144Op1" value="0" type="radio">
+                    <label id="q144lb1" for="q144Op1" class="chkbox">I would try to save my life if I found myself in a life-threatening situation.</label>
+                    <input name="q144Op1" id="q144Op2" value="1" type="radio">
+                    <label id="q144lb2" for="q144Op2" class="chkbox">I would take a chance on life or death if I found myself in a life-threatening situation.</label>
+                    <input name="q144Op1" id="q144Op3" value="2" type="radio">
+                    <label id="q144lb3" for="q144Op3" class="chkbox">I would not take steps necessary to avoid death if I found myself in a life-threatening situation.</label>
+                </fieldset>
+                <a href="#" id="q144Btn" onClick="q144()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err144" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="145">
+                <fieldset id="q145fd" data-role="controlgroup">
+                    <input name="q145Op1" id="q145Op1" value="0" type="radio">
+                    <label id="q145lb1" for="q145Op1" class="chkbox">I have brief periods of thinking about killing myself which pass quickly.</label>
+                    <input name="q145Op1" id="q145Op2" value="1" type="radio">
+                    <label id="q145lb2" for="q145Op2" class="chkbox">I have periods of thinking about killing myself which last for moderate amounts of time.</label>
+                    <input name="q145Op1" id="q145Op3" value="2" type="radio">
+                    <label id="q145lb3" for="q145Op3" class="chkbox">I have long periods of thinking of killing myself.</label>
+                </fieldset>
+                <a href="#" id="q145Btn" onClick="q145()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err145" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="146">
+                <fieldset id="q146fd" data-role="controlgroup">
+                    <input name="q146Op1" id="q146Op1" value="0" type="radio">
+                    <label id="q146lb1" for="q146Op1" class="chkbox">I rarely or only occasionally think about killing myself.</label>
+                    <input name="q146Op1" id="q146Op2" value="1" type="radio">
+                    <label id="q146lb2" for="q146Op2" class="chkbox">I have frequent thoughts about killing myself.</label>
+                    <input name="q146Op1" id="q146Op3" value="2" type="radio">
+                    <label id="q146lb3" for="q146Op3" class="chkbox">I continuously think about killing myself.</label>
+                </fieldset>
+                <a href="#" id="q146Btn" onClick="q146()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err146" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="147">
+                <fieldset id="q147fd" data-role="controlgroup">
+                    <input name="q147Op1" id="q147Op1" value="0" type="radio">
+                    <label id="q147lb1" for="q147Op1" class="chkbox">I do not accept the idea of killing myself.</label>
+                    <input name="q147Op1" id="q147Op2" value="1" type="radio">
+                    <label id="q147lb2" for="q147Op2" class="chkbox">I neither accept nor reject the idea of killing myself.</label>
+                    <input name="q147Op1" id="q147Op3" value="2" type="radio">
+                    <label id="q147lb3" for="q147Op3" class="chkbox">I accept the idea of killing myself.</label>
+                </fieldset>
+                <a href="#" id="q147Btn" onClick="q147()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err147" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="148">
+                <fieldset id="q148fd" data-role="controlgroup">
+                    <input name="q148Op1" id="q148Op1" value="0" type="radio">
+                    <label id="q148lb1" for="q148Op1" class="chkbox">I can keep myself from committing suicide.</label>
+                    <input name="q148Op1" id="q148Op2" value="1" type="radio">
+                    <label id="q148lb2" for="q148Op2" class="chkbox">I am unsure that I can keep myself from committing suicide.</label>
+                    <input name="q148Op1" id="q148Op3" value="2" type="radio">
+                    <label id="q148lb3" for="q148Op3" class="chkbox">I cannot keep myself from committing suicide.</label>
+                </fieldset>
+                <a href="#" id="q148Btn" onClick="q148()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err148" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="149">
+                <fieldset id="q149fd" data-role="controlgroup">
+                    <input name="q149Op1" id="q149Op1" value="0" type="radio">
+                    <label id="q149lb1" for="q149Op1" class="chkbox">I would not kill myself because of my family, friends, religion, possible injury from an unsuccessful attempt, etc.</label>
+                    <input name="q149Op1" id="q149Op2" value="1" type="radio">
+                    <label id="q149lb2" for="q149Op2" class="chkbox">I am somewhat concerned about killing myself because of my family, friends, religion, possible injury from an unsuccessful attempt, etc.</label>
+                    <input name="q149Op1" id="q149Op3" value="2" type="radio">
+                    <label id="q149lb3" for="q149Op3" class="chkbox">I am not or only a little concerned about killing myself because of my family, friends, religion, possible injury from an unsuccessful attempt, etc.</label>
+                </fieldset>
+                <a href="#" id="q149Btn" onClick="q149()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err149" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="150">
+                <fieldset id="q150fd" data-role="controlgroup">
+                    <input name="q150Op1" id="q150Op1" value="0" type="radio">
+                    <label id="q150lb1" for="q150Op1" class="chkbox">My reasons for wanting to commit suicide are primarily aimed at influencing other people, such as getting even with people, making people happier, making people pay attention to me, etc.</label>
+                    <input name="q150Op1" id="q150Op2" value="1" type="radio">
+                    <label id="q150lb2" for="q150Op2" class="chkbox">My reasons for wanting to commit suicide are not only aimed at influencing other people, but also represent a way of solving my problems.</label>
+                    <input name="q150Op1" id="q150Op3" value="2" type="radio">
+                    <label id="q150lb3" for="q150Op3" class="chkbox">My reasons for wanting to commit suicide are primarily based upon escaping from my problems.</label>
+                </fieldset>
+                <a href="#" id="q150Btn" onClick="q150()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err150" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="151">
+                <fieldset id="q151fd" data-role="controlgroup">
+                    <input name="q151Op1" id="q151Op1" value="0" type="radio">
+                    <label id="q151lb1" for="q151Op1" class="chkbox">I have no specific plan about how to kill myself.</label>
+                    <input name="q151Op1" id="q151Op2" value="1" type="radio">
+                    <label id="q151lb2" for="q151Op2" class="chkbox">I have considered ways of killing myself, but have not worked out the details.</label>
+                    <input name="q151Op1" id="q151Op3" value="2" type="radio">
+                    <label id="q151lb3" for="q151Op3" class="chkbox">I have a specific plan for killing myself.</label>
+                </fieldset>
+                <a href="#" id="q151Btn" onClick="q151()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err151" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="152">
+                <fieldset id="q152fd" data-role="controlgroup">
+                    <input name="q152Op1" id="q152Op1" value="0" type="radio">
+                    <label id="q152lb1" for="q152Op1" class="chkbox">I do not have access to a method or an opportunity to kill myself.</label>
+                    <input name="q152Op1" id="q152Op2" value="1" type="radio">
+                    <label id="q152lb2" for="q152Op2" class="chkbox">The method I would use for committing suicide takes time, and I really do not have a good opportunity to use this method.</label>
+                    <input name="q152Op1" id="q152Op3" value="2" type="radio">
+                    <label id="q152lb3" for="q152Op3" class="chkbox">I have access or anticipate having access to the method that I would choose for killing myself and also have or shall have the opportunity to use it.</label>
+                </fieldset>
+                <a href="#" id="q152Btn" onClick="q152()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err152" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="153">
+                <fieldset id="q153fd" data-role="controlgroup">
+                    <input name="q153Op1" id="q153Op1" value="0" type="radio">
+                    <label id="q153lb1" for="q153Op1" class="chkbox">I do not have the courage or ability to commit suicide.</label>
+                    <input name="q153Op1" id="q153Op2" value="1" type="radio">
+                    <label id="q153lb2" for="q153Op2" class="chkbox">I am unsure that I have the courage or the ability to commit suicide.</label>
+                    <input name="q153Op1" id="q153Op3" value="2" type="radio">
+                    <label id="q153lb3" for="q153Op3" class="chkbox">I have the courage and ability to commit suicide.</label>
+                </fieldset>
+                <a href="#" id="q153Btn" onClick="q153()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err153" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="154">
+                <fieldset id="q154fd" data-role="controlgroup">
+                    <input name="q154Op1" id="q154Op1" value="0" type="radio">
+                    <label id="q154lb1" for="q154Op1" class="chkbox">I do not expect to make a suicide attempt.</label>
+                    <input name="q154Op1" id="q154Op2" value="1" type="radio">
+                    <label id="q154lb2" for="q154Op2" class="chkbox">I am unsure that I shall make a suicide attempt.</label>
+                    <input name="q154Op1" id="q154Op3" value="2" type="radio">
+                    <label id="q154lb3" for="q154Op3" class="chkbox">I am sure that I shall make a suicide attempt.</label>
+                </fieldset>
+                <a href="#" id="q154Btn" onClick="q154()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err154" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="155">
+                <fieldset id="q155fd" data-role="controlgroup">
+                    <input name="q155Op1" id="q155Op1" value="0" type="radio">
+                    <label id="q155lb1" for="q155Op1" class="chkbox">I have made no preparations for committing suicide.</label>
+                    <input name="q155Op1" id="q155Op2" value="1" type="radio">
+                    <label id="q155lb2" for="q155Op2" class="chkbox">I have made some preparations for committing suicide.</label>
+                    <input name="q155Op1" id="q155Op3" value="2" type="radio">
+                    <label id="q155lb3" for="q155Op3" class="chkbox">I have almost finished or completed my preparations for committing suicide.</label>
+                </fieldset>
+                <a href="#" id="q155Btn" onClick="q155()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err155" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="156">
+                <fieldset id="q156fd" data-role="controlgroup">
+                    <input name="q156Op1" id="q156Op1" value="0" type="radio">
+                    <label id="q156lb1" for="q156Op1" class="chkbox">I have not written a suicide note.</label>
+                    <input name="q156Op1" id="q156Op2" value="1" type="radio">
+                    <label id="q156lb2" for="q156Op2" class="chkbox">I have thought about writing a suicide note or have started to write one, but have not completed it.</label>
+                    <input name="q156Op1" id="q156Op3" value="2" type="radio">
+                    <label id="q156lb3" for="q156Op3" class="chkbox">I have completed a suicide note.</label>
+                </fieldset>
+                <a href="#" id="q156Btn" onClick="q156()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err156" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="157">
+                <fieldset id="q157fd" data-role="controlgroup">
+                    <input name="q157Op1" id="q157Op1" value="0" type="radio">
+                    <label id="q157lb1" for="q157Op1" class="chkbox">I have made no arrangements for what will happen after I have committed suicide.</label>
+                    <input name="q157Op1" id="q157Op2" value="1" type="radio">
+                    <label id="q157lb2" for="q157Op2" class="chkbox">I have thought about making some arrangements for what will happen after I have committed suicide.</label>
+                    <input name="q157Op1" id="q157Op3" value="2" type="radio">
+                    <label id="q157lb3" for="q157Op3" class="chkbox">I have made definite arrangements for what will happen after I have committed suicide.</label>
+                </fieldset>
+                <a href="#" id="q157Btn" onClick="q157()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err157" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="158">
+                <fieldset id="q158fd" data-role="controlgroup">
+                    <input name="q158Op1" id="q158Op1" value="0" type="radio">
+                    <label id="q158lb1" for="q158Op1" class="chkbox">I have not hidden my desire to kill myself from people.</label>
+                    <input name="q158Op1" id="q158Op2" value="1" type="radio">
+                    <label id="q158lb2" for="q158Op2" class="chkbox">I have held back telling people about wanting to kill myself.</label>
+                    <input name="q158Op1" id="q158Op3" value="2" type="radio">
+                    <label id="q158lb3" for="q158Op3" class="chkbox">I have attempted to hide, conceal, or lie about wanting to commit suicide.</label>
+                </fieldset>
+                <a href="#" id="q158Btn" onClick="q158()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err158" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="159">
+                <fieldset id="q159fd" data-role="controlgroup">
+                    <input name="q159Op1" id="q159Op1" value="0" type="radio">
+                    <label id="q159lb1" for="q159Op1" class="chkbox">I have never attempted suicide.</label>
+                    <input name="q159Op1" id="q159Op2" value="1" type="radio">
+                    <label id="q159lb2" for="q159Op2" class="chkbox">I have attempted suicide once.</label>
+                    <input name="q159Op1" id="q159Op3" value="2" type="radio">
+                    <label id="q159lb3" for="q159Op3" class="chkbox">I have attempted suicide two or more times.</label>
+                </fieldset>
+                <a href="#" id="q159Btn" onClick="q159()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err159" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="160">
+                <fieldset id="q160fd" data-role="controlgroup">
+                    <input name="q160Op1" id="q160Op1" value="0" type="radio">
+                    <label id="q160lb1" for="q160Op1" class="chkbox">My wish to die during the last suicide attempt was low.</label>
+                    <input name="q160Op1" id="q160Op2" value="1" type="radio">
+                    <label id="q160lb2" for="q160Op2" class="chkbox">My wish to die during the last suicide attempt was moderate.</label>
+                    <input name="q160Op1" id="q160Op3" value="2" type="radio">
+                    <label id="q160lb3" for="q160Op3" class="chkbox">My wish to die during the last suicide attempt was high.</label>
+                </fieldset>
+                <a href="#" id="q160Btn" onClick="q160()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err160" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s8Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s8FinBtn" onClick="s8Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>

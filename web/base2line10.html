@@ -1,0 +1,239 @@
+<div data-role="page" id="base10" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a id="back" href="#" onclick="backBtn()" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-left ui-btn-icon-notext"></a>
+        <h1 class="ui-title"><span data-translate="Tec-Tec">Survey</span></h1>
+        <a id="fwd" href="#" onclick="forwardBtn()" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-icon-notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="ampSize">
+            <div id="baseInst10">
+                <p><b>Instructions:</b>  Please select whether each statement is true or false as it applies to you personally <strong><ins>since the first time you filled out surveys for our study</ins></strong>.  Although statements may seem similar to others, no two statements are identical.  So please read each statement carefully.</p>
+                <a href="#" id="bInst10Btn" onClick="bInst10()" class="ui-btn ui-corner-all btnSize2">Start</a>
+            </div>
+            <div id="179">
+                <p>I look forward to the future with hope and enthusiasm</p>
+                <fieldset id="q179fd" data-role="controlgroup">
+                    <input name="q179Op1" id="q179Op1" value="1" type="radio">
+                    <label id="q179lb1" for="q179Op1" class="chkbox">True</label>
+                    <input name="q179Op1" id="q179Op2" value="0" type="radio">
+                    <label id="q179lb2" for="q179Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q179Btn" onClick="q179()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err179" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="180">
+                <p>When things are going badly, I am helped by knowing that they can’t stay that way forever</p>
+                <fieldset id="q180fd" data-role="controlgroup">
+                    <input name="q180Op1" id="q180Op1" value="1" type="radio">
+                    <label id="q180lb1" for="q180Op1" class="chkbox">True</label>
+                    <input name="q180Op1" id="q180Op2" value="0" type="radio">
+                    <label id="q180lb2" for="q180Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q180Btn" onClick="q180()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err180" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="181">
+                <p>I might as well give up because there’s nothing I can do about making things better for myself</p>
+                <fieldset id="q181fd" data-role="controlgroup">
+                    <input name="q181Op1" id="q181Op1" value="1" type="radio">
+                    <label id="q181lb1" for="q181Op1" class="chkbox">True</label>
+                    <input name="q181Op1" id="q181Op2" value="0" type="radio">
+                    <label id="q181lb2" for="q181Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q181Btn" onClick="q181()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err181" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="182">
+                <p>I can’t imagine what my life would be like in 10 years</p>
+                <fieldset id="q182fd" data-role="controlgroup">
+                    <input name="q182Op1" id="q182Op1" value="1" type="radio">
+                    <label id="q182lb1" for="q182Op1" class="chkbox">True</label>
+                    <input name="q182Op1" id="q182Op2" value="0" type="radio">
+                    <label id="q182lb2" for="q182Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q182Btn" onClick="q182()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err182" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="183">
+                <p>I have enough time to accomplish the things I most want to do</p>
+                <fieldset id="q183fd" data-role="controlgroup">
+                    <input name="q183Op1" id="q183Op1" value="1" type="radio">
+                    <label id="q183lb1" for="q183Op1" class="chkbox">True</label>
+                    <input name="q183Op1" id="q183Op2" value="0" type="radio">
+                    <label id="q183lb2" for="q183Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q183Btn" onClick="q183()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err183" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="184">
+                <p>In the future I expect to succeed in what concerns me most</p>
+                <fieldset id="q184fd" data-role="controlgroup">
+                    <input name="q184Op1" id="q184Op1" value="1" type="radio">
+                    <label id="q184lb1" for="q184Op1" class="chkbox">True</label>
+                    <input name="q184Op1" id="q184Op2" value="0" type="radio">
+                    <label id="q184lb2" for="q184Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q184Btn" onClick="q184()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err184" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="185">
+                <p>My future seems dark to me</p>
+                <fieldset id="q185fd" data-role="controlgroup">
+                    <input name="q185Op1" id="q185Op1" value="1" type="radio">
+                    <label id="q185lb1" for="q185Op1" class="chkbox">True</label>
+                    <input name="q185Op1" id="q185Op2" value="0" type="radio">
+                    <label id="q185lb2" for="q185Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q185Btn" onClick="q185()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err185" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="186">
+                <p>I happen to be particularly lucky and I expect to get more of the good things in life than the average person.</p>
+                <fieldset id="q186fd" data-role="controlgroup">
+                    <input name="q186Op1" id="q186Op1" value="1" type="radio">
+                    <label id="q186lb1" for="q186Op1" class="chkbox">True</label>
+                    <input name="q186Op1" id="q186Op2" value="0" type="radio">
+                    <label id="q186lb2" for="q186Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q186Btn" onClick="q186()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err186" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="187">
+                <p>I just don’t get the breaks, and there’s no reason to believe I will in the future</p>
+                <fieldset id="q187fd" data-role="controlgroup">
+                    <input name="q187Op1" id="q187Op1" value="1" type="radio">
+                    <label id="q187lb1" for="q187Op1" class="chkbox">True</label>
+                    <input name="q187Op1" id="q187Op2" value="0" type="radio">
+                    <label id="q187lb2" for="q187Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q187Btn" onClick="q187()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err187" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="188">
+                <p>My past experiences have prepared me well for my future</p>
+                <fieldset id="q188fd" data-role="controlgroup">
+                    <input name="q188Op1" id="q188Op1" value="1" type="radio">
+                    <label id="q188lb1" for="q188Op1" class="chkbox">True</label>
+                    <input name="q188Op1" id="q188Op2" value="0" type="radio">
+                    <label id="q188lb2" for="q188Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q188Btn" onClick="q188()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err188" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="189">
+                <p>All I can see ahead of me is unpleasantness rather than pleasantness</p>
+                <fieldset id="q189fd" data-role="controlgroup">
+                    <input name="q189Op1" id="q189Op1" value="1" type="radio">
+                    <label id="q189lb1" for="q189Op1" class="chkbox">True</label>
+                    <input name="q189Op1" id="q189Op2" value="0" type="radio">
+                    <label id="q189lb2" for="q189Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q189Btn" onClick="q189()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err189" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="190">
+                <p>I don’t expect to get what I really want</p>
+                <fieldset id="q190fd" data-role="controlgroup">
+                    <input name="q190Op1" id="q190Op1" value="1" type="radio">
+                    <label id="q190lb1" for="q190Op1" class="chkbox">True</label>
+                    <input name="q190Op1" id="q190Op2" value="0" type="radio">
+                    <label id="q190lb2" for="q190Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q190Btn" onClick="q190()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err190" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="191">
+                <p>When I look ahead to the future I expect I will be happier than I am now</p>
+                <fieldset id="q191fd" data-role="controlgroup">
+                    <input name="q191Op1" id="q191Op1" value="1" type="radio">
+                    <label id="q191lb1" for="q191Op1" class="chkbox">True</label>
+                    <input name="q191Op1" id="q191Op2" value="0" type="radio">
+                    <label id="q191lb2" for="q191Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q191Btn" onClick="q191()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err191" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="192">
+                <p>Things just won’t work out the way I want them to</p>
+                <fieldset id="q192fd" data-role="controlgroup">
+                    <input name="q192Op1" id="q192Op1" value="1" type="radio">
+                    <label id="q192lb1" for="q192Op1" class="chkbox">True</label>
+                    <input name="q192Op1" id="q192Op2" value="0" type="radio">
+                    <label id="q192lb2" for="q192Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q192Btn" onClick="q192()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err192" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="193">
+                <p>I have great faith in the future</p>
+                <fieldset id="q193fd" data-role="controlgroup">
+                    <input name="q193Op1" id="q193Op1" value="1" type="radio">
+                    <label id="q193lb1" for="q193Op1" class="chkbox">True</label>
+                    <input name="q193Op1" id="q193Op2" value="0" type="radio">
+                    <label id="q193lb2" for="q193Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q193Btn" onClick="q193()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err193" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="194">
+                <p>I never get what I want so it’s foolish to want anything</p>
+                <fieldset id="q194fd" data-role="controlgroup">
+                    <input name="q194Op1" id="q194Op1" value="1" type="radio">
+                    <label id="q194lb1" for="q194Op1" class="chkbox">True</label>
+                    <input name="q194Op1" id="q194Op2" value="0" type="radio">
+                    <label id="q194lb2" for="q194Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q194Btn" onClick="q194()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err194" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="195">
+                <p>It is very unlikely that I will get any real satisfaction in the future</p>
+                <fieldset id="q195fd" data-role="controlgroup">
+                    <input name="q195Op1" id="q195Op1" value="1" type="radio">
+                    <label id="q195lb1" for="q195Op1" class="chkbox">True</label>
+                    <input name="q195Op1" id="q195Op2" value="0" type="radio">
+                    <label id="q195lb2" for="q195Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q195Btn" onClick="q195()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err195" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="196">
+                <p>The future seems vague and uncertain to me</p>
+                <fieldset id="q196fd" data-role="controlgroup">
+                    <input name="q196Op1" id="q196Op1" value="1" type="radio">
+                    <label id="q196lb1" for="q196Op1" class="chkbox">True</label>
+                    <input name="q196Op1" id="q196Op2" value="0" type="radio">
+                    <label id="q196lb2" for="q196Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q196Btn" onClick="q196()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err196" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="197">
+                <p>I can look forward to more good times than bad times</p>
+                <fieldset id="q197fd" data-role="controlgroup">
+                    <input name="q197Op1" id="q197Op1" value="1" type="radio">
+                    <label id="q197lb1" for="q197Op1" class="chkbox">True</label>
+                    <input name="q197Op1" id="q197Op2" value="0" type="radio">
+                    <label id="q197lb2" for="q197Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q197Btn" onClick="q197()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err197" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="198">
+                <p>There’s no use in really trying to get something I want because I probably won’t get it.</p>
+                <fieldset id="q198fd" data-role="controlgroup">
+                    <input name="q198Op1" id="q198Op1" value="1" type="radio">
+                    <label id="q198lb1" for="q198Op1" class="chkbox">True</label>
+                    <input name="q198Op1" id="q198Op2" value="0" type="radio">
+                    <label id="q198lb2" for="q198Op2" class="chkbox">False</label>
+                </fieldset>
+                <a href="#" id="q198Btn" onClick="q198()" class="ui-btn ui-corner-all noDisplay">Next</a>
+                <p id="err198" class="errmsg"><b>Please choose an answer.</b></p>
+            </div>
+            <div id="s10Fin">
+                <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
+                <a href="#" id="s10FinBtn" onClick="s10Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>
