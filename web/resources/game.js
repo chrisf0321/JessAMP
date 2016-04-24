@@ -2925,7 +2925,7 @@ function q64() {
     }
     if ($("#q64Op3").prop('checked')) {
         ans = true;
-        surArry.Attempt_method_t1_2 = $("q64Op3").val();
+        surArry.Attempt_method_t1_2 = $("#q64Op3").val();
     }
     else {
         surArry.Attempt_method_t1_2 = "";
@@ -3146,7 +3146,7 @@ function q70() {
     }
     if ($("#q70Op3").prop('checked')) {
         ans = true;
-        surArry.sevAttempt_method_t1_2 = $("q70Op3").val();
+        surArry.sevAttempt_method_t1_2 = $("#q70Op3").val();
     }
     else {
         surArry.sevAttempt_method_t1_2 = "";
@@ -3302,7 +3302,7 @@ function q74() {
     }
     if ($("#q74Op3").prop('checked')) {
         ans = true;
-        surArry.AllAttempt_method_t1_2 = $("q74Op3").val();
+        surArry.AllAttempt_method_t1_2 = $("#q74Op3").val();
     }
     else {
         surArry.AllAttempt_method_t1_2 = "";

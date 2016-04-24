@@ -1870,7 +1870,6 @@ function q48() {
         $("#err52").hide();
         $("#48").hide();
         $("#52").show();
-        $("#times1").focus();
         addArry(q47);
     }
     else {
@@ -1918,12 +1917,10 @@ function q52() {
 function q53() {
     var times = parseInt($("#times4").val());
     if (times >= 0 && times < 100000) {
-        surArry.InteruptSA_wk_t2 = times.toString();
+        surArry.InteruptSA_freq_t2 = times.toString();
         $("#err53").hide();
-        $("#err54").hide();
         $("#53").hide();
-        $("#54").show();
-        $("#times5").focus();
+        $("#s4Fin").show();
         addArry(q52);
         var progressbar = $( "#progressbar4" );
         var progressLabel = $( ".progress-label" );
@@ -2047,7 +2044,7 @@ function q64() {
     }
     if ($("#q64Op3").prop('checked')) {
         ans = true;
-        surArry.Attempt_method_t2_2 = $("q64Op3").val();
+        surArry.Attempt_method_t2_2 = $("#q64Op3").val();
     }
     else {
         surArry.Attempt_method_t2_2 = "";
