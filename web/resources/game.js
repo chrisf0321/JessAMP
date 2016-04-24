@@ -6273,6 +6273,7 @@ function s13Fin() {
     navArry = [];
     navPos = 0;
     $.mobile.loading("show");
+    console.log(surArry);
     setTimeout(function () {
         $.mobile.loading("hide");
         $.mobile.changePage("#finish");

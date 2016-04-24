@@ -43,6 +43,10 @@ p {
     margin-left: 15px;
 }
 
+.wrap {
+    height: 75px;
+}
+
 .left {
     width: 25%;
     float: left;

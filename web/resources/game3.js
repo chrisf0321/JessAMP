@@ -78,7 +78,7 @@ $(document).on('pagebeforeshow', '#base', function() {
 
 $(document).on('pagebeforeshow', '#base2', function() {
     navArry = [];
-    $("#11, #14, #15, #19, #s2Fin, #baseInst3, #back, #20, #24, #25, #29, #30").hide();
+    $("#11, #14, #15, #19, #s2Fin, #baseInst2, #back, #20, #24, #25, #29, #30").hide();
     vis = ["#q11Btn", "#q14Btn", "#q15Btn", "#q19Btn", "#q20Btn",
         "#q24Btn", "#q25Btn", "#q29Btn", "#q30Btn",
         "#bInst1Btn", "#bInst2Btn"];
@@ -159,7 +159,7 @@ $(document).on('pagebeforeshow', '#base10', function() {
     navArry = [];
     $("#179, #180, #181, #182, #183, #184, #185, #186, #187, #s10Fin, #back, #188, #189, #190, #191, #192, #193, #194, #195, #196, #197, #198").hide();
     vis = ["#q179Btn", "#q180Btn", "#q181Btn", "#q182Btn", "#q183Btn", "#q184Btn", "#q185Btn", "#q186Btn", "#q187Btn", "#q188Btn",
-        "#bInst30Btn", "#q189Btn", "#q190Btn", "#q191Btn", "#q192Btn", "#q193Btn", "#q194Btn", "#q195Btn", "#q196Btn", "#q197Btn", "#q198Btn"];
+        "#bInst10Btn", "#q189Btn", "#q190Btn", "#q191Btn", "#q192Btn", "#q193Btn", "#q194Btn", "#q195Btn", "#q196Btn", "#q197Btn", "#q198Btn"];
     //FastClick.attach(document.body);
     bindBase10();
 });
@@ -168,7 +168,7 @@ $(document).on('pagebeforeshow', '#base11', function() {
     navArry = [];
     $("#199, #200, #201, #202, #203, #204, #205, #206, #207, #s11Fin, #back, #208, #209, #210").hide();
     vis = ["#q199Btn", "#q200Btn", "#q201Btn", "#q202Btn", "#q203Btn", "#q204Btn", "#q205Btn", "#q206Btn", "#q207Btn", "#q208Btn",
-        "#bInst31Btn", "#q209Btn", "#q210Btn"];
+        "#bInst11Btn", "#q209Btn", "#q210Btn"];
     //FastClick.attach(document.body);
     bindBase11();
 });
@@ -177,7 +177,7 @@ $(document).on('pagebeforeshow', '#base12', function() {
     navArry = [];
     $("#211, #212, #213, #214, #215, #216, #217, #218, #219, #s12Fin, #back, #220, #221, #222, #223").hide();
     vis = ["#q211Btn", "#q212Btn", "#q213Btn", "#q214Btn", "#q215Btn", "#q216Btn", "#q217Btn", "#q218Btn", "#q219Btn", "#q220Btn",
-        "#bInst32Btn", "#q221Btn", "#q222Btn", "#q223Btn"];
+        "#bInst12Btn", "#q221Btn", "#q222Btn", "#q223Btn"];
     FastClick.attach(document.body);
     bindBase12();
 });
@@ -186,7 +186,7 @@ $(document).on('pagebeforeshow', '#base13', function() {
     navArry = [];
     $("#224, #225, #226, #227, #228, #229, #230, #231, #232, #s13Fin, #back, #233, #234, #235, #236, #237, #238").hide();
     vis = ["#q224Btn", "#q225Btn", "#q226Btn", "#q227Btn", "#q228Btn", "#q229Btn", "#q230Btn", "#q231Btn", "#q232Btn", "#q233Btn",
-        "#bInst33Btn", "#q234Btn", "#q235Btn", "#q236Btn", "#q237Btn", "#q238Btn"];
+        "#bInst13Btn", "#q234Btn", "#q235Btn", "#q236Btn", "#q237Btn", "#q238Btn"];
     //FastClick.attach(document.body);
 });
 
@@ -1731,9 +1731,9 @@ function q40() {
 function q41() {
     if (surArry.Plan_intent_t3 != "") {
         $("#err41").hide();
-        $("#err42").hide();
+        $("#err44").hide();
         $("#41").hide();
-        $("#42").show();
+        $("#44").show();
         addArry(q40);
     }
     else {
@@ -3737,12 +3737,12 @@ function base10St() {
     $("#err179").hide();
     $("#back").hide();
     $("#fwd").show();
-    $("#baseInst30").show();
+    $("#baseInst10").show();
 }
 
-function bInst30() {
+function bInst10() {
     base3Loaded = false;
-    $("#baseInst30").hide();
+    $("#baseInst10").hide();
     $("#err179").hide();
     $("#179").show();
     $("#back").show();
@@ -3756,7 +3756,7 @@ function q179() {
         $("#179").hide();
         $("#fwd").show();
         $("#180").show();
-        addArry(bInst30);
+        addArry(bInst10);
     }
     else {
         $("#err179").show();
@@ -4048,12 +4048,12 @@ function base11St() {
     $("#err199").hide();
     $("#back").hide();
     $("#fwd").show();
-    $("#baseInst31").show();
+    $("#baseInst11").show();
 }
 
-function bInst31() {
+function bInst11() {
     base3Loaded = false;
-    $("#baseInst31").hide();
+    $("#baseInst11").hide();
     $("#err199").hide();
     $("#199").show();
     $("#back").show();
@@ -4067,7 +4067,7 @@ function q199() {
         $("#199").hide();
         $("#fwd").show();
         $("#200").show();
-        addArry(bInst31);
+        addArry(bInst11);
     }
     else {
         $("#err199").show();
@@ -4247,12 +4247,12 @@ function base12St() {
     $("#err211").hide();
     $("#back").hide();
     $("#fwd").show();
-    $("#baseInst32").show();
+    $("#baseInst12").show();
 }
 
-function bInst32() {
+function bInst12() {
     base3Loaded = false;
-    $("#baseInst32").hide();
+    $("#baseInst12").hide();
     $("#err211").hide();
     $("#211").show();
     $("#back").show();
@@ -4266,7 +4266,7 @@ function q211() {
         $("#211").hide();
         $("#fwd").show();
         $("#212").show();
-        addArry(bInst32);
+        addArry(bInst12);
     }
     else {
         $("#err211").show();
@@ -4462,12 +4462,12 @@ function base13St() {
     $("#224").hide();
     $("#back").hide();
     $("#fwd").show();
-    $("#baseInst33").show();
+    $("#baseInst13").show();
 }
 
-function bInst33() {
+function bInst13() {
     base3Loaded = false;
-    $("#baseInst33").hide();
+    $("#baseInst13").hide();
     $("#224").show();
     $("#back").show();
     addArry(base13St);
@@ -4478,7 +4478,7 @@ function q224() {
     $("#224").hide();
     $("#fwd").show();
     $("#225").show();
-    addArry(bInst33);
+    addArry(bInst13);
 }
 
 function q225() {
@@ -4604,6 +4604,7 @@ function s13Fin() {
     navArry = [];
     navPos = 0;
     $.mobile.loading("show");
+    console.log(surArry);
     setTimeout(function () {
         $.mobile.loading("hide");
         $.mobile.changePage("#finish");
@@ -4647,7 +4648,7 @@ function forwardBtn() {
 
 function hideAll() {
     $("#1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #s1Fin").hide();
-    $("#11, #12, #13, #14, #baseInst3, #15, #16, #17, #18, #19, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30, #s2Fin").hide();
+    $("#11, #12, #13, #14, #baseInst2, #15, #16, #17, #18, #19, #20, #21, #22, #23, #24, #25, #26, #27, #28, #29, #30, #s2Fin").hide();
     $("#31, #32, #33, #34, #35, #36, #37, #38, #39, #s3Fin, #40, #41, #42, #43, #44, #45, #46").hide();
     $("#47, #48, #49, #50, #51, #52, #53, #54, #55, #s4Fin, #56").hide();
     $("#57, #58, #59, #60, #61, #62, #63, #64, #65, #s5Fin, #66, #67, #68, #69, #70, #71, #72, #73, #74, #75, #76, #77").hide();

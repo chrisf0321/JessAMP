@@ -29,6 +29,10 @@ var active = false;
 var ampArry = [];
 var ampScr = {};
 var ampSym = [];
+var allCat = 0;
+var allScr = 0.0;
+var imgName = "";
+var surType = "";
 
 $(window).on('popstate', function(e) {
     e.preventDefault();
@@ -45,39 +49,14 @@ $("#idtxt").keypress(function(event){
 var aArry = ["resources/images/a1.jpg", "resources/images/a2.jpg", "resources/images/a3.jpg", "resources/images/a4.jpg", "resources/images/a5.jpg", "resources/images/a6.jpg", "resources/images/a7.jpg",
     "resources/images/a8.jpg", "resources/images/a9.jpg", "resources/images/a10.jpg", "resources/images/a11.jpg", "resources/images/a12.jpg"];
 
-var bArry = ["resources/images/b1.jpg", "resources/images/b2.jpg", "resources/images/b3.jpg", "resources/images/b4.jpg", "resources/images/b5.jpg", "resources/images/b6.jpg", "resources/images/b7.jpg",
-    "resources/images/b8.jpg", "resources/images/b9.jpg", "resources/images/b10.jpg", "resources/images/b11.jpg", "resources/images/b12.jpg", "resources/images/b13.jpg", "resources/images/b14.jpg",
-    "resources/images/b15.jpg", "resources/images/b16.jpg", "resources/images/b17.jpg", "resources/images/b18.jpg", "resources/images/b19.jpg", "resources/images/b20.jpg", "resources/images/b21.jpg",
-    "resources/images/b22.jpg", "resources/images/b23.jpg", "resources/images/b24.jpg", "resources/images/b25.jpg", "resources/images/b26.jpg", "resources/images/b27.jpg", "resources/images/b28.jpg",
-    "resources/images/b29.jpg", "resources/images/b30.jpg", "resources/images/b31.jpg", "resources/images/b32.jpg", "resources/images/b33.jpg", "resources/images/b34.jpg", "resources/images/b35.jpg",
-    "resources/images/b36.jpg", "resources/images/b37.jpg", "resources/images/b38.jpg", "resources/images/b39.jpg", "resources/images/b40.jpg", "resources/images/b41.jpg", "resources/images/b42.jpg",
-    "resources/images/b43.jpg", "resources/images/b44.jpg", "resources/images/b45.jpg", "resources/images/b46.jpg", "resources/images/b47.jpg", "resources/images/b48.jpg", "resources/images/b49.jpg",
-    "resources/images/b50.jpg", "resources/images/b51.jpg"];
+var bArry = ["resources/images/b46.jpg", "resources/images/b12.jpg", "resources/images/b42.jpg", "resources/images/b2.jpg", "resources/images/b20.jpg", "resources/images/b36.jpg", "resources/images/b50.jpg",
+    "resources/images/b3.jpg", "resources/images/b41.jpg", "resources/images/b52.jpg", "resources/images/b19.jpg", "resources/images/b47.jpg"];
 
-var cArry = ["resources/images/c1.jpg", "resources/images/c2.jpg", "resources/images/c3.jpg", "resources/images/c4.jpg", "resources/images/c5.jpg", "resources/images/c6.jpg", "resources/images/c7.jpg",
-    "resources/images/c8.jpg", "resources/images/c9.jpg", "resources/images/c10.jpg", "resources/images/c11.jpg", "resources/images/c12.jpg", "resources/images/c13.jpg", "resources/images/c14.jpg",
-    "resources/images/c15.jpg", "resources/images/c16.jpg", "resources/images/c17.jpg", "resources/images/c18.jpg", "resources/images/c19.jpg", "resources/images/c20.jpg", "resources/images/c21.jpg",
-    "resources/images/c22.jpg", "resources/images/c23.jpg", "resources/images/c24.jpg", "resources/images/c25.jpg", "resources/images/c26.jpg", "resources/images/c27.jpg", "resources/images/c28.jpg",
-    "resources/images/c29.jpg", "resources/images/c30.jpg", "resources/images/c31.jpg", "resources/images/c32.jpg", "resources/images/c33.jpg", "resources/images/c34.jpg", "resources/images/c35.jpg",
-    "resources/images/c36.jpg", "resources/images/c37.jpg", "resources/images/c38.jpg", "resources/images/c39.jpg", "resources/images/c40.jpg", "resources/images/c41.jpg", "resources/images/c42.jpg",
-    "resources/images/c43.jpg", "resources/images/c44.jpg", "resources/images/c45.jpg", "resources/images/c46.jpg", "resources/images/c47.jpg", "resources/images/c48.jpg", "resources/images/c49.jpg",
-    "resources/images/c50.jpg", "resources/images/c51.jpg", "resources/images/c52.jpg", "resources/images/c53.jpg", "resources/images/c54.jpg", "resources/images/c55.jpg", "resources/images/c56.jpg",
-    "resources/images/c57.jpg", "resources/images/c58.jpg", "resources/images/c59.jpg", "resources/images/c60.jpg", "resources/images/c61.jpg", "resources/images/c62.jpg"];
+var eArry = ["resources/images/e1.jpg", "resources/images/e2.jpg", "resources/images/e5.jpg", "resources/images/e9.jpg", "resources/images/e10.jpg", "resources/images/e12.jpg", "resources/images/e13.jpg"
+    , "resources/images/e14.jpg", "resources/images/e16.jpg", "resources/images/e17.jpg", "resources/images/e18.jpg", "resources/images/e19.jpg"];
 
-var dArry = ["resources/images/d1.jpg", "resources/images/d2.jpg", "resources/images/d3.jpg", "resources/images/d4.jpg", "resources/images/d5.jpg", "resources/images/d6.jpg", "resources/images/d7.jpg",
-    "resources/images/d8.jpg", "resources/images/d9.jpg", "resources/images/d10.jpg", "resources/images/d11.jpg", "resources/images/d12.jpg", "resources/images/d13.jpg", "resources/images/d14.jpg",
-    "resources/images/d15.jpg", "resources/images/d16.jpg", "resources/images/d17.jpg", "resources/images/d18.jpg", "resources/images/d19.jpg", "resources/images/d20.jpg", "resources/images/d21.jpg",
-    "resources/images/d22.jpg", "resources/images/d23.jpg", "resources/images/d24.jpg", "resources/images/d25.jpg", "resources/images/d26.jpg", "resources/images/d27.jpg", "resources/images/d28.jpg",
-    "resources/images/d29.jpg", "resources/images/d30.jpg", "resources/images/d31.jpg", "resources/images/d32.jpg", "resources/images/d33.jpg", "resources/images/d34.jpg", "resources/images/d35.jpg",
-    "resources/images/d36.jpg", "resources/images/d37.jpg", "resources/images/d38.jpg"];
-
-var eArry = ["resources/images/e1.jpg", "resources/images/e2.jpg", "resources/images/e3.jpg", "resources/images/e4.jpg", "resources/images/e5.jpg", "resources/images/e6.jpg"
-    , "resources/images/e7.jpg", "resources/images/e8.jpg", "resources/images/e9.jpg", "resources/images/e10.jpg", "resources/images/e11.jpg", "resources/images/e12.jpg", "resources/images/e13.jpg"
-    , "resources/images/e14.jpg", "resources/images/e15.jpg", "resources/images/e16.jpg", "resources/images/e17.jpg", "resources/images/e18.jpg", "resources/images/e19.jpg", "resources/images/e20.jpg"
-    , "resources/images/e21.jpg", "resources/images/e22.jpg"];
-
-var fArry = ["resources/images/f1.jpg", "resources/images/f2.jpg", "resources/images/f3.jpg", "resources/images/f4.jpg", "resources/images/f5.jpg", "resources/images/f6.jpg"
-    , "resources/images/f7.jpg", "resources/images/f8.jpg", "resources/images/f9.jpg", "resources/images/f10.jpg", "resources/images/f11.jpg", "resources/images/f12.jpg"
+var fArry = ["resources/images/f1.jpg", "resources/images/f2.jpg", "resources/images/f3.jpg", "resources/images/f4.jpg", "resources/images/f6.jpg"
+    , "resources/images/f8.jpg", "resources/images/f9.jpg", "resources/images/f10.jpg", "resources/images/f11.jpg", "resources/images/f12.jpg"
     , "resources/images/f13.jpg", "resources/images/f14.jpg"];
 
 /*$("a").on(TOUCH_START, function() {
@@ -92,15 +71,39 @@ var fArry = ["resources/images/f1.jpg", "resources/images/f2.jpg", "resources/im
     }
 });*/
 
+var ampData = {"id" : "", "surType" : "", "AMP_suic" : "", "AMP_suic_low" : "", "AMP_suic_mod" : "", "AMP_suic_high" : "", "AMP_pos" : "", "AMP_bodybag" : "", "AMP_corpse" : "",
+    "AMP_guntohead1" : "", "AMP_guntohead2" : "", "AMP_guntohead3" : "", "AMP_height" : "", "AMP_morgue" : "", "AMP_noosetree" : "", "AMP_noose" : "", "AMP_pills" : "",
+    "AMP_ledge" : "", "AMP_suffocation" : "", "AMP_bathdrown" : "", "AMP_bathslit" : "", "AMP_bloodgun1" : "", "AMP_bloodgun2" : "", "AMP_bloodwrist" : "", "AMP_drowned" : "",
+    "AMP_float" : "", "AMP_hanged" : "", "AMP_hanging1" : "", "AMP_hanging2" : "", "AMP_OD" : "", "AMP_suffocation2" : "", "AMP_burned" : "", "AMP_burned2" : "", "AMP_deadbody" : "",
+    "AMP_fall" : "", "AMP_gsw1" : "", "AMP_gsw2" : "", "AMP_gsw3" : "", "AMP_hangedface" : "", "AMP_beach" : "", "AMP_cat" : "", "AMP_cats" : "", "AMP_girlwaves" : "",
+    "AMP_high5" : "", "AMP_like" : "", "AMP_panda" : "", "AMP_pig" : "", "AMP_puppy" : "", "AMP_squirrel" : "", "AMP_ball" : "", "AMP_pancakes" : ""}
+
+var imgMap = {"resources/images/b46.jpg" : "AMP_ball", "resources/images/b12.jpg" : "AMP_beach", "resources/images/b42.jpg" : "AMP_cat", "resources/images/b2.jpg" : "AMP_cats", "resources/images/b20.jpg" : "AMP_girlwaves", "resources/images/b36.jpg" : "AMP_high5", "resources/images/b50.jpg" : "AMP_like",
+    "resources/images/b3.jpg" : "AMP_pancakes", "resources/images/b41.jpg" : "AMP_panda", "resources/images/b52.jpg" : "AMP_pig", "resources/images/b19.jpg" : "AMP_puppy", "resources/images/b47.jpg" : "AMP_squirrel",
+    "resources/images/a1.jpg" : "AMP_suffocatehang", "resources/images/a2.jpg" : "AMP_gsw1", "resources/images/a3.jpg" : "AMP_gsw2", "resources/images/a4.jpg" : "AMP_fall", "resources/images/a5.jpg" : "AMP_slitthroat", "resources/images/a6.jpg" : "AMP_gsw3", "resources/images/a7.jpg" : "AMP_burned",
+    "resources/images/a8.jpg" : "AMP_deadbody", "resources/images/a9.jpg" : "AMP_slitthroat2", "resources/images/a10.jpg" : "AMP_burned2", "resources/images/a11.jpg" : "AMP_hangedface", "resources/images/a12.jpg" : "AMP_hangedface2",
+    "resources/images/f1.jpg" : "AMP_bathslit", "resources/images/f2.jpg" : "AMP_bloodgun2", "resources/images/f3.jpg" : "AMP_bloodgun1", "resources/images/f4.jpg" : "AMP_float", "resources/images/f6.jpg" : "AMP_drowned"
+    , "resources/images/f8.jpg" : "AMP_bathdrown", "resources/images/f9.jpg" : "AMP_hanged", "resources/images/f10.jpg" : "AMP_hanging1", "resources/images/f11.jpg" : "AMP_hanging2", "resources/images/f12.jpg" : "AMP_OD"
+    , "resources/images/f13.jpg" : "AMP_bloodwrist", "resources/images/f14.jpg" : "AMP_suffocation2", "resources/images/e1.jpg" : "AMP_bodybag", "resources/images/e2.jpg" : "AMP_corpse", "resources/images/e5.jpg" : "AMP_guntohead1", "resources/images/e9.jpg" : "AMP_guntohead2",
+    "resources/images/e10.jpg" : "AMP_guntohead3", "resources/images/e12.jpg" : "AMP_noose", "resources/images/e13.jpg" : "AMP_morgue", "resources/images/e14.jpg" : "AMP_noosetree", "resources/images/e16.jpg" : "AMP_pills", "resources/images/e17.jpg" : "AMP_height", "resources/images/e18.jpg" : "AMP_ledge",
+    "resources/images/e19.jpg" : "AMP_suffocation"}
+
 function loadSur() {
     if (pId.toLowerCase() == "sur2") {
         var gameJS = $("<script type='text/javascript' src='resources/game2.js'>");
+        surType = "2";
     }
     else if (pId.toLowerCase() == "sur3") {
         var gameJS = $("<script type='text/javascript' src='resources/game3.js'>");
+        surType = "3";
+    }
+    else if (pId.toLowerCase() == "sur4") {
+        var gameJS = $("<script type='text/javascript' src='resources/game4.js'>");
+        surType = "4";
     }
     else {
         var gameJS = $("<script type='text/javascript' src='resources/game.js'>");
+        surType = "1";
     }
     $("body").append(gameJS);
 }
@@ -156,7 +159,7 @@ $(document).on('pagebeforeshow', '#inst', function(){
     sizeC();
     preloadAmp();
     btnDelay();
-    if (pId.toLowerCase() == "sur2" || pId.toLowerCase() == "sur3") {
+    if (pId.toLowerCase() == "sur2" || pId.toLowerCase() == "sur3" || pId.toLowerCase() == "sur4") {
         $(":mobile-pagecontainer" ).pagecontainer( "load", "base2line2.html", { showLoadMsg: false } );
     }
     else {
@@ -164,14 +167,14 @@ $(document).on('pagebeforeshow', '#inst', function(){
     }
 });
 
-function testSur() {
-    if (pId.toLowerCase() == "sur2" || pId.toLowerCase() == "sur3") {
+/*function testSur() {
+    if (pId.toLowerCase() == "sur2" || pId.toLowerCase() == "sur3" || pId.toLowerCase() == "sur4") {
         $.mobile.changePage("#base2");
     }
     else {
         $.mobile.changePage("#base");
     }
-}
+}*/
 
 // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
 function isValidDate(dateString)
@@ -236,42 +239,50 @@ function plBtn() {
         bCat++;
     }
     else if (num === 3) {
-        cCat++;
-    }
-    else if (num === 4) {
-        dCat++;
-    }
-    else if (num === 5) {
         eCat++;
     }
-    else if (num === 6) {
+    else if (num === 4) {
         fCat++;
     }
     ampCnt++;
+    ampData[imgName] = "1";
     ampSt();
 }
 
 function unBtn() {
     ampCnt++;
+    ampData[imgName] = "0";
     ampSt();
 }
 
 function ampScore() {
     aScr = aCat / 12.0;
-    bScr = bCat / 6.0;
-    cScr = cCat / 6.0;
-    dScr = dCat / 6.0;
+    bScr = bCat / 12.0;
+    eScr = eCat / 12.0;
+    fScr = fCat / 12.0;
+    allCat = aCat + eCat + fCat;
+    allScr = allCat / 36.0;
 
     aScr = Math.round(aScr * 100) / 100;
     bScr = Math.round(bScr * 100) / 100;
-    cScr = Math.round(cScr * 100) / 100;
-    dScr = Math.round(dScr * 100) / 100;
+    eScr = Math.round(eScr * 100) / 100;
+    fScr = Math.round(fScr * 100) / 100;
+    allScr = Math.round(allScr * 100) / 100;
+
+    ampData["id"] = pId;
+    ampData["surType"] = surType;
+    ampData["AMP_suic"] = allScr;
+    ampData["AMP_suic_low"] = eScr;
+    ampData["AMP_suic_mod"] = fScr;
+    ampData["AMP_suic_high"] = aScr;
+    console.log(ampData);
 }
 
 function ampSt() {
-    if (ampCnt < 72) {
+    if (ampCnt < 48) {
         $("#amp1").attr('src', ampArry[ampCnt]);
         $("#amp3").attr('src', ampSym[ampCnt]);
+        imgName = imgMap[ampArry[ampCnt]];
 
         setTimeout(function() {
             setTimeout(function() {
@@ -287,14 +298,19 @@ function ampSt() {
             $("#amp1").show();}, 500);
     }
     else {
-        /*ampScore();
+        ampScore();
          var tDate = new Date();
-         var ampData = {};
+         /*var ampData = {};
          var ampDate = formatDate(tDate) + " " + formatAMPM(tDate);
          ampData = {"id" : pId, "stimuli" : aScr, "pleasant" : bScr, "neutral" : cScr, "unpleasant" : dScr, "date" : ampDate};
          storeAmp(ampData);*/
         setTimeout(function() {
-            $.mobile.changePage("#ampFin", {transition: "slide"});
+            if (surType == "1") {
+                $.mobile.changePage("#base", {transition: "slide"});
+            }
+            else {
+                $.mobile.changePage("#base2", {transition: "slide"});
+            }
         }, 300);
     }
 }
@@ -393,54 +409,15 @@ function preloadAmp() {
     ampScr = {};
     ampSym = [];
 
+    ampArry = aArry.concat(bArry, eArry, fArry);
+
     for (var i = 0; i < 12; i++) {
-        var ampImg = aArry[i];
-        if ($.inArray(ampImg, ampArry) === -1) {
-            ampArry.push(ampImg);
-            ampScr[ampImg] = 1;
-        }
-        //else i--;
+        ampScr[aArry[i]] = 1;
+        ampScr[bArry[i]] = 2;
+        ampScr[eArry[i]] = 3;
+        ampScr[fArry[i]] = 4;
     }
-    for (var i = 0; i < 12; i++) {
-        var ampImg = bArry[Math.floor(Math.random() * bArry.length)];
-        if ($.inArray(ampImg, ampArry) === -1) {
-            ampArry.push(ampImg);
-            ampScr[ampImg] = 2;
-        }
-        else i--;
-    }
-    for (var i = 0; i < 12; i++) {
-        var ampImg = cArry[Math.floor(Math.random() * cArry.length)];
-        if ($.inArray(ampImg, ampArry) === -1) {
-            ampArry.push(ampImg);
-            ampScr[ampImg] = 3;
-        }
-        else i--;
-    }
-    for (var i = 0; i < 12; i++) {
-        var ampImg = dArry[Math.floor(Math.random() * dArry.length)];
-        if ($.inArray(ampImg, ampArry) === -1) {
-            ampArry.push(ampImg);
-            ampScr[ampImg] = 4;
-        }
-        else i--;
-    }
-    for (var i = 0; i < 12; i++) {
-        var ampImg = eArry[Math.floor(Math.random() * eArry.length)];
-        if ($.inArray(ampImg, ampArry) === -1) {
-            ampArry.push(ampImg);
-            ampScr[ampImg] = 5;
-        }
-        else i--;
-    }
-    for (var i = 0; i < 12; i++) {
-        var ampImg = fArry[Math.floor(Math.random() * fArry.length)];
-        if ($.inArray(ampImg, ampArry) === -1) {
-            ampArry.push(ampImg);
-            ampScr[ampImg] = 6;
-        }
-        else i--;
-    }
+
     /*ampArry = ampArry.concat(eArry);
      ampScr["resources/images/e1.jpg"] = 5;
      ampScr["resources/images/e2.jpg"] = 5;
@@ -459,7 +436,7 @@ function preloadAmp() {
      ampScr["resources/images/f4.jpg"] = 6;
      ampScr["resources/images/f5.jpg"] = 6;*/
 
-    for (var i = 0; i < 72; i++) {
+    for (var i = 0; i < 48; i++) {
         var num = (Math.floor(Math.random() * 199)) + 1;
         var sImg = "resources/images/pic" + num + ".jpg";
         if ($.inArray(sImg, ampSym) === -1) {
