@@ -104,8 +104,14 @@
                 <a href="#" id="q38Btn" onClick="q38()" class="ui-btn ui-corner-all noDisplay">Next</a>
                 <p id="err38" class="errmsg"><b>Please choose an answer.</b></p>
             </div>
+            <div id="40">
+                <label for="periods">How many <strong>separate periods</strong> in your life have you thought your suicide plans?</label>
+                <input name="periods1" id="periods" pattern="[0-9]*" type="number" placeholder="separate periods in my lifetime">
+                <a href="#" id="q40Btn" onClick="q40()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err40" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
             <div id="41">
-                <p><ins>Since the first time you filled out surveys for our study</ins>, <strong>how seriously did you consider or intend on action on your suicide plan(s)</strong>?</p>
+                <p><ins>Since the first time you filled out surveys for our study</ins>, <strong>how seriously did you consider or intend on acting on your suicide plan(s)</strong>?</p>
                 <fieldset id="q41fd" data-role="controlgroup">
                     <input name="q41Op1" id="q41Op1" value="0" type="radio">
                     <label id="q41lb1" for="q41Op1" class="chkbox">0 Absolutely no intent/did not seriously consider acting on my plan(s) at all</label>
@@ -203,6 +209,7 @@
                 <p id="err46" class="errmsg"><b>Please choose an answer.</b></p>
             </div>
             <div id="s3Fin">
+                <div id="progressbar3"><div class="progress-label">Loading...</div></div>
                 <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
                 <a href="#" id="s3FinBtn" onClick="s3Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
             </div>

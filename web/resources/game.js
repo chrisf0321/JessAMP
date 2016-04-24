@@ -73,6 +73,13 @@ var surArry = {DOB : "", Age : "", Gender : "", Language : "", Race : "", Educat
     , Noose_t1 : "", Bloodygun_t1 : "", Bloodywrist_t1 : "", Drowning_t1 : "", Hanged_t1 : "", Burned_t1 : "", Positive1_t1 : "", Positive2_t1 : ""
     , Positive3_t1 : "", Positive4_t1 : "", Positive5_t1 : ""}
 
+$(document).keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){
+        forwardBtn();
+    }
+});
+
 $(document).on('pagebeforeshow', '#base', function() {
     navArry = [];
     $("#2, #3, #4, #5, #6, #7, #8, #9, #10, #s1Fin, #err1st, #back").hide();
@@ -631,14 +638,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q96Op2, #q96Op2, #q96Op3, #q96Op5").on('change', function () {
+    $("#q96Op2, #q96Op3, #q96Op4, #q96Op5").on('change', function () {
         surArry.ASQanx_dist_t1 = $(this).val();
         setTimeout(function () {
             q96();
         }, 200);
     });
 
-    $("#q97Op2, #q97Op2, #q97Op3, #q97Op5").on('change', function () {
+    $("#q97Op2, #q97Op3, #q97Op4, #q97Op5").on('change', function () {
         surArry.ASQanx_dur_t1 = $(this).val();
         setTimeout(function () {
             q97();
@@ -652,7 +659,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q99Op2, #q99Op2, #q99Op3, #q99Op5").on('change', function () {
+    $("#q99Op2, #q99Op3, #q99Op4, #q99Op5").on('change', function () {
         surArry.ASQanx_time_t1 = $(this).val();
         setTimeout(function () {
             q99();
@@ -666,14 +673,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q101Op2, #q101Op2, #q101Op3, #q101Op5").on('change', function () { 
+    $("#q101Op2, #q101Op3, #q101Op4, #q101Op5").on('change', function () { 
         surArry.ASQrage_dist_t1 = $(this).val(); 
         setTimeout(function () { 
             q101(); 
         }, 200); 
     });
 
-    $("#q102Op2, #q102Op2, #q102Op3, #q102Op5").on('change', function () { 
+    $("#q102Op2, #q102Op3, #q102Op4, #q102Op5").on('change', function () { 
         surArry.ASQrage_dur_t1 = $(this).val();
         setTimeout(function () {
             q102(); 
@@ -687,7 +694,7 @@ function bindBase7() {
         }, 200);
      });
 
-    $("#q104Op2, #q104Op2, #q104Op3, #q104Op5").on('change', function () { 
+    $("#q104Op2, #q104Op3, #q104Op4, #q104Op5").on('change', function () { 
         surArry.ASQrage_time_t1 = $(this).val(); 
         setTimeout(function () { 
             q104(); 
@@ -701,14 +708,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q106Op2, #q106Op2, #q106Op3, #q106Op5").on('change', function () {
+    $("#q106Op2, #q106Op3, #q106Op4, #q106Op5").on('change', function () {
         surArry.ASQdesp_dist_t1 = $(this).val();
         setTimeout(function () {
             q106();
         }, 200);
     });
 
-    $("#q107Op2, #q107Op2, #q107Op3, #q107Op5").on('change', function () {
+    $("#q107Op2, #q107Op3, #q107Op4, #q107Op5").on('change', function () {
         surArry.ASQdesp_dur_t1 = $(this).val();
         setTimeout(function () {
             q107();
@@ -722,7 +729,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q109Op2, #q109Op2, #q109Op3, #q109Op5").on('change', function () {
+    $("#q109Op2, #q109Op3, #q109Op4, #q109Op5").on('change', function () {
         surArry.ASQdesp_time_t1 = $(this).val();
         setTimeout(function () {
             q109();
@@ -736,14 +743,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q111Op2, #q111Op2, #q111Op3, #q111Op5").on('change', function () {
+    $("#q111Op2, #q111Op3, #q111Op4, #q111Op5").on('change', function () {
         surArry.ASQlonely_dist_t1 = $(this).val();
         setTimeout(function () {
             q111();
         }, 200);
     });
 
-    $("#q112Op2, #q112Op2, #q112Op3, #q112Op5").on('change', function () {
+    $("#q112Op2, #q112Op3, #q112Op4, #q112Op5").on('change', function () {
         surArry.ASQlonely_dur_t1 = $(this).val();
         setTimeout(function () {
             q112();
@@ -757,7 +764,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q114Op2, #q114Op2, #q114Op3, #q114Op5").on('change', function () {
+    $("#q114Op2, #q114Op3, #q114Op4, #q114Op5").on('change', function () {
         surArry.ASQlonely_time_t1 = $(this).val();
         setTimeout(function () {
             q114();
@@ -771,14 +778,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q116Op2, #q116Op2, #q116Op3, #q116Op5").on('change', function () {
+    $("#q116Op2, #q116Op3, #q116Op4, #q116Op5").on('change', function () {
         surArry.ASQhope_dist_t1 = $(this).val();
         setTimeout(function () {
             q116();
         }, 200);
     });
 
-    $("#q117Op2, #q117Op2, #q117Op3, #q117Op5").on('change', function () {
+    $("#q117Op2, #q117Op3, #q117Op4, #q117Op5").on('change', function () {
         surArry.ASQhope_dur_t1 = $(this).val();
         setTimeout(function () {
             q117();
@@ -792,7 +799,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q119Op2, #q119Op2, #q119Op3, #q119Op5").on('change', function () {
+    $("#q119Op2, #q119Op3, #q119Op4, #q119Op5").on('change', function () {
         surArry.ASQhope_time_t1 = $(this).val();
         setTimeout(function () {
             q119();
@@ -806,14 +813,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q121Op2, #q121Op2, #q121Op3, #q121Op5").on('change', function () {
+    $("#q121Op2, #q121Op3, #q121Op4, #q121Op5").on('change', function () {
         surArry.ASQaban_dist_t1 = $(this).val();
         setTimeout(function () {
             q121();
         }, 200);
     });
 
-    $("#q122Op2, #q122Op2, #q122Op3, #q122Op5").on('change', function () {
+    $("#q122Op2, #q122Op3, #q122Op4, #q122Op5").on('change', function () {
         surArry.ASQaban_dur_t1 = $(this).val();
         setTimeout(function () {
             q122();
@@ -827,7 +834,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q124Op2, #q124Op2, #q124Op3, #q124Op5").on('change', function () {
+    $("#q124Op2, #q124Op3, #q124Op4, #q124Op5").on('change', function () {
         surArry.ASQaban_time_t1 = $(this).val();
         setTimeout(function () {
             q124();
@@ -841,14 +848,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q126Op2, #q126Op2, #q126Op3, #q126Op5").on('change', function () {
+    $("#q126Op2, #q126Op3, #q126Op4, #q126Op5").on('change', function () {
         surArry.ASQselfhate_dist_t1 = $(this).val();
         setTimeout(function () {
             q126();
         }, 200);
     });
 
-    $("#q127Op2, #q127Op2, #q127Op3, #q127Op5").on('change', function () {
+    $("#q127Op2, #q127Op3, #q127Op4, #q127Op5").on('change', function () {
         surArry.ASQselfhate_dur_t1 = $(this).val();
         setTimeout(function () {
             q127();
@@ -862,7 +869,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q129Op2, #q129Op2, #q129Op3, #q129Op5").on('change', function () {
+    $("#q129Op2, #q129Op3, #q129Op4, #q129Op5").on('change', function () {
         surArry.ASQselfhate_time_t1 = $(this).val();
         setTimeout(function () {
             q129();
@@ -876,14 +883,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q131Op2, #q131Op2, #q131Op3, #q131Op5").on('change', function () {
+    $("#q131Op2, #q131Op3, #q131Op4, #q131Op5").on('change', function () {
         surArry.ASQguilt_dist_t1 = $(this).val();
         setTimeout(function () {
             q131();
         }, 200);
     });
 
-    $("#q132Op2, #q132Op2, #q132Op3, #q132Op5").on('change', function () {
+    $("#q132Op2, #q132Op3, #q132Op4, #q132Op5").on('change', function () {
         surArry.ASQguilt_dur_t1 = $(this).val();
         setTimeout(function () {
             q132();
@@ -897,7 +904,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q134Op2, #q134Op2, #q134Op3, #q134Op5").on('change', function () {
+    $("#q134Op2, #q134Op3, #q134Op4, #q134Op5").on('change', function () {
         surArry.ASQguilt_time_t1 = $(this).val();
         setTimeout(function () {
             q134();
@@ -911,14 +918,14 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q136Op2, #q136Op2, #q136Op3, #q136Op5").on('change', function () {
+    $("#q136Op2, #q136Op3, #q136Op4, #q136Op5").on('change', function () {
         surArry.ASQhumil_dist_t1 = $(this).val();
         setTimeout(function () {
             q136();
         }, 200);
     });
 
-    $("#q137Op2, #q137Op2, #q137Op3, #q137Op5").on('change', function () {
+    $("#q137Op2, #q137Op3, #q137Op4, #q137Op5").on('change', function () {
         surArry.ASQhumil_dur_t1 = $(this).val();
         setTimeout(function () {
             q137();
@@ -932,7 +939,7 @@ function bindBase7() {
         }, 200);
     });
 
-    $("#q139Op2, #q139Op2, #q139Op3, #q139Op5").on('change', function () {
+    $("#q139Op2, #q139Op3, #q139Op4, #q139Op5").on('change', function () {
         surArry.ASQhumil_time_t1 = $(this).val();
         setTimeout(function () {
             q139();
@@ -1542,6 +1549,7 @@ function baseSt() {
     $("#2").hide();
     $("#back").hide();
     $("#1").show();
+    $("#date").focus();
 }
 
 function q1() {
@@ -1552,6 +1560,7 @@ function q1() {
         $("#err2").hide();
         $("#1").hide();
         $("#2").show();
+        $("#age").focus();
         $("#back").show();
         addArry(baseSt);
     }
@@ -1660,6 +1669,7 @@ function q9() {
         $("#9").hide();
         $("#10").show();
         $("#fwd").show();
+        $("#twitter").focus();
         addArry(q8);
     }
     else {
@@ -1680,6 +1690,10 @@ function q10() {
         $("#err10").hide();
         $("#10").hide();
         $("#s1Fin").show();
+        var progressbar = $( "#progressbar" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 4});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         $("#fwd").hide();
         addArry(q9);
         $(":mobile-pagecontainer").pagecontainer("load", "baseline2.html", {showLoadMsg: false});
@@ -1692,7 +1706,11 @@ function q10() {
 function s1Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base2");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base2");
+    }, 2000);
 }
 
 function base2St() {
@@ -1719,6 +1737,7 @@ function q11() {
         $("#err12").hide();
         $("#11").hide();
         $("#12").show();
+        $("#age2").focus();
         addArry(bInst1);
     }
     else if (choice === "0") {
@@ -1769,6 +1788,7 @@ function q12() {
         $("#err13").hide();
         $("#12").hide();
         $("#13").show();
+        $("#age3").focus();
         addArry(q11);
     }
     else {
@@ -1806,6 +1826,7 @@ function q14() {
         $("#err15").hide();
         $("#14").hide();
         $("#15").show();
+        $("#age5").focus();
         addArry(bInst2);
     }
     else if (choice === "0") {
@@ -1830,12 +1851,13 @@ function q14() {
 
 function q15() {
     var age = parseInt($("#age5").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Cut_wk_t1 = age.toString();
         $("#err15").hide();
         $("#err16").hide();
         $("#15").hide();
         $("#16").show();
+        $("#age6").focus();
         addArry(q14);
     }
     else {
@@ -1845,12 +1867,13 @@ function q15() {
 
 function q16() {
     var age = parseInt($("#age6").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Cut_mth_t1 = age.toString();
         $("#err16").hide();
         $("#err17").hide();
         $("#16").hide();
         $("#17").show();
+        $("#age7").focus();
         addArry(q15);
     }
     else {
@@ -1860,12 +1883,13 @@ function q16() {
 
 function q17() {
     var age = parseInt($("#age7").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Cut_yr_t1 = age.toString();
         $("#err17").hide();
         $("#err18").hide();
         $("#17").hide();
         $("#18").show();
+        $("#age8").focus();
         addArry(q16);
     }
     else {
@@ -1875,7 +1899,7 @@ function q17() {
 
 function q18() {
     var age = parseInt($("#age8").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Cut_life_t1 = age.toString();
         $("#err18").hide();
         $("#err19").hide();
@@ -1896,6 +1920,7 @@ function q19() {
         $("#err20").hide();
         $("#19").hide();
         $("#20").show();
+        $("#age9").focus();
         if (q14logic) {
             addArry(q14);
         }
@@ -1930,12 +1955,13 @@ function q19() {
 
 function q20() {
     var age = parseInt($("#age9").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Burn_wk_t1 = age.toString();
         $("#err20").hide();
         $("#err21").hide();
         $("#20").hide();
         $("#21").show();
+        $("#age10").focus();
         addArry(q19);
     }
     else {
@@ -1945,12 +1971,13 @@ function q20() {
 
 function q21() {
     var age = parseInt($("#age10").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Burn_mth_t1 = age.toString();
         $("#err21").hide();
         $("#err22").hide();
         $("#21").hide();
         $("#22").show();
+        $("#age11").focus();
         addArry(q20);
     }
     else {
@@ -1960,12 +1987,13 @@ function q21() {
 
 function q22() {
     var age = parseInt($("#age11").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Burn_yr_t1 = age.toString();
         $("#err22").hide();
         $("#err23").hide();
         $("#22").hide();
         $("#23").show();
+        $("#age12").focus();
         addArry(q21);
     }
     else {
@@ -1975,7 +2003,7 @@ function q22() {
 
 function q23() {
     var age = parseInt($("#age12").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.Burn_life_t1 = age.toString();
         $("#err23").hide();
         $("#err24").hide();
@@ -1996,6 +2024,7 @@ function q24() {
         $("#err25").hide();
         $("#24").hide();
         $("#25").show();
+        $("#age13").focus();
         if (q19logic) {
             addArry(q19);
         }
@@ -2036,12 +2065,13 @@ function q24() {
 
 function q25() {
     var age = parseInt($("#age13").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.AltNSSI_wk_t1 = age.toString();
         $("#err25").hide();
         $("#err26").hide();
         $("#25").hide();
         $("#26").show();
+        $("#age14").focus();
         addArry(q24);
     }
     else {
@@ -2051,12 +2081,13 @@ function q25() {
 
 function q26() {
     var age = parseInt($("#age14").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.AltNSSI_mth_t1 = age.toString();
         $("#err26").hide();
         $("#err27").hide();
         $("#26").hide();
         $("#27").show();
+        $("#age15").focus();
         addArry(q25);
     }
     else {
@@ -2066,12 +2097,13 @@ function q26() {
 
 function q27() {
     var age = parseInt($("#age15").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.AltNSSI_yr_t1 = age.toString();
         $("#err27").hide();
         $("#err28").hide();
         $("#27").hide();
         $("#28").show();
+        $("#age16").focus();
         addArry(q26);
     }
     else {
@@ -2081,7 +2113,7 @@ function q27() {
 
 function q28() {
     var age = parseInt($("#age16").val());
-    if (age > 0 && age < 100000) {
+    if (age >= 0 && age < 100000) {
         surArry.AltNSSI_life_t1 = age.toString();
         $("#err28").hide();
         $("#err29").hide();
@@ -2114,6 +2146,10 @@ function q30() {
         $("#30").hide();
         $("#fwd").hide();
         $("#s2Fin").show();
+        var progressbar = $( "#progressbar2" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 12});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         if (q11logic) {
             addArry(q11);
         }
@@ -2132,7 +2168,11 @@ function q30() {
 function s2Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base3");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base3");
+    }, 2000);
 }
 
 function base3St() {
@@ -2155,7 +2195,7 @@ function q31() {
     if (surArry.Plan_yn_t1 != "") {
         $("#err31").hide();
         $("#err32").hide();
-        $("#err45").hide();
+        $("#err44").hide();
         $("#31").hide();
         $("#fwd").show();
         if (surArry.Plan_yn_t1 == "0") {
@@ -2172,16 +2212,15 @@ function q31() {
             surArry.Plan_intent_t1 = "";
             surArry.wPlan_freq_t1 = "";
             surArry.wPlan_intent_t1 = "";
-            surArry.Plan_likelihood_t1 = "";
             $("#40").find("input").each(function() {
                 $(this).val("");
             });
-            $("#32, #33, #34, #35, #36, #37, #38, #39, #41, #42, #43, #44").find("input").each(function() {
+            $("#32, #33, #34, #35, #36, #37, #38, #39, #41, #42, #43").find("input").each(function() {
                 if ($(this).is(":checked")) {
                     $(this).prop("checked", false).checkboxradio("refresh");
                 }
             });
-            $("#45").show();
+            $("#44").show();
         }
         else {
             q31logic = false;
@@ -2291,6 +2330,7 @@ function q39() {
         $("#err40").hide();
         $("#39").hide();
         $("#40").show();
+        $("#periods").focus();
         addArry(q38);
     }
     else {
@@ -2300,7 +2340,7 @@ function q39() {
 
 function q40() {
     var period = parseInt($("#periods").val());
-    if (period > 0 && period < 100000) {
+    if (period >= 0 && period < 100000) {
         surArry.Plan_life_t1 = period.toString();
         $("#err40").hide();
         $("#err41").hide();
@@ -2358,7 +2398,12 @@ function q44() {
         $("#err45").hide();
         $("#44").hide();
         $("#45").show();
-        addArry(q43);
+        if (q31logic) {
+            addArry(q31);
+        }
+        else {
+            addArry(q43);
+        }
     }
     else {
         $("#err44").show();
@@ -2380,6 +2425,10 @@ function q45() {
                 }
             });
             $("#s3Fin").show();
+            var progressbar = $( "#progressbar3" );
+            var progressLabel = $( ".progress-label" );
+            progressbar.progressbar({value: 19});
+            progressLabel.text(progressbar.progressbar( "value" ) + "%" );
             $(":mobile-pagecontainer").pagecontainer("load", "baseline4.html", {showLoadMsg: false});
         }
         else {
@@ -2387,12 +2436,7 @@ function q45() {
             $("#fwd").show();
             $("#46").show();
         }
-        if (q31logic) {
-            addArry(q31);
-        }
-        else {
-            addArry(q44);
-        }
+        addArry(q44);
     }
     else {
         $("#err45").show();
@@ -2405,6 +2449,10 @@ function q46() {
         $("#46").hide();
         $("#fwd").hide();
         $("#s3Fin").show();
+        var progressbar = $( "#progressbar3" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 19});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         addArry(q45);
     }
     else {
@@ -2415,7 +2463,11 @@ function q46() {
 function s3Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base4");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base4");
+    }, 2000);
 }
 
 function base4St() {
@@ -2455,6 +2507,7 @@ function q47() {
         else {
             q47logic = false;
             $("#48").show();
+            $("#times").focus();
         }
         addArry(bInst4);
     }
@@ -2465,12 +2518,13 @@ function q47() {
 
 function q48() {
     var times = parseInt($("#times").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.AbortedSA_wk_t1 = times.toString();
         $("#err48").hide();
         $("#err49").hide();
         $("#48").hide();
         $("#49").show();
+        $("#times1").focus();
         addArry(q47);
     }
     else {
@@ -2480,12 +2534,13 @@ function q48() {
 
 function q49() {
     var times = parseInt($("#times1").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.AbortedSA_mth_t1 = times.toString();
         $("#err49").hide();
         $("#err50").hide();
         $("#49").hide();
         $("#50").show();
+        $("#times2").focus();
         addArry(q48);
     }
     else {
@@ -2495,12 +2550,13 @@ function q49() {
 
 function q50() {
     var times = parseInt($("#times2").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.AbortedSA_yr_t1 = times.toString();
         $("#err50").hide();
         $("#err51").hide();
         $("#50").hide();
         $("#51").show();
+        $("#times3").focus();
         addArry(q49);
     }
     else {
@@ -2510,7 +2566,7 @@ function q50() {
 
 function q51() {
     var times = parseInt($("#times3").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.AbortedSA_life_t1 = times.toString();
         $("#err51").hide();
         $("#err52").hide();
@@ -2542,10 +2598,15 @@ function q52() {
             $("#fwd").hide();
             $(":mobile-pagecontainer").pagecontainer("load", "baseline5.html", {showLoadMsg: false});
             $("#s4Fin").show();
+            var progressbar = $( "#progressbar4" );
+            var progressLabel = $( ".progress-label" );
+            progressbar.progressbar({value: 23});
+            progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         }
         else {
             q52logic = false;
             $("#53").show();
+            $("#times4").focus();
         }
         if (q47logic) {
             addArry(q47);
@@ -2561,12 +2622,13 @@ function q52() {
 
 function q53() {
     var times = parseInt($("#times4").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.InteruptSA_wk_t1 = times.toString();
         $("#err53").hide();
         $("#err54").hide();
         $("#53").hide();
         $("#54").show();
+        $("#times5").focus();
         addArry(q52);
     }
     else {
@@ -2576,12 +2638,13 @@ function q53() {
 
 function q54() {
     var times = parseInt($("#times5").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.InteruptSA_mth_t1 = times.toString();
         $("#err54").hide();
         $("#err55").hide();
         $("#54").hide();
         $("#55").show();
+        $("#times6").focus();
         addArry(q53);
     }
     else {
@@ -2591,13 +2654,14 @@ function q54() {
 
 function q55() {
     var times = parseInt($("#times6").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.InteruptSA_yr_t1 = times.toString();
         $("#err55").hide();
         $("#err56").hide();
         $("#fwd").show();
         $("#55").hide();
         $("#56").show();
+        $("#times7").focus();
         addArry(q54);
     }
     else {
@@ -2607,13 +2671,17 @@ function q55() {
 
 function q56() {
     var times = parseInt($("#times7").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.InteruptSA_life_t1 = times.toString();
         $("#err56").hide();
         $("#fwd").hide();
         $("#56").hide();
         $("#s4Fin").show();
         addArry(q55);
+        var progressbar = $( "#progressbar4" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 23});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         $(":mobile-pagecontainer").pagecontainer("load", "baseline5.html", {showLoadMsg: false});
     }
     else {
@@ -2624,7 +2692,11 @@ function q56() {
 function s4Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base5");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base5");
+    }, 2000);
 }
 
 function base5St() {
@@ -2659,17 +2731,56 @@ function q57() {
             surArry.Attempt_life_t1 = "";
             surArry.Attempt_agestart_t1 = "";
             surArry.Attempt_agelast_t1 = "";
-            surArry.Attempt_method_t1 = "";
+            surArry.Attempt_method_t1_0 = "";
+            surArry.Attempt_method_t1_1 = "";
+            surArry.Attempt_method_t1_2 = "";
+            surArry.Attempt_method_t1_3 = "";
+            surArry.Attempt_method_t1_4 = "";
+            surArry.Attempt_method_t1_5 = "";
+            surArry.Attempt_method_t1_6 = "";
+            surArry.Attempt_method_t1_7 = "";
+            surArry.Attempt_method_t1_8 = "";
+            surArry.Attempt_method_t1_9 = "";
+            surArry.Attempt_method_t1_10 = "";
+            surArry.Attempt_method_t1_11 = "";
+            surArry.Attempt_method_t1_12 = "";
+            surArry.Attempt_method_t1_13 = "";
             surArry.Attempt_inj_t1 = "";
             surArry.Attempt_desire_t1 = "";
             surArry.Attempt_conf_t1 = "";
             surArry.RecentSevere_yn_t1 = "";
             surArry.sevAttempt_age_t1 = "";
-            surArry.sevAttempt_method_t1 = "";
+            surArry.sevAttempt_method_t1_0 = "";
+            surArry.sevAttempt_method_t1_1 = "";
+            surArry.sevAttempt_method_t1_2 = "";
+            surArry.sevAttempt_method_t1_3 = "";
+            surArry.sevAttempt_method_t1_4 = "";
+            surArry.sevAttempt_method_t1_5 = "";
+            surArry.sevAttempt_method_t1_6 = "";
+            surArry.sevAttempt_method_t1_7 = "";
+            surArry.sevAttempt_method_t1_8 = "";
+            surArry.sevAttempt_method_t1_9 = "";
+            surArry.sevAttempt_method_t1_10 = "";
+            surArry.sevAttempt_method_t1_11 = "";
+            surArry.sevAttempt_method_t1_12 = "";
+            surArry.sevAttempt_method_t1_13 = "";
             surArry.sevAttempt_inj_t1 = "";
             surArry.sevAttempt_desire_t1 = "";
             surArry.sevAttempt_conf_t1 = "";
-            surArry.AllAttempt_method_t1 = "";
+            surArry.AllAttempt_method_t1_0 = "";
+            surArry.AllAttempt_method_t1_1 = "";
+            surArry.AllAttempt_method_t1_2 = "";
+            surArry.AllAttempt_method_t1_3 = "";
+            surArry.AllAttempt_method_t1_4 = "";
+            surArry.AllAttempt_method_t1_5 = "";
+            surArry.AllAttempt_method_t1_6 = "";
+            surArry.AllAttempt_method_t1_7 = "";
+            surArry.AllAttempt_method_t1_8 = "";
+            surArry.AllAttempt_method_t1_9 = "";
+            surArry.AllAttempt_method_t1_10 = "";
+            surArry.AllAttempt_method_t1_11 = "";
+            surArry.AllAttempt_method_t1_12 = "";
+            surArry.AllAttempt_method_t1_13 = "";
             surArry.AllAttempt_desire_t1 = "";
             surArry.AllAttempt_conf_t1 = "";
             $("#58, #59, #60, #61, #62, #63, #69").find("input").each(function() {
@@ -2685,6 +2796,7 @@ function q57() {
         else {
             q57logic = false;
             $("#58").show();
+            $("#times8").focus();
         }
         addArry(bInst5);
     }
@@ -2695,13 +2807,14 @@ function q57() {
 
 function q58() {
     var times = parseInt($("#times8").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.Attempt_wk_t1 = times.toString();
         $("#err58").hide();
         $("#err59").hide();
         $("#fwd").show();
         $("#58").hide();
         $("#59").show();
+        $("#times9").focus();
         addArry(q57);
     }
     else {
@@ -2711,13 +2824,14 @@ function q58() {
 
 function q59() {
     var times = parseInt($("#times9").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.Attempt_mth_t1 = times.toString();
         $("#err59").hide();
         $("#err60").hide();
         $("#fwd").show();
         $("#59").hide();
         $("#60").show();
+        $("#times10").focus();
         addArry(q58);
     }
     else {
@@ -2727,13 +2841,14 @@ function q59() {
 
 function q60() {
     var times = parseInt($("#times10").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.Attempt_yr_t1 = times.toString();
         $("#err60").hide();
         $("#err61").hide();
         $("#fwd").show();
         $("#60").hide();
         $("#61").show();
+        $("#times11").focus();
         addArry(q59);
     }
     else {
@@ -2743,13 +2858,14 @@ function q60() {
 
 function q61() {
     var times = parseInt($("#times11").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.Attempt_life_t1 = times.toString();
         $("#err61").hide();
         $("#err62").hide();
         $("#fwd").show();
         $("#61").hide();
         $("#62").show();
+        $("#times12").focus();
         addArry(q60);
     }
     else {
@@ -2759,13 +2875,14 @@ function q61() {
 
 function q62() {
     var times = parseInt($("#times12").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.Attempt_agestart_t1 = times.toString();
         $("#err62").hide();
         $("#err63").hide();
         $("#fwd").show();
         $("#62").hide();
         $("#63").show();
+        $("#times13").focus();
         addArry(q61);
     }
     else {
@@ -2775,7 +2892,7 @@ function q62() {
 
 function q63() {
     var times = parseInt($("#times13").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.Attempt_agelast_t1 = times.toString();
         $("#err63").hide();
         $("#err64").hide();
@@ -2952,10 +3069,23 @@ function q68() {
         $("#err74").hide();
         $("#68").hide();
         $("#fwd").show();
-        if (surArry.RecentSevere_yn_t1 == "0") {
+        if (surArry.RecentSevere_yn_t1 == "1") {
             q68logic = true;
             surArry.sevAttempt_age_t1 = "";
-            surArry.sevAttempt_method_t1 = "";
+            surArry.sevAttempt_method_t1_0 = "";
+            surArry.sevAttempt_method_t1_1 = "";
+            surArry.sevAttempt_method_t1_2 = "";
+            surArry.sevAttempt_method_t1_3 = "";
+            surArry.sevAttempt_method_t1_4 = "";
+            surArry.sevAttempt_method_t1_5 = "";
+            surArry.sevAttempt_method_t1_6 = "";
+            surArry.sevAttempt_method_t1_7 = "";
+            surArry.sevAttempt_method_t1_8 = "";
+            surArry.sevAttempt_method_t1_9 = "";
+            surArry.sevAttempt_method_t1_10 = "";
+            surArry.sevAttempt_method_t1_11 = "";
+            surArry.sevAttempt_method_t1_12 = "";
+            surArry.sevAttempt_method_t1_13 = "";
             surArry.sevAttempt_inj_t1 = "";
             surArry.sevAttempt_desire_t1 = "";
             surArry.sevAttempt_conf_t1 = "";
@@ -2972,6 +3102,7 @@ function q68() {
         else {
             q68logic = false;
             $("#69").show();
+            $("#times14").focus();
         }
         addArry(q67);
     }
@@ -2982,7 +3113,7 @@ function q68() {
 
 function q69() {
     var times = parseInt($("#times14").val());
-    if (times > 0 && times < 100000) {
+    if (times >= 0 && times < 100000) {
         surArry.sevAttempt_age_t1 = times.toString();
         $("#err69").hide();
         $("#err70").hide();
@@ -3305,6 +3436,10 @@ function q77() {
         $("#77").hide();
         $("#fwd").hide();
         $("#s5Fin").show();
+        var progressbar = $( "#progressbar5" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 32});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         if (q57logic) {
             addArry(q57);
         }
@@ -3321,7 +3456,11 @@ function q77() {
 function s5Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base6");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base6");
+    }, 2000);
 }
 
 function base6St() {
@@ -3480,7 +3619,11 @@ function q87() {
         $("#87").hide();
         $("#fwd").hide();
         $("#s6Fin").show();
-        addArry(q85);
+        var progressbar = $( "#progressbar6" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 36});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
+        addArry(q86);
         $(":mobile-pagecontainer").pagecontainer("load", "baseline7.html", {showLoadMsg: false});
     }
     else {
@@ -3491,7 +3634,11 @@ function q87() {
 function s6Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base7");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base7");
+    }, 2000);
 }
 function base7St() {
     $("#88").hide();
@@ -3668,7 +3815,7 @@ function q97() {
 }
 
 function q98() {
-    if (surArry.ASQinc_t1 != "") {
+    if (surArry.ASQanx_inc_t1 != "") {
         $("#err98").hide();
         $("#err99").hide();
         $("#err100").hide();
@@ -4018,7 +4165,7 @@ function q113() {
         addArry(q112);
     }
     else {
-        $("#err108").show();
+        $("#err113").show();
     }
 }
 
@@ -4491,6 +4638,10 @@ function q135() {
             });
             $("#fwd").hide();
             $("#s7Fin").show();
+            var progressbar = $( "#progressbar7" );
+            var progressLabel = $( ".progress-label" );
+            progressbar.progressbar({value: 58});
+            progressLabel.text(progressbar.progressbar( "value" ) + "%" );
             $(":mobile-pagecontainer").pagecontainer("load", "baseline8.html", {showLoadMsg: false});
         }
         else {
@@ -4556,6 +4707,10 @@ function q138() {
             });
             $("#fwd").hide();
             $("#s7Fin").show();
+            var progressbar = $( "#progressbar7" );
+            var progressLabel = $( ".progress-label" );
+            progressbar.progressbar({value: 58});
+            progressLabel.text(progressbar.progressbar( "value" ) + "%" );
             $(":mobile-pagecontainer").pagecontainer("load", "baseline8.html", {showLoadMsg: false});
         }
         else {
@@ -4575,6 +4730,10 @@ function q139() {
         $("#139").hide();
         $("#fwd").hide();
         $("#s7Fin").show();
+        var progressbar = $( "#progressbar7" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 58});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         addArry(q138);
         $(":mobile-pagecontainer").pagecontainer("load", "baseline8.html", {showLoadMsg: false});
     }
@@ -4586,7 +4745,11 @@ function q139() {
 function s7Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base8");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base8");
+    }, 2000);
 }
 
 function base8St() {
@@ -4905,6 +5068,10 @@ function q159() {
             $("#fwd").hide();
             surArry.BSS21_t1 = "";
             $("#s8Fin").show();
+            var progressbar = $( "#progressbar8" );
+            var progressLabel = $( ".progress-label" );
+            progressbar.progressbar({value: 67});
+            progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         }
         else {
             q159logic = false;
@@ -4929,6 +5096,10 @@ function q160() {
         $("#160").hide();
         $("#fwd").hide();
         $("#s8Fin").show();
+        var progressbar = $( "#progressbar8" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 67});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         addArry(q159);
         $(":mobile-pagecontainer").pagecontainer("load", "baseline9.html", {showLoadMsg: false});
     }
@@ -4940,7 +5111,11 @@ function q160() {
 function s8Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base9");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base9");
+    }, 2000);
 }
 
 function base9St() {
@@ -5204,6 +5379,10 @@ function q178() {
         $("#178").hide();
         $("#fwd").hide();
         $("#s9Fin").show();
+        var progressbar = $( "#progressbar9" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 74});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         addArry(q177);
         $(":mobile-pagecontainer").pagecontainer("load", "baseline10.html", {showLoadMsg: false});
     }
@@ -5215,7 +5394,11 @@ function q178() {
 function s9Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base10");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base10");
+    }, 2000);
 }
 
 function base10St() {
@@ -5507,6 +5690,10 @@ function q198() {
         $("#198").hide();
         $("#fwd").hide();
         $("#s10Fin").show();
+        var progressbar = $( "#progressbar10" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 83});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         addArry(q197);
         $(":mobile-pagecontainer").pagecontainer("load", "baseline11.html", {showLoadMsg: false});
     }
@@ -5518,7 +5705,11 @@ function q198() {
 function s10Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base11");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base11");
+    }, 2000);
 }
 
 function base11St() {
@@ -5698,6 +5889,10 @@ function q210() {
         $("#210").hide();
         $("#fwd").hide();
         $("#s11Fin").show();
+        var progressbar = $( "#progressbar11" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 88});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         addArry(q209);
         $(":mobile-pagecontainer").pagecontainer("load", "baseline12.html", {showLoadMsg: false});
     }
@@ -5709,7 +5904,11 @@ function q210() {
 function s11Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base12");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base12");
+    }, 2000);
 }
 
 function base12St() {
@@ -5903,6 +6102,10 @@ function q223() {
         $("#223").hide();
         $("#fwd").hide();
         $("#s12Fin").show();
+        var progressbar = $( "#progressbar12" );
+        var progressLabel = $( ".progress-label" );
+        progressbar.progressbar({value: 93});
+        progressLabel.text(progressbar.progressbar( "value" ) + "%" );
         addArry(q222);
         if (!base3Loaded) {
             base3Loaded = true;
@@ -5917,7 +6120,11 @@ function q223() {
 function s12Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#base13");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#base13");
+    }, 2000);
 }
 
 function base13St() {
@@ -6054,6 +6261,10 @@ function q238() {
     $("#238").hide();
     $("#fwd").show();
     $("#s13Fin").show();
+    var progressbar = $( "#progressbar13" );
+    var progressLabel = $( ".progress-label" );
+    progressbar.progressbar({value: 100});
+    progressLabel.text(progressbar.progressbar( "value" ) + "%" );
     addArry(q237);
     $(":mobile-pagecontainer").pagecontainer("load", "finished.html", {showLoadMsg: false});
 }
@@ -6061,7 +6272,11 @@ function q238() {
 function s13Fin() {
     navArry = [];
     navPos = 0;
-    $.mobile.changePage("#finish");
+    $.mobile.loading("show");
+    setTimeout(function () {
+        $.mobile.loading("hide");
+        $.mobile.changePage("#finish");
+    }, 2000);
 }
 
 function addArry(blk) {

@@ -22,7 +22,7 @@
                 <p id="err47" class="errmsg"><b>Please choose an answer.</b></p>
             </div>
             <div id="48">
-                <label for="times"><ins>Since the first time you filled out surveys for our study</ins>, have you been <strong>very close to killing yourself and in the last minute, you stopped yourself</strong> before you took an action?</label>
+                <label for="times">How many times <ins>since the first time you filled out surveys for our study</ins>, have you been <strong>very close to killing yourself and in the last minute, you stopped yourself</strong> before you took an action?</label>
                 <input name="times1" id="times" pattern="[0-9]*" type="number" placeholder="times">
                 <a href="#" id="q48Btn" onClick="q48()" class="ui-btn ui-corner-all btnSize2">Next</a>
                 <p id="err48" class="errmsg"><b>Please enter a valid number.</b></p>
@@ -38,7 +38,14 @@
                 <a href="#" id="q52Btn" onClick="q52()" class="ui-btn ui-corner-all noDisplay">Next</a>
                 <p id="err52" class="errmsg"><b>Please choose an answer.</b></p>
             </div>
+            <div id="53">
+                <label for="times4">How many times <ins>since the first time you filled out surveys for our study</ins>, have you been <strong>very close to killing yourself and in the last minute, someone or something else stopped you</strong> before you took an action?</label>
+                <input name="times5" id="times4" pattern="[0-9]*" type="number" placeholder="times">
+                <a href="#" id="q53Btn" onClick="q53()" class="ui-btn ui-corner-all btnSize2">Next</a>
+                <p id="err53" class="errmsg"><b>Please enter a valid number.</b></p>
+            </div>
             <div id="s4Fin">
+                <div id="progressbar4"><div class="progress-label">Loading...</div></div>
                 <p>This section is complete.  If you need to change any responses to the questions in this section please do so at this time.</p>
                 <a href="#" id="s4FinBtn" onClick="s4Fin()" class="ui-btn ui-corner-all btnSize2">Continue</a>
             </div>

@@ -35,6 +35,13 @@ $(window).on('popstate', function(e) {
     return;
 });
 
+$("#idtxt").keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){
+        idSt();
+    }
+});
+
 var aArry = ["resources/images/a1.jpg", "resources/images/a2.jpg", "resources/images/a3.jpg", "resources/images/a4.jpg", "resources/images/a5.jpg", "resources/images/a6.jpg", "resources/images/a7.jpg",
     "resources/images/a8.jpg", "resources/images/a9.jpg", "resources/images/a10.jpg", "resources/images/a11.jpg", "resources/images/a12.jpg"];
 
@@ -86,7 +93,15 @@ var fArry = ["resources/images/f1.jpg", "resources/images/f2.jpg", "resources/im
 });*/
 
 function loadSur() {
-    var gameJS = $("<script type='text/javascript' src='resources/game.js'>");
+    if (pId.toLowerCase() == "sur2") {
+        var gameJS = $("<script type='text/javascript' src='resources/game2.js'>");
+    }
+    else if (pId.toLowerCase() == "sur3") {
+        var gameJS = $("<script type='text/javascript' src='resources/game3.js'>");
+    }
+    else {
+        var gameJS = $("<script type='text/javascript' src='resources/game.js'>");
+    }
     $("body").append(gameJS);
 }
 
@@ -96,6 +111,7 @@ $(document).on('pagebeforeshow', '#idHome', function() {
     if ($(window).width() > $(window).height()) {
         $('.sur3').css({'margin-left': '40%', 'margin-right': '40%', 'margin-top': '10%'});
     }
+    $("#idtxt").focus();
 });
 
 $(document).on('pagebeforeshow', '#amp', function() {
@@ -140,7 +156,12 @@ $(document).on('pagebeforeshow', '#inst', function(){
     sizeC();
     preloadAmp();
     btnDelay();
-    $(":mobile-pagecontainer" ).pagecontainer( "load", "baseline.html", { showLoadMsg: false } );
+    if (pId.toLowerCase() == "sur2" || pId.toLowerCase() == "sur3") {
+        $(":mobile-pagecontainer" ).pagecontainer( "load", "base2line2.html", { showLoadMsg: false } );
+    }
+    else {
+        $(":mobile-pagecontainer").pagecontainer("load", "baseline.html", {showLoadMsg: false});
+    }
 });
 
 // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
