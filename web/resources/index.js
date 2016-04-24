@@ -164,6 +164,15 @@ $(document).on('pagebeforeshow', '#inst', function(){
     }
 });
 
+function testSur() {
+    if (pId.toLowerCase() == "sur2" || pId.toLowerCase() == "sur3") {
+        $.mobile.changePage("#base2");
+    }
+    else {
+        $.mobile.changePage("#base");
+    }
+}
+
 // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
 function isValidDate(dateString)
 {

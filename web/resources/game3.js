@@ -78,10 +78,10 @@ $(document).on('pagebeforeshow', '#base', function() {
 
 $(document).on('pagebeforeshow', '#base2', function() {
     navArry = [];
-    $("#11, #14, #15, #19, #s2Fin, #baseInst3, #back, #20, #24, #29, #30").hide();
+    $("#11, #14, #15, #19, #s2Fin, #baseInst3, #back, #20, #24, #25, #29, #30").hide();
     vis = ["#q11Btn", "#q14Btn", "#q15Btn", "#q19Btn", "#q20Btn",
         "#q24Btn", "#q25Btn", "#q29Btn", "#q30Btn",
-        "#bInst3Btn", "#bInst3Btn"];
+        "#bInst1Btn", "#bInst2Btn"];
     //FastClick.attach(document.body);
     bindBase2();
 });
@@ -1332,12 +1332,12 @@ function base2St() {
     $("#11").hide();
     $("#err11").hide();
     $("#back").hide();
-    $("#baseInst3").show();
+    $("#baseInst1").show();
 }
 
-function bInst3() {
+function bInst1() {
     base3Loaded = false;
-    $("#baseInst3").hide();
+    $("#baseInst1").hide();
     $("#err11").hide();
     $("#11").show();
     $("#back").show();
@@ -1350,8 +1350,8 @@ function q11() {
         q11logic = false;
         $("#err11").hide();
         $("#11").hide();
-        $("#baseInst3").show();
-        addArry(bInst3);
+        $("#baseInst2").show();
+        addArry(bInst1);
     }
     else if (choice === "0") {
         q11logic = true;
@@ -1375,15 +1375,15 @@ function q11() {
         });
         $("#30").show();
         $("#fwd").show();
-        addArry(bInst3);
+        addArry(bInst1);
     }
     else {
         $("#err11").show();
     }
 }
 
-function bInst3() {
-    $("#baseInst3").hide();
+function bInst2() {
+    $("#baseInst2").hide();
     $("#err14").hide();
     $("#14").show();
     addArry(q11);
@@ -1398,7 +1398,7 @@ function q14() {
         $("#14").hide();
         $("#15").show();
         $("#age5").focus();
-        addArry(bInst3);
+        addArry(bInst2);
     }
     else if (choice === "0") {
         q14logic = true;
@@ -1410,7 +1410,7 @@ function q14() {
             $(this).val("");
         });
         $("#19").show();
-        addArry(bInst3);
+        addArry(bInst2);
     }
     else {
         $("#err14").show();
@@ -2017,10 +2017,10 @@ function q58() {
     if (times >= 0 && times < 100000) {
         surArry.Attempt_freq_t3 = times.toString();
         $("#err58").hide();
-        $("#err59").hide();
+        $("#err64").hide();
         $("#fwd").show();
         $("#58").hide();
-        $("#59").show();
+        $("#64").show();
         $("#times9").focus();
         addArry(q57);
     }
