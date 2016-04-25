@@ -75,7 +75,8 @@ var ampData = {"id" : "", "surType" : "", "AMP_suic" : "", "AMP_suic_low" : "", 
     "AMP_guntohead1" : "", "AMP_guntohead2" : "", "AMP_guntohead3" : "", "AMP_height" : "", "AMP_morgue" : "", "AMP_noosetree" : "", "AMP_noose" : "", "AMP_pills" : "",
     "AMP_ledge" : "", "AMP_suffocation" : "", "AMP_bathdrown" : "", "AMP_bathslit" : "", "AMP_bloodgun1" : "", "AMP_bloodgun2" : "", "AMP_bloodwrist" : "", "AMP_drowned" : "",
     "AMP_float" : "", "AMP_hanged" : "", "AMP_hanging1" : "", "AMP_hanging2" : "", "AMP_OD" : "", "AMP_suffocation2" : "", "AMP_burned" : "", "AMP_burned2" : "", "AMP_deadbody" : "",
-    "AMP_fall" : "", "AMP_gsw1" : "", "AMP_gsw2" : "", "AMP_gsw3" : "", "AMP_hangedface" : "", "AMP_beach" : "", "AMP_cat" : "", "AMP_cats" : "", "AMP_girlwaves" : "",
+    "AMP_fall" : "", "AMP_gsw1" : "", "AMP_gsw2" : "", "AMP_gsw3" : "", "AMP_hangedface" : "", "AMP_slitthroat" : "", "AMP_slitthroat2" : "", "AMP_suffocatehang" : "",
+    "AMP_hangedface2" : "", "AMP_beach" : "", "AMP_cat" : "", "AMP_cats" : "", "AMP_girlwaves" : "",
     "AMP_high5" : "", "AMP_like" : "", "AMP_panda" : "", "AMP_pig" : "", "AMP_puppy" : "", "AMP_squirrel" : "", "AMP_ball" : "", "AMP_pancakes" : ""}
 
 var imgMap = {"resources/images/b46.jpg" : "AMP_ball", "resources/images/b12.jpg" : "AMP_beach", "resources/images/b42.jpg" : "AMP_cat", "resources/images/b2.jpg" : "AMP_cats", "resources/images/b20.jpg" : "AMP_girlwaves", "resources/images/b36.jpg" : "AMP_high5", "resources/images/b50.jpg" : "AMP_like",
@@ -275,6 +276,7 @@ function ampScore() {
     ampData["AMP_suic_low"] = eScr;
     ampData["AMP_suic_mod"] = fScr;
     ampData["AMP_suic_high"] = aScr;
+    ampData["AMP_pos"] = bScr;
     console.log(ampData);
 }
 
