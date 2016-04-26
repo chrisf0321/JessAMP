@@ -1,7 +1,7 @@
 /*$(function() {
     FastClick.attach(document.body);
 });*/
-var rootURL = "http://ampstudy.elasticbeanstalk.com/rest";
+var rootURL = "http://ampstudy.elasticbeanstalk.com/rest/tec";
 var hasTouch = ('ontouchstart' in window);
 var TOUCH_START = hasTouch ? "touchstart" : "mousedown";
 var aCnt = 0;
