@@ -3821,7 +3821,7 @@ function q98() {
         $("#err100").hide();
         $("#98").hide();
         $("#fwd").show();
-        if (surArry.ASQanx_t1 == "0") {
+        if (surArry.ASQanx_inc_t1 == "0") {
             q98logic = true;
             surArry.ASQanx_time_t1 = "";
             $("#99").find("input").each(function() {
@@ -6270,10 +6270,19 @@ function q238() {
 }
 
 function s13Fin() {
+    var online = window.navigator.onLine;
     navArry = [];
     navPos = 0;
     $.mobile.loading("show");
-    console.log(surArry);
+    if (!online) {
+        dataToJSON();
+        var storedItems = JSON.parse(window.localStorage.getItem("stored")) || [];
+        storedItems.push(finData);
+        window.localStorage.setItem("stored", JSON.stringify(storedItems));
+    }
+    else {
+        saveData();
+    }
     setTimeout(function () {
         $.mobile.loading("hide");
         $.mobile.changePage("#finish");

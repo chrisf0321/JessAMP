@@ -1,7 +1,7 @@
 /*$(function() {
     FastClick.attach(document.body);
 });*/
-var rootURL = "http://amptest.elasticbeanstalk.com/rest/tec";
+var rootURL = "http://ampstudy.elasticbeanstalk.com/rest";
 var hasTouch = ('ontouchstart' in window);
 var TOUCH_START = hasTouch ? "touchstart" : "mousedown";
 var aCnt = 0;
@@ -33,6 +33,7 @@ var allCat = 0;
 var allScr = 0.0;
 var imgName = "";
 var surType = "";
+var finData = {};
 
 $(window).on('popstate', function(e) {
     e.preventDefault();
@@ -90,21 +91,17 @@ var imgMap = {"resources/images/b46.jpg" : "AMP_ball", "resources/images/b12.jpg
     "resources/images/e19.jpg" : "AMP_suffocation"}
 
 function loadSur() {
-    if (pId.toLowerCase() == "sur2") {
+    if (surType == "2") {
         var gameJS = $("<script type='text/javascript' src='resources/game2.js'>");
-        surType = "2";
     }
-    else if (pId.toLowerCase() == "sur3") {
+    else if (surType == "3") {
         var gameJS = $("<script type='text/javascript' src='resources/game3.js'>");
-        surType = "3";
     }
-    else if (pId.toLowerCase() == "sur4") {
+    else if (surType == "4") {
         var gameJS = $("<script type='text/javascript' src='resources/game4.js'>");
-        surType = "4";
     }
     else {
         var gameJS = $("<script type='text/javascript' src='resources/game.js'>");
-        surType = "1";
     }
     $("body").append(gameJS);
 }
@@ -114,6 +111,12 @@ $(document).on('pagebeforeshow', '#idHome', function() {
     $("#err1").hide();
     if ($(window).width() > $(window).height()) {
         $('.sur3').css({'margin-left': '40%', 'margin-right': '40%', 'margin-top': '10%'});
+    }
+    if (window.localStorage.getItem("stored") !== null) {
+        $("#reBtn").show();
+    }
+    else {
+        $("#reBtn").hide();
     }
     $("#idtxt").focus();
 });
@@ -231,29 +234,33 @@ function btnDelay() {
 }
 
 function plBtn() {
-    var num = ampScr[ampArry[ampCnt]];
+    if (active) {
+        var num = ampScr[ampArry[ampCnt]];
 
-    if (num === 1) {
-        aCat++;
+        if (num === 1) {
+            aCat++;
+        }
+        else if (num === 2) {
+            bCat++;
+        }
+        else if (num === 3) {
+            eCat++;
+        }
+        else if (num === 4) {
+            fCat++;
+        }
+        ampCnt++;
+        ampData[imgName] = "1";
+        ampSt();
     }
-    else if (num === 2) {
-        bCat++;
-    }
-    else if (num === 3) {
-        eCat++;
-    }
-    else if (num === 4) {
-        fCat++;
-    }
-    ampCnt++;
-    ampData[imgName] = "1";
-    ampSt();
 }
 
 function unBtn() {
-    ampCnt++;
-    ampData[imgName] = "0";
-    ampSt();
+    if (active) {
+        ampCnt++;
+        ampData[imgName] = "0";
+        ampSt();
+    }
 }
 
 function ampScore() {
@@ -291,7 +298,8 @@ function ampSt() {
                 setTimeout(function() {
                     setTimeout(function() {
                         $("#amp3").hide();
-                        $("#amp4").show();}, 100);
+                        $("#amp4").show();
+                        active = true;}, 100);
                     $("#amp2").hide();
                     $("#amp3").show();}, 125);
                 $("#amp1").hide();
@@ -301,11 +309,7 @@ function ampSt() {
     }
     else {
         ampScore();
-         var tDate = new Date();
-         /*var ampData = {};
-         var ampDate = formatDate(tDate) + " " + formatAMPM(tDate);
-         ampData = {"id" : pId, "stimuli" : aScr, "pleasant" : bScr, "neutral" : cScr, "unpleasant" : dScr, "date" : ampDate};
-         storeAmp(ampData);*/
+        var tDate = new Date();
         setTimeout(function() {
             if (surType == "1") {
                 $.mobile.changePage("#base", {transition: "slide"});
@@ -316,43 +320,87 @@ function ampSt() {
         }, 300);
     }
 }
-function storeAmp(ampData) {
+
+function saveData() {
+    var path;
+    if (surType == "1") {
+        path = "amp";
+    }
+    else if (surType == "2") {
+        path = "amp2";
+    }
+    else if (surType == "3") {
+        path = "amp3";
+    }
+    else {
+        path = "amp4";
+    }
+
     $.ajax({
         type: 'POST',
         contentType: 'application/json',
-        url: rootURL + "/amp",
+        url: rootURL + "/" + path,
         dataType: "json",
-        data: JSON.stringify(ampData),
-        success: function(data){
-            resendDataAmp();
+        data: dataToJSON(),
+        success: function(data, textStatus, jqXHR){
         },
-        error: function(err) {
-            var storedItems = JSON.parse(window.localStorage.getItem("amp")) || [];
-            storedItems.push(ampData);
-            window.localStorage.setItem("amp", JSON.stringify(storedItems));
+        error: function(jqXHR, textStatus, errorThrown){
         }
     });
 }
 
+function dataToJSON() {
+    finData["id"] = pId;
+
+    $.each(ampData, function(key, value) {
+        finData[key] = value;
+    });
+    $.each(surArry, function(key, value) {
+        finData[key] = value;
+    });
+
+    return JSON.stringify(finData);
+}
+
 function cleanupAmp(arr) {
-    window.localStorage.removeItem("amp");
+    window.localStorage.removeItem("stored");
 
     if (arr.length > 0) {
-        window.localStorage.setItem("amp", JSON.stringify(arr));
+        window.localStorage.setItem("stored", JSON.stringify(arr));
     }
 }
 
-function resendDataAmp() {
+function resendData() {
+    var online = window.navigator.onLine;
     var posi = 0;
     var newStore = [];
-    if (window.localStorage.getItem("amp") !== null) {
-        var redata = JSON.parse(window.localStorage.getItem("amp"));
+    if (!online) {
+        return;
+    }
+    else {
+        $("#reBtn").hide();
+    }
+    if (window.localStorage.getItem("stored") !== null) {
+        var redata = JSON.parse(window.localStorage.getItem("stored"));
         for (var i = 0; i < redata.length; i++) {
             var dataSend = redata[i];
+            var path;
+            if (dataSend.surType == "1") {
+                path = "amp";
+            }
+            else if (dataSend.surType == "2") {
+                path = "amp2";
+            }
+            else if (dataSend.surType == "3") {
+                path = "amp3";
+            }
+            else {
+                path = "amp4";
+            }
             $.ajax({
                 type: 'POST',
                 contentType: 'application/json',
-                url: rootURL + "/amp",
+                url: rootURL + "/" + path,
                 dataType: "json",
                 data: JSON.stringify(dataSend),
                 success: function(data, textStatus, jqXHR){
@@ -371,6 +419,9 @@ function resendDataAmp() {
             });
         }
     }
+    else {
+        $("#reBtn").hide();
+    }
 }
 
 function idSt() {
@@ -381,27 +432,34 @@ function idSt() {
         $("#err0").show();
     }
     else {
-        loadSur();
         $.mobile.changePage("#home");
-        /*$.ajax({
+        $.ajax({
          type: 'GET',
          url: rootURL + '/' + pId,
          dataType: "json",
          success: function(data){
          var user = data;
          if (user.match) {
-         $("#err0").hide;
-         $("#err1").hide;
-         $.mobile.changePage("#home");
+             $("#err0").hide;
+             $("#err1").hide;
+             $("#err1-1").hide();
+             if (user.locked != "1") {
+                 surType = user.surType;
+                 loadSur();
+                 $.mobile.changePage("#home");
+             }
+             else {
+                 $("#err1-1").show();
+             }
          }
          else {
-         $("#err0").show();
-         }
+            $("#err0").show();
+            }
          },
          error: function(err) {
-         $("#err1").show();
-         }
-         });*/
+            $("#err1").show();
+            }
+         });
     }
 }
 
@@ -419,24 +477,6 @@ function preloadAmp() {
         ampScr[eArry[i]] = 3;
         ampScr[fArry[i]] = 4;
     }
-
-    /*ampArry = ampArry.concat(eArry);
-     ampScr["resources/images/e1.jpg"] = 5;
-     ampScr["resources/images/e2.jpg"] = 5;
-     ampScr["resources/images/e3.jpg"] = 5;
-     ampScr["resources/images/e4.jpg"] = 5;
-     ampScr["resources/images/e5.jpg"] = 5;
-     ampArry.push("resources/images/e5.jpg");
-     ampArry.push("resources/images/f1.jpg");
-     ampArry.push("resources/images/f2.jpg");
-     ampArry.push("resources/images/f3.jpg");
-     ampArry.push("resources/images/f4.jpg");
-     ampArry.push("resources/images/f5.jpg");
-     ampScr["resources/images/f1.jpg"] = 6;
-     ampScr["resources/images/f2.jpg"] = 6;
-     ampScr["resources/images/f3.jpg"] = 6;
-     ampScr["resources/images/f4.jpg"] = 6;
-     ampScr["resources/images/f5.jpg"] = 6;*/
 
     for (var i = 0; i < 48; i++) {
         var num = (Math.floor(Math.random() * 199)) + 1;

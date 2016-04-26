@@ -4598,10 +4598,19 @@ function q238() {
 }
 
 function s13Fin() {
+    var online = window.navigator.onLine;
     navArry = [];
     navPos = 0;
     $.mobile.loading("show");
-    console.log(surArry);
+    if (!online) {
+        dataToJSON();
+        var storedItems = JSON.parse(window.localStorage.getItem("stored")) || [];
+        storedItems.push(finData);
+        window.localStorage.setItem("stored", JSON.stringify(storedItems));
+    }
+    else {
+        saveData();
+    }
     setTimeout(function () {
         $.mobile.loading("hide");
         $.mobile.changePage("#finish");
