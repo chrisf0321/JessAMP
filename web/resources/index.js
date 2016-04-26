@@ -235,6 +235,7 @@ function btnDelay() {
 
 function plBtn() {
     if (active) {
+        active = false;
         var num = ampScr[ampArry[ampCnt]];
 
         if (num === 1) {
@@ -257,6 +258,7 @@ function plBtn() {
 
 function unBtn() {
     if (active) {
+        active = false;
         ampCnt++;
         ampData[imgName] = "0";
         ampSt();
@@ -284,7 +286,6 @@ function ampScore() {
     ampData["AMP_suic_mod"] = fScr;
     ampData["AMP_suic_high"] = aScr;
     ampData["AMP_pos"] = bScr;
-    console.log(ampData);
 }
 
 function ampSt() {
@@ -309,7 +310,6 @@ function ampSt() {
     }
     else {
         ampScore();
-        var tDate = new Date();
         setTimeout(function() {
             if (surType == "1") {
                 $.mobile.changePage("#base", {transition: "slide"});
